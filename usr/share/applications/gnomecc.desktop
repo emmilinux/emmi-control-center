@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Control Center
+GenericName=The GNOME configuration tool
+Icon=gnome-control-center
+Exec=gnome-control-center
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;
+OnlyShowIn=GNOME;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-control-center
+X-GNOME-Bugzilla-Component=shell
+X-GNOME-Bugzilla-Version=2.30.1
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=gnome-control-center-2.0
