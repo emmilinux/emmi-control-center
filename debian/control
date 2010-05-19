@@ -1,0 +1,12 @@
+Source: tuquito-control-center
+Section: gnome
+Priority: extra
+Maintainer: Mario Colque <mario@tuquito.org.ar>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.1
+
+Package: tuquito-control-center
+Architecture: all
+Description: Menú de centro de control
+ Menú de centro de control
+ * Tuquito Team! - 2010
