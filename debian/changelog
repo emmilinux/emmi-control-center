@@ -1,3 +1,9 @@
+tuquito-control-center (0.1-5) lucid; urgency=low
+
+  * cambio en empaquetado
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 21 May 2010 11:31:28 -0300
+
 tuquito-control-center (0.1-4) lucid; urgency=low
 
   * Modificacion en visibilidad
