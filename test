@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rf /usr/lib/tuquito/tuquito-control-center
+cp -R usr/lib/tuquito/tuquito-control-center /usr/lib/tuquito/
+cp usr/bin/* /usr/bin/
+tuquito-control-center

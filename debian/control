@@ -7,6 +7,7 @@ Standards-Version: 3.8.1
 
 Package: tuquito-control-center
 Architecture: all
-Description: Menú de centro de control
- Menú de centro de control
+Depends: garfio, simple-ccsm, gnome-disk-utility, tuquito-control-parental, hardinfo
+Description: Centro de control de tuquito
+ Menú de centro de control de Tuquito
  * Tuquito Team! - 2010

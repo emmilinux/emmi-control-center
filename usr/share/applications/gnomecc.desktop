@@ -1,7 +1,8 @@
 [Desktop Entry]
 Categories=GNOME;GTK;Settings;
-Exec=gnome-control-center
-GenericName=The GNOME configuration tool
+Exec=tuquito-control-center
+GenericName[es]=La herramienta de configuración de Tuquito
+GenericName=The Tuquito configuration tool
 Icon=gnome-control-center
 Name=Control Center
 NoDisplay=false

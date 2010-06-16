@@ -1,3 +1,10 @@
+tuquito-control-center (0.1-6) lucid; urgency=low
+
+  * Nueva interfaz grafica con webkit
+  * Nuevo concepto de seleccion de aplicaciones
+
+ -- Mario Colque <mario@tuquito.org.ar>  Wed, 16 Jun 2010 00:50:37 -0300
+
 tuquito-control-center (0.1-5) lucid; urgency=low
 
   * cambio en empaquetado
