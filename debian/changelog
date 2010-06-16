@@ -1,3 +1,9 @@
+tuquito-control-center (0.1-8) lucid; urgency=low
+
+  * correccion en archivo .desktop
+
+ -- Mario Colque <mario@tuquito.org.ar>  Wed, 16 Jun 2010 01:29:21 -0300
+
 tuquito-control-center (0.1-7) lucid; urgency=low
 
   * correccion en rules
