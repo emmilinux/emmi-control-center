@@ -1,3 +1,9 @@
+tuquito-control-center (0.1-9) lucid; urgency=low
+
+  * Idiomas en .desktop
+
+ -- Mario Colque <mario@tuquito.org.ar>  Sun, 04 Jul 2010 18:38:10 -0300
+
 tuquito-control-center (0.1-8) lucid; urgency=low
 
   * correccion en archivo .desktop
