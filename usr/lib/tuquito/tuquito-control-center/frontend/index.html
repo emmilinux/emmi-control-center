@@ -12,13 +12,14 @@
 <body>
 <div id="nav" class="hidden">
 	<ul id="men">
-		<li><a href="#" class="btn" rel="apariencia">Apariencia</a></li>
-		<li><a href="#" class="btn" rel="redes">Redes e Internet</a></li>
-		<li><a href="#" class="btn" rel="programas">Programas</a></li>
-		<li><a href="#" class="btn" rel="usuarios">Cuentas de usuario</a></li>
-		<li><a href="#" class="btn" rel="sistema">Sistema y seguridad</a></li>
-		<li><a href="#" class="btn" rel="hardware">Hardware y sonido</a></li>
-		<li><a href="#" class="volver">Vover al menú</a></li>
+		<li><a href="#" class="btn" rel="apariencia">$appearance</a></li>
+		<li><a href="#" class="btn" rel="redes">$network</a></li>
+		<li><a href="#" class="btn" rel="programas">$programs</a></li>
+		<li><a href="#" class="btn" rel="usuarios">$accounts</a></li>
+		<li><a href="#" class="btn" rel="sistema">$system</a></li>
+		<li><a href="#" class="btn" rel="hardware">$hard</a></li>
+		<li><a href='javascript:changeTitle("about")' class="btn">$about</a></li>
+		<li><a href="#" class="volver">$back</a></li>
 	</ul>
 </div>
 
@@ -26,55 +27,55 @@
 	<div id="ajax" class="hidden"></div>
 	<ul class="menu">
 		<li>
-<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/1-apariencia.png" rel="apariencia" width="72" class="btn">
+<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/1-apariencia.png" rel="apariencia" width="72" class="btn nodrag">
 <p>
-	<p class="bold">Apariencia</p>
-	Cambiar el tema y el fondo<br>
-	Configurar efectos visuales<br>
-	Ajustar la resolución de pantalla
+	<p class="bold">$appearance</p>
+	$cambiar_tema<br>
+	$efectos_visuales<br>
+	$resolucion
 </p>
 		</li>
 		<li>
-<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/2-redes.png" rel="redes" width="72" class="btn">
+<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/2-redes.png" rel="redes" width="72" class="btn nodrag">
 <p>
-	<p class="bold">Redes e Internet</p>
-	Conexiones de red<br>
-	Herramientas de red<br>
-	Sitios de red
+	<p class="bold">$network</p>
+	$conexiones<br>
+	$herramientas_red<br>
+	$sitios_red
 </p>
 		</li>
 		<li>
-<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/3-programas.png" rel="programas" width="72" class="btn">
+<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/3-programas.png" rel="programas" width="72" class="btn nodrag">
 <p>
-	<p class="bold">Programas</p>
-	Agregar o quitar programas<br>
-	Configurar aplicaciones favoritas<br>
-	Eliminar archivos sin uso
+	<p class="bold">$programs</p>
+	$agregar_prog<br>
+	$favoritas<br>
+	$arch_sin_uso
 </p>
 		</li>
 		<li>
-<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/4-usuarios.png" rel="usuarios" width="72" class="btn">
+<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/4-usuarios.png" rel="usuarios" width="72" class="btn nodrag">
 <p>
-	<p class="bold">Cuentas de usuario y control de acceso</p>
-	Agregar o quitar cuentas de usuarios<br>
-	Configurar el Control parental<br>
+	<p class="bold">$cuentas_control</p>
+	$agregar_usuarios<br>
+	$control_parental<br>
 </p>
 		</li>
 		<li>
-<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/5-sistema.png" rel="sistema" width="72" class="btn">
+<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/5-sistema.png" rel="sistema" width="72" class="btn nodrag">
 <p>
-	<p class="bold">Sistema y seguridad</p>
-	Revisar el estado del equipo<br>
-	Hacer una copia de seguridad<br>
-	Bucar y corregir problemas
+	<p class="bold">$system</p>
+	$estado_equipo<br>
+	$backup<br>
+	$corregir_problemas
 </p>
 		</li>
 		<li>
-<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/6-hardware.png" rel="hardware" width="72" class="btn">
+<img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/6-hardware.png" rel="hardware" width="72" class="btn nodrag">
 <p>
-	<p class="bold">Hardware y sonido</p>
-	Ver dispositivos e impresoras<br>
-	Instalar controladores<br>
+	<p class="bold">$hard</p>
+	$impresoras<br>
+	$drivers<br>
 </p>
 		</li>
 	</ul>
@@ -82,80 +83,80 @@
 
 <div id="apariencia" class="hidden">
 	<div class="content">
-		<h2>Apariencia</h2>
+		<h2>$appearance</h2>
 		<ul>
-			<li><a href='javascript:changeTitle("tema_fondo")'>Cambiar el tema y el fondo</a></li>
-			<li><a href='javascript:changeTitle("compiz")'>Configurar efectos visuales</a></li>
-			<li><a href='javascript:changeTitle("monitores")'>Ajustar la resolución de pantalla</a></li>
-			<li><a href='javascript:changeTitle("screensaver")'>Configurar salvapantallas</a></li>
+			<li><a href='javascript:changeTitle("tema_fondo")'>$cambiar_tema</a></li>
+			<li><a href='javascript:changeTitle("compiz")'>$efectos_visuales</a></li>
+			<li><a href='javascript:changeTitle("monitores")'>$resolucion</a></li>
+			<li><a href='javascript:changeTitle("screensaver")'>$salvapantallas</a></li>
 		</ul>
 	</div>
 </div>
 
 <div id="redes" class="hidden">
 	<div class="content">
-		<h2>Redes e Internet</h2>
+		<h2>$network</h2>
 		<ul>
-			<li><a href='javascript:changeTitle("conexiones-red")'>Conexiones de red</a></li>
-			<li><a href='javascript:changeTitle("herramientas-red")'>Herramientas de red</a></li>
-			<li><a href='javascript:changeTitle("sitios-red")'>Sitios de red</a></li>
-			<li><a href='javascript:changeTitle("proxy")'>Configurar proxy de la red</a></li>
-			<li><a href='javascript:changeTitle("firewall")'>Configurar cortafuegos</a></li>
-			<li><a href='javascript:changeTitle("compartidos")'>Archivos y carpetas compartidas</a></li>
+			<li><a href='javascript:changeTitle("conexiones-red")'>$conexiones</a></li>
+			<li><a href='javascript:changeTitle("herramientas-red")'>$herramientas_red</a></li>
+			<li><a href='javascript:changeTitle("sitios-red")'>$sitios_red</a></li>
+			<li><a href='javascript:changeTitle("proxy")'>$proxy</a></li>
+			<li><a href='javascript:changeTitle("firewall")'>$firewall</a></li>
+			<li><a href='javascript:changeTitle("compartidos")'>$arch_comp</a></li>
 		</ul>
 	</div>
 </div>
 
 <div id="programas" class="hidden">
 	<div class="content">
-		<h2>Programas</h2>
+		<h2>$programs</h2>
 		<ul>
-			<li><a href='javascript:changeTitle("software-center")'>Agregar o quitar programas</a></li>
-			<li><a href='javascript:changeTitle("app_fav")'>Configurar aplicaciones favoritas</a></li>
-			<li><a href='javascript:changeTitle("clean")'>Eliminar archivos de instalación</a></li>
+			<li><a href='javascript:changeTitle("software-center")'>$agregar_prog</a></li>
+			<li><a href='javascript:changeTitle("app_fav")'>$favoritas</a></li>
+			<li><a href='javascript:changeTitle("clean")'>$arch_sin_uso</a></li>
 		</ul>
 	</div>
 </div>
 
 <div id="usuarios" class="hidden">
 	<div class="content">
-		<h2>Cuentas de usuario y control de acceso</h2>
+		<h2>$accounts</h2>
 		<ul>
-			<li><a href='javascript:changeTitle("cuentas-usuarios")'>Agregar o quitar cuentas de usuarios</a></li>
-			<li><a href='javascript:changeTitle("control-parental")'>Configurar el Control parental</a></li>
-			<li><a href='javascript:changeTitle("gdm")'>Configurar pantalla de inicio del sistema</a></li>
+			<li><a href='javascript:changeTitle("cuentas-usuarios")'>$agregar_usuarios</a></li>
+			<li><a href='javascript:changeTitle("control-parental")'>$control_parental</a></li>
+			<li><a href='javascript:changeTitle("gdm")'>$gdm</a></li>
 		</ul>
 	</div>
 </div>
 
 <div id="sistema" class="hidden">
 	<div class="content">
-		<h2>Sistema y seguridad</h2>
+		<h2>$system</h2>
 		<ul>
-			<li><a href='javascript:changeTitle("fecha-hora")'>Configurar fecha y hora del equipo</a></li>
-			<li><a href='javascript:changeTitle("idioma")'>Configurar idiomas del equipo</a></li>
-			<li><a href='javascript:changeTitle("boot")'>Configurar inicio del sistema</a></li>
-			<li><a href='javascript:changeTitle("estado")'>Revisar el estado del equipo</a></li>
-			<li><a href='javascript:changeTitle("garfio")'>Hacer una copia de seguridad</a></li>
-			<li><a href='javascript:changeTitle("sucesos")'>Ver sucesos del sistema</a></li>
-			<li><a href='javascript:changeTitle("claves")'>Configurar contraseñas y claves de cifrado</a></li>
+			<li><a href='javascript:changeTitle("fecha-hora")'>$hora</a></li>
+			<li><a href='javascript:changeTitle("idioma")'>$idiomas</a></li>
+			<li><a href='javascript:changeTitle("boot")'>$inicio</a></li>
+			<li><a href='javascript:changeTitle("estado")'>$estado_equipo</a></li>
+			<li><a href='javascript:changeTitle("garfio")'>$backup</a></li>
+			<li><a href='javascript:changeTitle("sucesos")'>$sucesos</a></li>
+			<li><a href='javascript:changeTitle("claves")'>$pass</a></li>
 		</ul>
 	</div>
 </div>
 
 	<div id="hardware" class="hidden">
 	<div class="content">
-		<h2>Hardware y sonido</h2>
+		<h2>$hard</h2>
 		<ul>
-			<li><a href='javascript:changeTitle("hardinfo")'>Informacion del sistema</a></li>
-			<li><a href='javascript:changeTitle("impresoras")'>Configurar impresoras</a></li>
-			<li><a href='javascript:changeTitle("discos")'>Configurar discos</a></li>
-			<li><a href='javascript:changeTitle("controladores")'>Instalar controladores propietarios</a></li>
-			<li><a href='javascript:changeTitle("ndiswrapper")'>Controladores de redes inalambricas</a></li>
-			<li><a href='javascript:changeTitle("teclado")'>Configurar el teclado</a></li>
-			<li><a href='javascript:changeTitle("mouse")'>Configurar el ratón</a></li>
-			<li><a href='javascript:changeTitle("sonido")'>Preferencias de sonido</a></li>
-			<li><a href='javascript:changeTitle("bluetooth")'>Configurar opciones de bluetooth</a></li>
+			<li><a href='javascript:changeTitle("hardinfo")'>$info</a></li>
+			<li><a href='javascript:changeTitle("impresoras")'>$impresoras</a></li>
+			<li><a href='javascript:changeTitle("discos")'>$discos</a></li>
+			<li><a href='javascript:changeTitle("controladores")'>$drivers</a></li>
+			<li><a href='javascript:changeTitle("ndiswrapper")'>$inalambricas</a></li>
+			<li><a href='javascript:changeTitle("teclado")'>$teclado</a></li>
+			<li><a href='javascript:changeTitle("mouse")'>$mouse</a></li>
+			<li><a href='javascript:changeTitle("sonido")'>$sonido</a></li>
+			<li><a href='javascript:changeTitle("bluetooth")'>$bluetooth</a></li>
 		</ul>
 	</div>
 </div>

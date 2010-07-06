@@ -1,0 +1,2 @@
+#!/bin/bash
+xgettext --language=Python --keyword=_ --output=po/tuquito-control-center.pot usr/lib/tuquito/tuquito-control-center/control-center.py --from-code=utf-8

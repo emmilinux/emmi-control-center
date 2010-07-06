@@ -33,7 +33,7 @@ class Center():
 		self.builder = gtk.Builder()
 		self.builder.add_from_file('/usr/lib/tuquito/tuquito-control-center/control-center.glade')
 		self.window = self.builder.get_object('window')
-		self.builder.get_object('window').set_title(_('Tuquito Control Center'))
+		self.builder.get_object('window').set_title(_('Control Center'))
 
 		user = os.getenv('USER')
 
@@ -42,6 +42,60 @@ class Center():
 		self.builder.get_object('scrolled').add(browser)
 		browser.connect('button-press-event', lambda w, e: e.button == 3)
 		text = {}
+		text['appearance'] = _('Appearance')
+		text['network'] = _('Network & Internet')
+		text['programs'] = _('Programs')
+		text['accounts'] = _('User Accounts')
+		text['system'] = _('System and security')
+		text['hard'] = _('Hardware and sound')
+		text['about'] = _('About')
+		text['back'] = _('Back to menu')
+
+		text['cambiar_tema'] = _('Change the background and theme') 
+		text['efectos_visuales'] = _('Configure visual effects')
+		text['resolucion'] = _('Adjust the screen resolution')
+
+		text['conexiones'] = _('Network connections')
+		text['herramientas_red'] = _('Network tools')
+		text['sitios_red'] = _('Network sites')
+
+		text['agregar_prog'] = _('Add/Remove programs')
+		text['favoritas'] = _('Set favorite applications')
+		text['arch_sin_uso'] = _('Remove unused files')
+
+		text['cuentas_control'] = _('User accounts and access control')
+		text['agregar_usuarios'] = _('Add or remove user accounts')
+		text['control_parental'] = _('Set up Parental Control')
+
+		text['estado_equipo'] = _('Status computer')
+		text['backup'] = _('Make a backup')
+		text['corregir_problemas'] = _('Find and fix problems')
+
+		text['impresoras'] = _('View devices and printers')
+		text['drivers'] = _('Install drivers')
+
+		text['salvapantallas'] = _('Set up screensaver')
+
+		text['proxy'] = _('Set up network proxy')
+		text['firewall'] = _('Set up firewall')
+		text['arch_comp'] = _('Shared files and folders')
+
+		text['gdm'] = _('Set up startup screen')
+
+		text['hora'] = _('Set date and time')
+		text['idiomas'] = _('Set up languages')
+		text['inicio'] = _('Set up startup')
+		text['sucesos'] = _('View system events')
+		text['pass'] = _('Set passwords and encryption keys')
+
+		text['info'] = _('System information')
+		text['discos'] = _('Configure disks')
+		text['inalambricas'] = _('Wireless network drivers')
+		text['teclado'] = _('Configure keyboard')
+		text['mouse'] = _('Configure mouse')
+		text['sonido'] = _('Sound Preferences')
+		text['bluetooth'] = _('Configure bluetooth')
+		
 		template = open('/usr/lib/tuquito/tuquito-control-center/frontend/index.html').read()		
 		html = string.Template(template).safe_substitute(text)
 		browser.load_html_string(html, 'file:/')
@@ -71,8 +125,8 @@ class Center():
 		elif title == 'compartidos':
 			os.system('gnome-file-share-properties &')
 
-		elif title == 'software-center':
-			os.system('software-center &')
+		elif title == 'software-manager':
+			os.system('tuquito-software-manager &')
 		elif title == 'app_fav':
 			os.system('gnome-default-applications-properties &')
 		elif title == 'clean':
@@ -118,6 +172,8 @@ class Center():
 			os.system('gnome-volume-control &')
 		elif title == 'bluetooth':
 			os.system('bluetooth-properties &')
+		elif title == 'about':
+			os.system('/usr/lib/tuquito/tuquito-control-center/about.py &')
 
 if __name__ == '__main__':
 	gtk.gdk.threads_init()

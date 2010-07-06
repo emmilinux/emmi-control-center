@@ -1,3 +1,10 @@
+tuquito-control-center (0.1-10) lucid; urgency=low
+
+  * Implementación de i18n
+  * nueva resolución
+
+ -- Mario Colque <mario@tuquito.org.ar>  Tue, 06 Jul 2010 14:07:08 -0300
+
 tuquito-control-center (0.1-9) lucid; urgency=low
 
   * Idiomas en .desktop
