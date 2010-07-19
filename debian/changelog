@@ -1,3 +1,10 @@
+tuquito-control-center (0.1-11) lucid; urgency=low
+
+  * Corrección de apretura de software-manager
+  * Idioma pt_BR añadido
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 19 Jul 2010 16:16:58 -0300
+
 tuquito-control-center (0.1-10) lucid; urgency=low
 
   * Implementación de i18n
