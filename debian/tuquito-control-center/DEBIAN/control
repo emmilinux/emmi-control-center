@@ -1,0 +1,11 @@
+Package: tuquito-control-center
+Version: 0.1-11
+Architecture: all
+Maintainer: Mario Colque <mario@tuquito.org.ar>
+Installed-Size: 324
+Depends: garfio, simple-ccsm, gnome-disk-utility, tuquito-control-parental, hardinfo
+Section: gnome
+Priority: extra
+Description: Centro de control de tuquito
+ Menú de centro de control de Tuquito
+ * Tuquito Team! - 2010

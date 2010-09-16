@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkAboutDialog" id="about">
+    <property name="border_width">5</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="icon_name">preferences-desktop</property>
+    <property name="type_hint">normal</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
+    <property name="program_name">Control Center</property>
+    <property name="version">0.1</property>
+    <property name="copyright">Copyright &#xA9; 2010 - Tuquito Team!</property>
+    <property name="comments">Herramienta de configuraci&#xF3;n para Tuquito</property>
+    <property name="website">www.tuquito.org.ar</property>
+    <property name="website_label">Tuquito Team!</property>
+    <property name="authors">Mario Colque &lt;mario@tuquito.org.ar&gt;</property>
+    <property name="translator_credits" translatable="yes">Mario Colque &lt;mario@tuquito.org.ar&gt;
+Carlos Felipe P. de Ara&#xFA;jo &lt;carlosfelipe@tuquito.org.ar&gt;</property>
+    <property name="artists">Mario Colque &lt;mario@tuquito.org.ar&gt;</property>
+    <property name="logo_icon_name">preferences-desktop</property>
+    <signal name="response" handler="quit"/>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="spacing">2</property>
+        <child>
+          <placeholder/>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

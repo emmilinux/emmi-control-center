@@ -1,0 +1,141 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 550px;
+}
+
+html {
+	font-family: "Trebuchet MS", Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
+	font-size: 14px;
+	color: #64676A;
+	background: #fff url(images/content-wrap-background.png) repeat-x 50% 100%;
+}
+
+body { background: url(images/tuquito-logo.png) bottom right no-repeat; }
+
+.hidden { display: none; }
+
+.nodrag { -khtml-user-drag: none }
+
+.bold {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 5px 0 10px 0;
+	color: #688200;
+}
+
+/*----------- Nav -------------*/
+#nav {
+	padding: 0 10px 0 0 ;
+	float: left;
+	text-align: right;
+	width: 0px;
+}
+
+#nav ul {
+	background: url(images/nav.png) repeat-x;
+	border-right: 1px dotted;
+	list-style-type: none;
+	width: 180px;
+	float: left;
+	margin: 0;
+	padding: 0 10px 0 0;
+	height: 550px;
+}
+
+#nav li {
+	width: 180px;
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+#nav li:hover {
+	background: url(images/overlay.png);
+}
+
+#nav li a {
+	padding: 8px 20px 8px 10px;
+	float: left;
+	width: 150px;
+	background: url(images/arrow-right2.gif) right 15px no-repeat;
+	text-decoration: none;
+	color: #294f88;
+	color: #fff;
+}
+
+/*-------- Menu -----------*/
+#content {
+	padding: 10px;
+	overflow: auto;
+	color: #597199;
+}
+
+#content ul.menu {
+	list-style-type: none;
+	width: 370px;
+	float: left;
+	margin: 50px 10px auto 0;
+}
+
+#content ul.menu li {
+	width: 370px;
+	height: 120px;
+	float: left;
+	padding: 0px;
+	margin: 10px 0 10px 0;
+}
+
+#content img {
+	margin: 10px;
+	padding: 12px;
+	float: left;
+	border-radius: 6px;
+	border: 2px solid #AFAFAF;
+	background: #f2f2f2 url(images/boton.png) repeat-x scroll left top;
+	opacity: 0.5;
+}
+
+#content img:hover {
+	cursor: pointer;
+	border-color: #E64939;
+}
+
+/*-------- content ---------*/
+.content {
+	border: 1px solid #92cdec;
+	border-radius: 6px;
+	background: #d7e7ff;
+	padding: 0 20px 0 20px;
+}
+
+.content ul {
+	list-style-type: none;
+	width: 310px;
+	float: left;
+	margin: 30px 10px 30px 0;
+padding: 0 10px 0 0;
+}
+
+.content li {
+	background: url(images/dotted.gif) bottom left repeat-x;
+	width: 310px;
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+.content li:hover {
+	background-color: #E1E8EF;
+}
+
+.content li a {
+	padding: 8px 20px 8px 10px;
+	width: 280px;
+	float: left;
+	background: url(images/arrow-right.gif) right 15px no-repeat;
+	text-decoration: none;
+	color: #294f88;
+}
+
+.content li a:hover {
+	background-image:url(images/arrow-right-dark.gif);
+}

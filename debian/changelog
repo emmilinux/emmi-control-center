@@ -1,3 +1,10 @@
+tuquito-control-center (0.2-1) maverick; urgency=low
+
+  * implementation of html5
+  * lock selection
+
+ -- Mario Colque <mario@tuquito.org.ar>  Wed, 15 Sep 2010 21:56:59 -0300
+
 tuquito-control-center (0.1-11) lucid; urgency=low
 
   * Corrección de apretura de software-manager

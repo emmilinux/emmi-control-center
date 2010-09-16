@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Control Center
+Name[es]=Centro de control
+Name[pt]=Centro de Controle
+Comment=Tuquito configuration tool
+Comment[es]=Herramienta de configuración de Tuquito
+Comment[pt]=Ferramenta de configuração do Tuquito
+Categories=GNOME;GTK;Settings;
+Exec=tuquito-control-center
+Icon=gnome-control-center
+NoDisplay=false
+OnlyShowIn=GNOME;
+StartupNotify=true
+Terminal=false
+Type=Application
