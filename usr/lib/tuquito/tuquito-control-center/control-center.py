@@ -19,8 +19,7 @@
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 """
 
-import gtk, pygtk
-pygtk.require("2.0")
+import gtk
 import commands, os
 import gettext, webkit, string
 from user import home
@@ -39,7 +38,7 @@ class Center():
 
 		self.builder.get_object('window').connect('destroy', gtk.main_quit)
 		browser = webkit.WebView()
-		self.builder.get_object('scrolled').add(browser)
+		self.builder.get_object('window').add(browser)
 		browser.connect('button-press-event', lambda w, e: e.button == 3)
 		text = {}
 		text['appearance'] = _('Appearance')

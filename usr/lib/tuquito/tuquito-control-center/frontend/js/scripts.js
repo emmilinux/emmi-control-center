@@ -1,3 +1,10 @@
+document.onmousedown = new Function("return false");
+document.onselectstart = new Function ("return false");
+if (window.sidebar) {
+   document.onmousedown = new Function("return false");
+   document.onclick = new Function("return true");
+}
+
 function changeTitle(title) {
 	document.title = title;
 	document.title = "nop";
