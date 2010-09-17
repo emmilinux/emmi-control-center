@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-2) maverick; urgency=low
+
+  * garfio deleted
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 17 Sep 2010 14:49:15 -0300
+
 tuquito-control-center (0.2-1) maverick; urgency=low
 
   * implementation of html5
