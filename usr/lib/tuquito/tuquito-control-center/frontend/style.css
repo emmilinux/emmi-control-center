@@ -1,3 +1,5 @@
+* { -khtml-user-drag: none }
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -5,21 +7,21 @@ html, body {
 }
 
 html {
-	font-family: "Trebuchet MS", Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
+	font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
 	font-size: 14px;
 	color: #64676A;
-	background: #fff url(images/content-wrap-background.png) repeat-x 50% 100%;
+	background: #fff url(images/bg.png) repeat-x top;
 }
 
-body { background: url(images/tuquito-logo.png) bottom right no-repeat; }
+body {
+	background: url(images/clouds.png) top right no-repeat;
+}
 
 .hidden { display: none; }
 
-.nodrag { -khtml-user-drag: none }
 
 .bold {
-	font-weight: bold;
-	font-size: 18px;
+	font-size: 20px;
 	margin: 5px 0 10px 0;
 	color: #688200;
 }
@@ -30,6 +32,7 @@ body { background: url(images/tuquito-logo.png) bottom right no-repeat; }
 	float: left;
 	text-align: right;
 	width: 0px;
+	text-shadow: #2D4B69 1px 1px 0px;
 }
 
 #nav ul {
@@ -50,7 +53,7 @@ body { background: url(images/tuquito-logo.png) bottom right no-repeat; }
 }
 
 #nav li:hover {
-	background: url(images/overlay.png);
+	background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/overlay.png);
 }
 
 #nav li a {
@@ -67,7 +70,8 @@ body { background: url(images/tuquito-logo.png) bottom right no-repeat; }
 #content {
 	padding: 10px;
 	overflow: auto;
-	color: #597199;
+	color: #4B4B4B;
+	text-shadow: white 1px 1px 0px;
 }
 
 #content ul.menu {
@@ -89,22 +93,14 @@ body { background: url(images/tuquito-logo.png) bottom right no-repeat; }
 	margin: 10px;
 	padding: 12px;
 	float: left;
-	border-radius: 6px;
-	border: 2px solid #AFAFAF;
-	background: #f2f2f2 url(images/boton.png) repeat-x scroll left top;
-	opacity: 0.5;
 }
 
 #content img:hover {
 	cursor: pointer;
-	border-color: #E64939;
 }
 
 /*-------- content ---------*/
 .content {
-	border: 1px solid #92cdec;
-	border-radius: 6px;
-	background: #d7e7ff;
 	padding: 0 20px 0 20px;
 }
 
@@ -113,7 +109,7 @@ body { background: url(images/tuquito-logo.png) bottom right no-repeat; }
 	width: 310px;
 	float: left;
 	margin: 30px 10px 30px 0;
-padding: 0 10px 0 0;
+	padding: 0 10px 0 0;
 }
 
 .content li {

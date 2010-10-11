@@ -50,7 +50,7 @@ class Center():
 		text['about'] = _('About')
 		text['back'] = _('Back to menu')
 
-		text['cambiar_tema'] = _('Change the background and theme') 
+		text['cambiar_tema'] = _('Change the background and theme')
 		text['efectos_visuales'] = _('Configure visual effects')
 		text['resolucion'] = _('Adjust the screen resolution')
 
@@ -94,8 +94,8 @@ class Center():
 		text['mouse'] = _('Configure mouse')
 		text['sonido'] = _('Sound Preferences')
 		text['bluetooth'] = _('Configure bluetooth')
-		
-		template = open('/usr/lib/tuquito/tuquito-control-center/frontend/index.html').read()		
+
+		template = open('/usr/lib/tuquito/tuquito-control-center/frontend/index.html').read()
 		html = string.Template(template).safe_substitute(text)
 		browser.load_html_string(html, 'file:/')
 		browser.connect('title-changed', self.title_changed)
