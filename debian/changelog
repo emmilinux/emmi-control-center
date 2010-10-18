@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-4) maverick; urgency=low
+
+  * added libjs-jquery
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 18 Oct 2010 10:45:32 -0300
+
 tuquito-control-center (0.2-3) maverick; urgency=low
 
   * several improvements
