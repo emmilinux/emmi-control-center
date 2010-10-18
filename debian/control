@@ -7,7 +7,7 @@ Standards-Version: 3.8.1
 
 Package: tuquito-control-center
 Architecture: all
-Depends: gnome-disk-utility, tuquito-control-parental, hardinfo
+Depends: gnome-disk-utility, tuquito-control-parental, hardinfo, libjs-jquery
 Description: Centro de control de tuquito
  Menú de centro de control de Tuquito
  * Tuquito Team! - 2010
