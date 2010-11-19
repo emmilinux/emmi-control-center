@@ -40,7 +40,7 @@ class MessageDialog:
         dialog = gtk.MessageDialog(None, gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT, self.style, gtk.BUTTONS_OK)
         dialog.set_markup(_('<b>Error:</b>'))
         dialog.set_icon_name('preferences-desktop')
-        dialog.format_secondary_text(self.message)
+        dialog.format_secondary_markup(self.message)
         dialog.set_title(_('Control Center'))
         dialog.set_position(gtk.WIN_POS_CENTER)
         dialog.run()
@@ -131,7 +131,7 @@ class ControlCenter():
         self.window.show_all()
 
     def items_window(self, widget):
-        self.model = gtk.TreeStore(str, str)
+        self.model = gtk.TreeStore(str, str, str)
         self.model.set_sort_column_id(0, gtk.SORT_ASCENDING)
         self.item_window = self.builder.get_object('items')
         self.item_window.set_title(_('Add or remove items'))
@@ -155,6 +155,7 @@ class ControlCenter():
                 iter = self.model.insert_before(None, None)
                 self.model.set_value(iter, 0, _(title))
                 self.model.set_value(iter, 1, command)
+                self.model.set_value(iter, 2, title)
         self.treeview_items.set_model(self.model)
         del self.model
         self.builder.connect_signals(self)
@@ -164,6 +165,7 @@ class ControlCenter():
         self.builder.get_object('title').set_text('')
         self.builder.get_object('code').set_text('')
         self.builder.get_object('add_item').set_title(_('Add item'))
+        self.builder.get_object('save').connect('clicked', self.save_item)
         self.builder.get_object('ltitle').set_label(_('Title: (eg Change Wallpaper)'))
         self.builder.get_object('lcode').set_label(_('Command app:'))
         self.builder.get_object('add_item').show()
@@ -218,10 +220,57 @@ class ControlCenter():
                 line = str.strip(line).split('|')
                 title = line[0]
                 command = line[1]
-                self.browser.execute_script("addItem('%s','%s','%s')" % (_(title), command, self.category))
-                self.items_cache.append(title)
+                try:
+                    owner = line[2]
+                except:
+                    owner = False
+                command_clean = command.split(' ')[0]
+                if command_clean != 'gksu':
+                    command_search = command_clean
+                else:
+                     command_search = command.split(' ')[1]
+                cmd = commands.getoutput('which ' + command_search)
+                if cmd != '' or owner == 'user':
+                    self.browser.execute_script("addItem('%s','%s','%s')" % (_(title), command, self.category))
+                    self.items_cache.append(title)
         self.browser.execute_script("setContent('" + self.category + "')")
         self.close_items(self)
+
+    def edit_item(self, widget):
+        selection = self.treeview_items.get_selection()
+        (self.model, self.iter) = selection.get_selected()
+        if self.iter != None:
+            title = self.model.get_value(self.iter, 0)
+            command = self.model.get_value(self.iter, 1)
+            self.title_en = self.model.get_value(self.iter, 2)
+            self.builder.get_object('title').set_text(title)
+            self.builder.get_object('code').set_text(command)
+            self.builder.get_object('add_item').set_title(_('Edit item'))
+            self.builder.get_object('save').connect('clicked', self.save_edited_item)
+            self.builder.get_object('ltitle').set_label(_('Title: (eg Change Wallpaper)'))
+            self.builder.get_object('lcode').set_label(_('Command app:'))
+            self.builder.get_object('add_item').show()
+            self.old_item = self.title_en + '|' + command
+            self.old_command = command
+
+    def save_edited_item(self, widget):
+        title = self.builder.get_object('title').get_text().strip()
+        command = self.builder.get_object('code').get_text().strip()
+        if not os.path.isfile(self.home_file):
+            os.system('cp %s %s &' % (self.category_file,self.home_file))
+            self.category_file = self.home_file
+        if command != '' and title != '':
+            new_item = title + '|' + command + '|user'
+            self.model.set_value(self.iter, 0, title)
+            self.model.set_value(self.iter, 1, command)
+            self.model.set_value(self.iter, 2, title)
+            os.system("sed 's/" + self.old_item.replace('/', '\/') + "/" + new_item.replace('/', '\/') + "/' " + self.home_file + ' > ' + self.home_file + '.back')
+            os.system('mv ' + self.home_file + '.back ' + self.home_file)
+            #usage: editItem('title','old_command', 'new_command')
+            self.browser.execute_script("editItem('%s','%s', '%s')" % (_(title), self.old_command, command))
+            self.browser.execute_script("setContent('" + self.category + "')")
+            self.items_cache.append(title)
+        self.close_add_item(self)
 
     def title_changed(self, view, frame, title):
         if title.startswith('exec:'):
@@ -230,7 +279,7 @@ class ControlCenter():
             if cmd != '':
                 os.system('%s &' % command)
             else:
-                message = MessageDialog('Error', _('The command is not found or not is executable'), gtk.MESSAGE_ERROR)
+                message = MessageDialog('Error', _('The command <b>%s</b> is not found or not is executable') % command, gtk.MESSAGE_ERROR)
                 message.show()
         elif title.startswith('category:'):
             self.category = title.split(':')[1]

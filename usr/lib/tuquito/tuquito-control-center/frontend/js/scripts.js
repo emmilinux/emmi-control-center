@@ -26,6 +26,12 @@ function removeItem(command, category) {
     setContent(category);
 }
 
+function editItem(title, old_command, new_command) {
+    html = "<li id='" + new_command + "'><a href='javascript:changeTitle(\"exec:" + new_command + "\")'>" + title + "</a>";
+    selector = "li#" + old_command;
+    $(selector).replaceWith(html);
+}
+
 function setContent(v) {
     cont = $("#"+v).html();
     $('#ajax').hide().html(cont).fadeIn();

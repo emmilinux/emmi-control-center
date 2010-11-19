@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-18 23:15-0300\n"
+"POT-Creation-Date: 2010-11-19 12:28-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,20 +215,27 @@ msgstr ""
 msgid "Resore original"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:155
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:167
 msgid "Add item"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:156
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:169
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:250
 msgid "Title: (eg Change Wallpaper)"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:157
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:170
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:251
 msgid "Command app:"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:222
-msgid "The command is not found or not is executable"
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:248
+msgid "Edit item"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:282
+#, python-format
+msgid "The command <b>%s</b> is not found or not is executable"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-control-center/about.py:34
