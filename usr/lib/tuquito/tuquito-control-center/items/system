@@ -2,6 +2,7 @@ Set date and time|time-admin
 Set up languages|gnome-language-selector
 Set up startup|gksu startupmanager
 Status computer|gnome-system-monitor
+Status computer|lxtask
 Make a backup|gksu /usr/lib/tuquito/garfio/garfio.py -D "Garfio"
 View system events|gnome-system-log
 Set passwords and encryption keys|seahorse

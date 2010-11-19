@@ -1,3 +1,4 @@
 Add/Remove programs|tuquito-software-manager
 Set favorite applications|gnome-default-applications-properties
-Remove unused files|tuquito-cleanup
+Set favorite applications|libfm-pref-apps
+Remove unused files|bleachbit

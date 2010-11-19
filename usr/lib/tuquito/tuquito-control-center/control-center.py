@@ -53,6 +53,8 @@ class ControlCenter():
         self.window = self.builder.get_object('window')
         self.builder.get_object('window').set_title(_('Control Center'))
         self.items_cache = []
+        self.edit_handler_id = False
+        self.add_handler_id = False
 
         # Define treeview
         self.treeview_items = self.builder.get_object('treeview_items')
@@ -165,7 +167,11 @@ class ControlCenter():
         self.builder.get_object('title').set_text('')
         self.builder.get_object('code').set_text('')
         self.builder.get_object('add_item').set_title(_('Add item'))
-        self.builder.get_object('save').connect('clicked', self.save_item)
+        if self.edit_handler_id:
+            self.builder.get_object('save').disconnect(self.edit_handler_id)
+        if self.add_handler_id:
+            self.builder.get_object('save').disconnect(self.add_handler_id)
+        self.add_handler_id = self.builder.get_object('save').connect('clicked', self.save_item)
         self.builder.get_object('ltitle').set_label(_('Title: (eg Change Wallpaper)'))
         self.builder.get_object('lcode').set_label(_('Command app:'))
         self.builder.get_object('add_item').show()
@@ -179,22 +185,29 @@ class ControlCenter():
         return True
 
     def save_item(self, widget):
+        print "save_item"
         title = self.builder.get_object('title').get_text().strip()
         command = self.builder.get_object('code').get_text().strip()
         if not os.path.isfile(self.home_file):
-            os.system('cp %s %s &' % (self.category_file,self.home_file))
+            os.system('cp %s %s &' % (self.category_file, self.home_file))
             self.category_file = self.home_file
         if command != '' and title != '':
-            self.model = self.treeview_items.get_model()
-            iter = self.model.insert_before(None, None)
             item = title + '|' + command + '|user'
-            self.model.set_value(iter, 0, title)
-            self.model.set_value(iter, 1, command)
-            os.system('echo "' + item + '" >>' + self.home_file)
-            self.browser.execute_script("addItem('%s','%s','%s')" % (_(title), command, self.category))
-            self.browser.execute_script("setContent('" + self.category + "')")
-            self.items_cache.append(title)
-        self.close_add_item(self)
+            exists = commands.getoutput('grep -wxs "%s" %s | wc -l' % (item, self.home_file))
+            if exists != '0':
+                message = MessageDialog('Error', _('The item <b>%s</b> already exists') % (title + '|' + command), gtk.MESSAGE_ERROR)
+                message.show()
+            else:
+                self.model = self.treeview_items.get_model()
+                iter = self.model.insert_before(None, None)
+                self.model.set_value(iter, 0, title)
+                self.model.set_value(iter, 1, command)
+                os.system('echo "' + item + '" >>' + self.home_file)
+                self.browser.execute_script("addItem('%s','%s','%s')" % (_(title), command, self.category))
+                self.browser.execute_script("setContent('" + self.category + "')")
+                self.items_cache.append(title)
+                self.close_add_item(self)
+                del self.model
 
     def remove_item(self, widget):
         selection = self.treeview_items.get_selection()
@@ -246,7 +259,11 @@ class ControlCenter():
             self.builder.get_object('title').set_text(title)
             self.builder.get_object('code').set_text(command)
             self.builder.get_object('add_item').set_title(_('Edit item'))
-            self.builder.get_object('save').connect('clicked', self.save_edited_item)
+            if self.add_handler_id:
+                self.builder.get_object('save').disconnect(self.add_handler_id)
+            if self.edit_handler_id:
+                self.builder.get_object('save').disconnect(self.edit_handler_id)
+            self.edit_handler_id = self.builder.get_object('save').connect('clicked', self.save_edited_item)
             self.builder.get_object('ltitle').set_label(_('Title: (eg Change Wallpaper)'))
             self.builder.get_object('lcode').set_label(_('Command app:'))
             self.builder.get_object('add_item').show()
@@ -271,6 +288,7 @@ class ControlCenter():
             self.browser.execute_script("setContent('" + self.category + "')")
             self.items_cache.append(title)
         self.close_add_item(self)
+        del self.model
 
     def title_changed(self, view, frame, title):
         if title.startswith('exec:'):

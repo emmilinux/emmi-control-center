@@ -1,4 +1,8 @@
 Change the background and theme|gnome-appearance-properties
+Change the background and theme|lxappearance
+Configure Openbox|obconf
 Configure visual effects|simple-ccsm
 Adjust the screen resolution|gnome-display-properties
+Adjust the screen resolution|lxrandr
 Set up screensaver|gnome-screensaver-preferences
+Set up screensaver|xscreensaver-demo

@@ -4,6 +4,9 @@ Configure disks|palimpsest
 Install drivers|jockey-gtk
 Wireless network drivers|gksu /usr/sbin/ndisgtk
 Configure keyboard|gnome-keyboard-properties
+Configure keyboard|lxinput
 Configure mouse|gnome-mouse-properties
+Configure mouse|lxinput
 Sound Preferences|gnome-volume-control
+Sound Preferences|gnome-alsamixer
 Configure bluetooth|bluetooth-properties
