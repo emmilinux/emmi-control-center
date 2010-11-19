@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-11) maverick; urgency=low
+
+  * new version -11
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 20:55:46 -0300
+
 tuquito-control-center (0.2-10) maverick; urgency=low
 
   * fixed icons :P
