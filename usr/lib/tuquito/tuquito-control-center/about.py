@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
- Centro de Control 0.1
+ Centro de Control 0.2
  Copyright (C) 2010
  Author: Mario Colque <mario@tuquito.org.ar>
  Tuquito Team! - www.tuquito.org.ar
@@ -20,19 +20,25 @@
 """
 
 import gtk
+import gettext
+
+# i18n
+gettext.install('tuquito-control-center', '/usr/share/tuquito/locale')
 
 class About:
-	def __init__(self):
-		self.glade = gtk.Builder()
-		self.glade.add_from_file('/usr/lib/tuquito/tuquito-control-center/about.glade')
-		self.window = self.glade.get_object('about')
-		self.glade.connect_signals(self)
-		self.window.show()
-		
-	def quit(self, widget, data=None):
-		gtk.main_quit()
-		return True
+    def __init__(self):
+        self.glade = gtk.Builder()
+        self.glade.add_from_file('/usr/lib/tuquito/tuquito-control-center/about.glade')
+        self.window = self.glade.get_object('about')
+        self.glade.get_object('about').set_name(_('Control Center'))
+        self.glade.get_object('about').set_comments(_('Configuration tool for Tuquito'))
+        self.glade.connect_signals(self)
+        self.window.show()
+
+    def quit(self, widget, data=None):
+        gtk.main_quit()
+        return True
 
 if __name__ == '__main__':
-	win = About()
-	gtk.main()
+    win = About()
+    gtk.main()

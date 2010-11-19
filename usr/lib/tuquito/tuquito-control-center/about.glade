@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk+" version="2.16"/>
   <!-- interface-naming-policy project-wide -->
@@ -11,14 +11,13 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="program_name">Control Center</property>
-    <property name="version">0.1</property>
-    <property name="copyright">Copyright &#xA9; 2010 - Tuquito Team!</property>
-    <property name="comments">Herramienta de configuraci&#xF3;n para Tuquito</property>
-    <property name="website">www.tuquito.org.ar</property>
+    <property name="version">0.2</property>
+    <property name="copyright">Copyright © 2010 - Tuquito Team!</property>
+    <property name="website">http://www.tuquito.org.ar</property>
     <property name="website_label">Tuquito Team!</property>
     <property name="authors">Mario Colque &lt;mario@tuquito.org.ar&gt;</property>
     <property name="translator_credits" translatable="yes">Mario Colque &lt;mario@tuquito.org.ar&gt;
-Carlos Felipe P. de Ara&#xFA;jo &lt;carlosfelipe@tuquito.org.ar&gt;</property>
+Carlos Felipe P. de Araújo &lt;carlosfelipe@tuquito.org.ar&gt;</property>
     <property name="artists">Mario Colque &lt;mario@tuquito.org.ar&gt;</property>
     <property name="logo_icon_name">preferences-desktop</property>
     <signal name="response" handler="quit"/>

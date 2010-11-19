@@ -1,0 +1,9 @@
+System information|hardinfo
+View devices and printers|system-config-printer
+Configure disks|palimpsest
+Install drivers|/usr/bin/jockey-gtk
+Wireless network drivers|gksu /usr/sbin/ndisgtk
+Configure keyboard|gnome-keyboard-properties
+Configure mouse|gnome-mouse-properties
+Sound Preferences|gnome-volume-control
+Configure bluetooth|bluetooth-properties

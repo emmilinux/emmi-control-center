@@ -1,137 +1,152 @@
 * { -khtml-user-drag: none }
 
 html, body {
-	margin: 0;
-	padding: 0;
-	height: 550px;
+    margin: 0;
+    padding: 0;
+    height: 520px;
 }
 
 html {
-	font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
-	font-size: 14px;
-	color: #64676A;
-	background: #fff url(images/bg.png) repeat-x top;
+    font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
+    font-size: 14px;
+    color: #64676A;
+    background: #fff url(images/bg.png) repeat-x top;
 }
 
-body {
-	background: url(images/clouds.png) top right no-repeat;
-}
+body { background: url(images/clouds.png) top right no-repeat; }
 
 .hidden { display: none; }
 
 
 .bold {
-	font-size: 20px;
-	margin: 5px 0 10px 0;
-	color: #688200;
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+    color: #688200;
 }
+
+a { color: #294f88; }
 
 /*----------- Nav -------------*/
 #nav {
-	padding: 0 10px 0 0 ;
-	float: left;
-	text-align: right;
-	width: 0px;
-	text-shadow: #2D4B69 1px 1px 0px;
+    padding: 0 10px 0 0 ;
+    float: left;
+    text-align: right;
+    width: 0px;
+    text-shadow: #2D4B69 1px 1px 0px;
 }
 
 #nav ul {
-	background: url(images/nav.png) repeat-x;
-	border-right: 1px dotted;
-	list-style-type: none;
-	width: 180px;
-	float: left;
-	margin: 0;
-	padding: 0 10px 0 0;
-	height: 550px;
+    background: url(images/nav.png) repeat-x;
+    border-right: 1px dotted;
+    list-style-type: none;
+    width: 180px;
+    float: left;
+    margin: 0;
+    padding: 0 10px 0 0;
+    height: 520px;
 }
 
 #nav li {
-	width: 180px;
-	float: left;
-	padding: 0 10px 0 0;
+    width: 180px;
+    float: left;
+    padding: 0 10px 0 0;
 }
 
 #nav li:hover {
-	background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/overlay.png);
+    background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/overlay.png);
 }
 
 #nav li a {
-	padding: 8px 20px 8px 10px;
-	float: left;
-	width: 150px;
-	background: url(images/arrow-right2.gif) right 15px no-repeat;
-	text-decoration: none;
-	color: #294f88;
-	color: #fff;
+    padding: 8px 20px 8px 10px;
+    float: left;
+    width: 150px;
+    background: url(images/arrow-right2.gif) right 15px no-repeat;
+    text-decoration: none;
+    color: #294f88;
+    color: #fff;
 }
 
 /*-------- Menu -----------*/
 #content {
-	padding: 10px;
-	overflow: auto;
-	color: #4B4B4B;
-	text-shadow: white 1px 1px 0px;
+    padding: 10px;
+    overflow: auto;
+    color: #4B4B4B;
+    text-shadow: white 1px 1px 0px;
 }
 
 #content ul.menu {
-	list-style-type: none;
-	width: 370px;
-	float: left;
-	margin: 50px 10px auto 0;
+    list-style-type: none;
+    width: 370px;
+    float: left;
+    margin: 50px 10px auto 0;
 }
 
 #content ul.menu li {
-	width: 370px;
-	height: 120px;
-	float: left;
-	padding: 0px;
-	margin: 10px 0 10px 0;
+    width: 370px;
+    height: 120px;
+    float: left;
+    padding: 0px;
+    margin: 10px 0 10px 0;
 }
 
 #content img {
-	margin: 10px;
-	padding: 12px;
-	float: left;
+    margin: 10px;
+    padding: 12px;
+    float: left;
 }
 
-#content img:hover {
-	cursor: pointer;
-}
+img:hover.btn { cursor: pointer; }
 
 /*-------- content ---------*/
-.content {
-	padding: 0 20px 0 20px;
-}
+.content { padding: 0 20px 0 20px; }
 
 .content ul {
-	list-style-type: none;
-	width: 310px;
-	float: left;
-	margin: 30px 10px 30px 0;
-	padding: 0 10px 0 0;
+    list-style-type: none;
+    width: 310px;
+    float: left;
+    margin: 30px 10px 30px 0;
+    padding: 0 10px 0 0;
 }
 
 .content li {
-	background: url(images/dotted.gif) bottom left repeat-x;
-	width: 310px;
-	float: left;
-	padding: 0 10px 0 0;
+    background: url(images/dotted.gif) bottom left repeat-x;
+    width: 310px;
+    float: left;#06C
+    padding: 0 10px 0 0;
 }
 
-.content li:hover {
-	background-color: #E1E8EF;
-}
+.content li:hover { background-color: #EAF6FF; }
 
 .content li a {
-	padding: 8px 20px 8px 10px;
-	width: 280px;
-	float: left;
-	background: url(images/arrow-right.gif) right 15px no-repeat;
-	text-decoration: none;
-	color: #294f88;
+    padding: 8px 20px 8px 10px;
+    width: 280px;
+    float: left;
+    background: url(images/arrow-right.gif) right 15px no-repeat;
+    text-decoration: none;
 }
 
-.content li a:hover {
-	background-image:url(images/arrow-right-dark.gif);
+.content li a:hover { background-image:url(images/arrow-right-dark.gif); }
+
+.logo-back {
+    position: absolute;
+    bottom: -10px;
+    right: 8px;
+    opacity: 0.5;
+    width: 155px;
+}
+
+/* Others */
+img.btn { width: 60px; }
+
+.edit_items {
+    position: relative;
+    clear: both;
+    float: left;
+}
+
+.content ul {
+    padding-left: 20px;
+    width: 619px;
+    height: 365px;
+    overflow: auto;
 }

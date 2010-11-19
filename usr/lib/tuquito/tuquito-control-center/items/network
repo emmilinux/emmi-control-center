@@ -1,0 +1,6 @@
+Network connections|nm-connection-editor
+Network tools|gnome-nettool
+Network sites|nautilus --no-desktop network:
+Set up network proxy|gnome-network-properties
+Set up firewall|gufw
+Shared files and folders|gnome-file-share-properties
