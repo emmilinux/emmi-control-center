@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-6) maverick; urgency=low
+
+  * added user items control
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 00:54:33 -0300
+
 tuquito-control-center (0.2-5) maverick; urgency=low
 
   * new icons
