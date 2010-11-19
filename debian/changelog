@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-7) maverick; urgency=low
+
+  * new function added: edit items
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 12:30:39 -0300
+
 tuquito-control-center (0.2-6) maverick; urgency=low
 
   * added user items control
