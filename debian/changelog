@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-10) maverick; urgency=low
+
+  * fixed icons :P
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 20:50:53 -0300
+
 tuquito-control-center (0.2-9) maverick; urgency=low
 
   * new translations
