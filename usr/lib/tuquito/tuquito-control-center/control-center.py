@@ -138,12 +138,23 @@ class ControlCenter():
         self.builder.get_object('toolbutton_restore').set_label(_('Resore original'))
         items_file = open(self.category_file)
         for line in items_file:
-            iter = self.model.insert_before(None, None)
             line = str.strip(line).split('|')
             title = line[0]
             command = line[1]
-            self.model.set_value(iter, 0, _(title))
-            self.model.set_value(iter, 1, command)
+            try:
+                owner = line[2]
+            except:
+                owner = False
+            command_clean = command.split(' ')[0]
+            if command_clean != 'gksu':
+                command_search = command_clean
+            else:
+                 command_search = command.split(' ')[1]
+            cmd = commands.getoutput('which ' + command_search)
+            if cmd != '' or owner == 'user':
+                iter = self.model.insert_before(None, None)
+                self.model.set_value(iter, 0, _(title))
+                self.model.set_value(iter, 1, command)
         self.treeview_items.set_model(self.model)
         del self.model
         self.builder.connect_signals(self)
@@ -174,7 +185,7 @@ class ControlCenter():
         if command != '' and title != '':
             self.model = self.treeview_items.get_model()
             iter = self.model.insert_before(None, None)
-            item = title + '|' + command
+            item = title + '|' + command + '|user'
             self.model.set_value(iter, 0, title)
             self.model.set_value(iter, 1, command)
             os.system('echo "' + item + '" >>' + self.home_file)
@@ -193,7 +204,7 @@ class ControlCenter():
             title = self.model.get_value(iter, 0)
             command = self.model.get_value(iter, 1)
             item = title + '|' + command
-            os.system("sed '/" + command + "$/ d' " + self.home_file + ' > ' + self.home_file + '.back')
+            os.system("sed '/|user$/ d' " + self.home_file + ' > ' + self.home_file + '.back')
             os.system('mv ' + self.home_file + '.back ' + self.home_file)
             self.model.remove(iter)
             self.browser.execute_script("removeItem('" + command + "', '" + self.category + "')")
@@ -235,10 +246,21 @@ class ControlCenter():
                 line = str.strip(line).split('|')
                 title = line[0]
                 command = line[1]
-                if title not in self.items_cache:
-                    self.items_cache.append(title)
-                    #usage: addItem(title, command, category)
-                    self.browser.execute_script("addItem('" + _(title) + "','" + command + "','" + self.category + "')")
+                try:
+                    owner = line[2]
+                except:
+                    owner = False
+                command_clean = command.split(' ')[0]
+                if command_clean != 'gksu':
+                    command_search = command_clean
+                else:
+                     command_search = command.split(' ')[1]
+                cmd = commands.getoutput('which ' + command_search)
+                if cmd != '' or owner == 'user':
+                    if title not in self.items_cache:
+                        self.items_cache.append(title)
+                        #usage: addItem(title, command, category)
+                        self.browser.execute_script("addItem('" + _(title) + "','" + command + "','" + self.category + "')")
         elif title == 'add-item':
             self.items_window(self)
         elif title == 'about':

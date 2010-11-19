@@ -1,6 +1,6 @@
 Set date and time|time-admin
-Set up languages|/usr/bin/gnome-language-selector
-Set up startup|su-to-root -X -c /usr/sbin/startupmanager
+Set up languages|gnome-language-selector
+Set up startup|gksu startupmanager
 Status computer|gnome-system-monitor
 Make a backup|gksu /usr/lib/tuquito/garfio/garfio.py -D "Garfio"
 View system events|gnome-system-log
