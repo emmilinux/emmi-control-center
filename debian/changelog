@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-9) maverick; urgency=low
+
+  * new translations
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 16:26:32 -0300
+
 tuquito-control-center (0.2-8) maverick; urgency=low
 
   * added repeat items control

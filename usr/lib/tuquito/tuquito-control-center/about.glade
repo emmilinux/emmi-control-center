@@ -11,7 +11,7 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="program_name">Control Center</property>
-    <property name="version">0.2</property>
+    <property name="version">0.2-9</property>
     <property name="copyright">Copyright © 2010 - Tuquito Team!</property>
     <property name="website">http://www.tuquito.org.ar</property>
     <property name="website_label">Tuquito Team!</property>
