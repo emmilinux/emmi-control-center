@@ -1,3 +1,14 @@
+tuquito-control-center (0.2-12) maverick; urgency=low
+
+  * added json
+  * added new items
+  * added suggestions
+  * added info window
+  * added icon edit function
+  * several improvements in html and javascript
+
+ -- Mario Colque <mario@tuquito.org.ar>  Thu, 25 Nov 2010 02:01:56 -0300
+
 tuquito-control-center (0.2-11) maverick; urgency=low
 
   * new version -11
