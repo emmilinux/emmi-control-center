@@ -1,3 +1,11 @@
+tuquito-control-center (0.2-13) maverick; urgency=low
+
+  * added jstest-gtk
+  * added font-manager
+  * added depends synaptic
+
+ -- Mario Colque <mario@tuquito.org.ar>  Thu, 25 Nov 2010 15:41:14 -0300
+
 tuquito-control-center (0.2-12) maverick; urgency=low
 
   * added json

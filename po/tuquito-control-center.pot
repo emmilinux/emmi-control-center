@@ -324,3 +324,11 @@ msgstr ""
 #: usr/lib/tuquito/tuquito-control-center/suggestions.py:151
 msgid "GB"
 msgstr ""
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:152
+msgid "Configure joystick"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:153
+msgid "Font manager"
+msgstr ""
