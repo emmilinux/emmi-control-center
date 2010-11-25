@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-control-center 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-23 23:17-0300\n"
+"POT-Creation-Date: 2010-11-25 02:05-0300\n"
 "PO-Revision-Date: 2010-07-06 13:58-0300\n"
 "Last-Translator: Carlos Felipe P. de Araújo <carlosfelipe@tuquito.org.ar>\n"
 "Language-Team: Portuguese\n"
@@ -23,8 +23,8 @@ msgstr "<b>Erro:</b>"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:45
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:55
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:338
-#: usr/lib/tuquito/tuquito-control-center/about.py:33
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:340
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:361
 #: usr/lib/tuquito/tuquito-control-center/suggestions.py:45
 #: usr/lib/tuquito/tuquito-control-center/suggestions.py:55
 msgid "Control Center"
@@ -228,22 +228,22 @@ msgid "Add item"
 msgstr "Adicionar item"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:179
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:297
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:298
 msgid "Title: (eg Change Wallpaper)"
 msgstr "Título: (ex: Trocar o papel de parede)"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:180
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:298
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:299
 msgid "Command app:"
 msgstr "Comando do aplicativo:"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:181
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:299
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:300
 msgid "Icon file:"
 msgstr "Ícone do arquivo:"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:182
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:300
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:301
 msgid "Options icon"
 msgstr "Icone opções"
 
@@ -257,18 +257,18 @@ msgstr "O comando <b>%s</b> já existe"
 msgid "The title <b>%s</b> already exists"
 msgstr "O título <b>%s</b> já existe"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:291
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:292
 msgid "Edit item"
 msgstr "Editar itens"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:361
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:362
+msgid "Configuration tool for Tuquito"
+msgstr "Ferramenta de configuração para Tuquito"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:378
 #, python-format
 msgid "The command <b>%s</b> is not found or not is executable"
 msgstr "O comando <b>%s</b> não se encontra ou não é executável"
-
-#: usr/lib/tuquito/tuquito-control-center/about.py:34
-msgid "Configuration tool for Tuquito"
-msgstr "Ferramenta de configuração para Tuquito"
 
 #: usr/lib/tuquito/tuquito-control-center/suggestions.py:42
 msgid "<b>Information:</b>"
@@ -316,19 +316,19 @@ msgstr ""
 msgid "Please wait, this can take some time"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:146
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:145
 msgid "B"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:148
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:147
 msgid "KB"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:150
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:149
 msgid "MB"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:152
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:151
 msgid "GB"
 msgstr ""
 
