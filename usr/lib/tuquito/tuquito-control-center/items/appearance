@@ -22,7 +22,7 @@
     },
     "xscreensaver-demo": {
         "title": "Set up screensaver", "owner": "system", "icon": "preferences-desktop-screensaver"
-    }
+    },
     "font-manager": {
         "title": "Font Manager", "owner": "system", "icon": "preferences-desktop-font"
     }

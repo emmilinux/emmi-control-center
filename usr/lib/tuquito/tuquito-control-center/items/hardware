@@ -37,7 +37,7 @@
     },
     "bluetooth-properties": {
         "title": "Configure bluetooth", "owner": "system", "icon": "bluetooth"
-    }
+    },
     "jstest-gtk": {
         "title": "Configure joystick", "owner": "system", "icon": "joystick"
     }
