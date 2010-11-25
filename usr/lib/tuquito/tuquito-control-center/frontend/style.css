@@ -54,6 +54,8 @@ a { color: #294f88; }
 
 #nav li:hover {
     background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/overlay.png);
+    opacity: 0.95;
+    color: #FFF;
 }
 
 #nav li a {
@@ -89,7 +91,7 @@ a { color: #294f88; }
     margin: 10px 0 10px 0;
 }
 
-#content img {
+#content img.btn {
     margin: 10px;
     padding: 12px;
     float: left;
@@ -102,35 +104,54 @@ img:hover.btn { cursor: pointer; }
 
 .content ul {
     list-style-type: none;
-    width: 310px;
     float: left;
     margin: 30px 10px 30px 0;
-    padding: 0 10px 0 0;
+    padding: 0 10px 0 20px;
+    width: 620px;
+    height: 350px;
+    overflow: auto;
 }
 
 .content li {
-    background: url(images/dotted.gif) bottom left repeat-x;
-    width: 310px;
-    float: left;#06C
-    padding: 0 10px 0 0;
+    /*background: url(images/dotted.gif) bottom left repeat-x;*/
+    width: 350px;
+    float: left;
+    padding: 0;
+
 }
 
-.content li:hover { background-color: #EAF6FF; }
+.content li:hover {
+    background-color: rgba(247,247,247,0.6);
+    border: 1px solid #BBB;
+    -webkit-border-radius: 4px;
+    height: 41px;
+}
 
 .content li a {
     padding: 8px 20px 8px 10px;
-    width: 280px;
+    width: 350px;
     float: left;
-    background: url(images/arrow-right.gif) right 15px no-repeat;
     text-decoration: none;
 }
 
-.content li a:hover { background-image:url(images/arrow-right-dark.gif); }
+.content li a:hover {
+    padding: 7px 19px 7px 9px;
+    color: #2D4B69;
+    text-shadow: #EEE 1px 1px 0px;
+}
+
+.loading_app {
+    background: url(images/loading.gif) 97% 50% no-repeat;
+    background-color: rgba(247,247,247,0.6);
+    border: 1px solid #BBB;
+    -webkit-border-radius: 4px;
+    height: 41px;
+}
 
 .logo-back {
     position: absolute;
-    bottom: -10px;
-    right: 8px;
+    bottom: 10px;
+    right: 40px;
     opacity: 0.5;
     width: 155px;
 }
@@ -142,11 +163,4 @@ img.btn { width: 60px; }
     position: relative;
     clear: both;
     float: left;
-}
-
-.content ul {
-    padding-left: 20px;
-    width: 619px;
-    height: 365px;
-    overflow: auto;
 }

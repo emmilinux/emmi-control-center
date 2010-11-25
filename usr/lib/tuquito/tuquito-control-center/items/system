@@ -1,8 +1,29 @@
-Set date and time|time-admin
-Set up languages|gnome-language-selector
-Set up startup|gksu startupmanager
-Status computer|gnome-system-monitor
-Status computer|lxtask
-Make a backup|gksu /usr/lib/tuquito/garfio/garfio.py -D "Garfio"
-View system events|gnome-system-log
-Set passwords and encryption keys|seahorse
+{
+    "time-admin": {
+        "title": "Set date and time", "owner": "system", "icon": "time-admin"
+    },
+    "gnome-language-selector": {
+        "title": "Set up languages", "owner": "system", "icon": "config-language"
+    },
+    "gksu tuquito-update": {
+        "title": "Update Manager", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-update/logo.png"
+    },
+    "gksu startupmanager": {
+        "title": "Set up startup", "owner": "system", "icon": "startupmanager"
+    },
+    "gnome-system-monitor": {
+        "title": "Status computer", "owner": "system", "icon": "gnome-system-monitor"
+    },
+    "lxtask": {
+        "title": "Status computer", "owner": "system", "icon": "utilities-system-monitor"
+    },
+    "gksu /usr/lib/tuquito/garfio/garfio.py -D 'Garfio'": {
+        "title": "Make a backup", "owner": "system", "icon": "/usr/lib/tuquito/garfio/logo.png"
+    },
+    "gnome-system-log": {
+        "title": "View system events", "owner": "system", "icon": "logviewer"
+    },
+    "seahorse": {
+        "title": "Set passwords and encryption keys", "owner": "system", "icon": "seahorse"
+    }
+}

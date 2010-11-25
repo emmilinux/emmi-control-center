@@ -1,8 +1,26 @@
-Change the background and theme|gnome-appearance-properties
-Change the background and theme|lxappearance
-Configure Openbox|obconf
-Configure visual effects|simple-ccsm
-Adjust the screen resolution|gnome-display-properties
-Adjust the screen resolution|lxrandr
-Set up screensaver|gnome-screensaver-preferences
-Set up screensaver|xscreensaver-demo
+{
+    "gnome-appearance-properties": {
+        "title": "Change the background and theme", "owner": "system", "icon": "preferences-desktop-theme"
+    },
+    "lxappearance": {
+        "title": "Change the background and theme", "owner": "system", "icon": "preferences-desktop-theme"
+    },
+    "obconf": {
+        "title": "Configure Openbox", "owner": "system", "icon": "preferences-desktop-theme"
+    },
+    "simple-ccsm": {
+        "title": "Configure visual effects", "owner": "system", "icon": "simple-ccsm"
+    },
+    "gnome-display-properties": {
+        "title": "Adjust the screen resolution", "owner": "system", "icon": "gnome-display-properties"
+    },
+    "lxrandr": {
+        "title": "Adjust the screen resolution", "owner": "system", "icon": "gnome-display-properties"
+    },
+    "gnome-screensaver-preferences": {
+        "title": "Set up screensaver", "owner": "system", "icon": "preferences-desktop-screensaver"
+    },
+    "xscreensaver-demo": {
+        "title": "Set up screensaver", "owner": "system", "icon": "preferences-desktop-screensaver"
+    }
+}

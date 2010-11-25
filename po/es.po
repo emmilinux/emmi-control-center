@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-control-center 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-19 16:23-0300\n"
+"POT-Creation-Date: 2010-11-23 23:17-0300\n"
 "PO-Revision-Date: 2010-07-06 13:38-0300\n"
 "Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
 "Language-Team: Spanish\n"
@@ -17,228 +17,251 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:41
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:42
 msgid "<b>Error:</b>"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:44
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:54
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:45
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:55
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:338
 #: usr/lib/tuquito/tuquito-control-center/about.py:33
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:45
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:55
 msgid "Control Center"
 msgstr "Centro de Control"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:61
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:63
 msgid "Item"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:64
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:66
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:60
 msgid "Command"
 msgstr "Comando"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:78
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:80
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:79
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:81
 msgid "Network & Internet"
-msgstr "Redes y Internet"
+msgstr "Redes e Internet"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:80
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:82
 msgid "Programs"
 msgstr "Programas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:81
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:83
 msgid "User Accounts"
 msgstr "Cuentas de usuario"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:82
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:84
 msgid "System and security"
 msgstr "Sistema y seguridad"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:83
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:85
 msgid "Hardware and sound"
 msgstr "Hardware y sonido"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:84
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:86
 msgid "About"
 msgstr "Acerca de"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:85
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:87
 msgid "Back to menu"
 msgstr "Volver al menú"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:87
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:89
 msgid "Change the background and theme"
 msgstr "Cambiar el fondo y el tema"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:88
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:90
 msgid "Configure visual effects"
 msgstr "Configurar efectos visuales"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:89
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:91
 msgid "Adjust the screen resolution"
 msgstr "Ajustar la resolución de pantalla"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:90
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:92
 msgid "Set up screensaver"
 msgstr "Configurar salvapantallas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:92
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:94
 msgid "Network connections"
 msgstr "Conexiones de red"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:93
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:95
 msgid "Network tools"
 msgstr "Herramientas de red"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:94
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:96
 msgid "Network sites"
 msgstr "Sitios de red"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:95
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:97
 msgid "Set up network proxy"
 msgstr "Configurar proxy de la red"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:96
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:98
 msgid "Set up firewall"
 msgstr "Configurar cortafuegos"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:97
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:99
 msgid "Shared files and folders"
 msgstr "Archivos y carpetas compartidas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:99
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:101
 msgid "Add/Remove programs"
 msgstr "Agregar o quitar programas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:100
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:102
 msgid "Set favorite applications"
 msgstr "Establecer aplicaciones favoritas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:101
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:103
 msgid "Remove unused files"
 msgstr "Eliminar archivos sin uso"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:103
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:105
 msgid "User accounts and access control"
 msgstr "Cuentas de usuario y control de acceso"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:104
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:106
 msgid "Add or remove user accounts"
 msgstr "Agregar o eliminar usuarios"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:105
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:107
 msgid "Set up Parental Control"
 msgstr "Configurar el Control Parental"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:106
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:108
 msgid "Set up startup screen"
 msgstr "Configurar pantalla de inicio"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:108
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:110
 msgid "Set date and time"
 msgstr "Configurar fecha y hora"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:109
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:111
 msgid "Set up languages"
 msgstr "Establecer idiomas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:110
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:112
 msgid "Set up startup"
 msgstr "Configurar el arranque"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:111
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:113
 msgid "Status computer"
 msgstr "Estado del equipo"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:112
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:114
 msgid "Make a backup"
 msgstr "Hacer una copia de seguridad"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:113
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:115
 msgid "View system events"
 msgstr "Ver eventos del sistema"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:114
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:116
 msgid "Set passwords and encryption keys"
 msgstr "Establecer contraseñas y claves de cifrado"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:116
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:118
 msgid "System information"
 msgstr "Información del sistema"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:117
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:119
 msgid "View devices and printers"
 msgstr "Ver dispositivos e impresoras"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:118
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:120
 msgid "Configure disks"
 msgstr "Configurar discos"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:119
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:121
 msgid "Install drivers"
 msgstr "Instalar controladores"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:120
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:122
 msgid "Wireless network drivers"
 msgstr "Controladores de red inalámbrica"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:121
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:123
 msgid "Configure keyboard"
 msgstr "Configurar teclado"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:122
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:124
 msgid "Configure mouse"
 msgstr "Configurar ratón"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:123
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:125
 msgid "Sound Preferences"
 msgstr "Preferencias de sonido"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:124
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:126
 msgid "Configure bluetooth"
 msgstr "Configurar bluetooth"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:126
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:128
 msgid "Find and fix problems"
 msgstr "Buscar y solucionar problemas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:127
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:129
 msgid "Edit items"
 msgstr "Editar items"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:139
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:130
+msgid "Suggested programs"
+msgstr "Programas sugeridos"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:143
 msgid "Add or remove items"
 msgstr "Agregar o eliminar items"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:140
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:144
 msgid "Resore original"
 msgstr "Restaurar original"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:169
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:173
 msgid "Add item"
 msgstr "Agregar item"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:175
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:267
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:179
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:297
 msgid "Title: (eg Change Wallpaper)"
 msgstr "Título: (ej Cambiar Wallpaper)"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:176
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:268
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:180
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:298
 msgid "Command app:"
 msgstr "Comando de aplicación:"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:198
-#, python-format
-msgid "The item <b>%s</b> already exists"
-msgstr "El item <b>%s</b> ya existe"
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:181
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:299
+msgid "Icon file:"
+msgstr "Archivo de ícono:"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:261
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:182
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:300
+msgid "Options icon"
+msgstr "Opciones de ícono:"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:208
+#, python-format
+msgid "The command <b>%s</b> already exists"
+msgstr "El comando <b>%s</b> ya existe"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:212
+#, python-format
+msgid "The title <b>%s</b> already exists"
+msgstr "El título <b>%s</b> ya existe"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:291
 msgid "Edit item"
 msgstr "Editar items"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:300
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:361
 #, python-format
 msgid "The command <b>%s</b> is not found or not is executable"
 msgstr "El comando  <b>%s</b> no se encuentra o no es ejecutable"
@@ -246,3 +269,83 @@ msgstr "El comando  <b>%s</b> no se encuentra o no es ejecutable"
 #: usr/lib/tuquito/tuquito-control-center/about.py:34
 msgid "Configuration tool for Tuquito"
 msgstr "Herramienta de configuración para Tuquito"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:42
+msgid "<b>Information:</b>"
+msgstr "<b>Información:</b>"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:57
+msgid "App"
+msgstr "Aplicación"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:106
+#, python-format
+msgid "<b>Package</b>: %s"
+msgstr "<b>Paquete</b>: %s"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:107
+#, python-format
+msgid ""
+"\n"
+"<b>Description</b>:\n"
+"%s"
+msgstr ""
+"\n"
+"<b>Descripción</b>:\n"
+"%s"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:108
+#, python-format
+msgid ""
+"\n"
+"<b>Version</b>: %s"
+msgstr ""
+"\n"
+"<b>Versión</b>: %s"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:109
+#, python-format
+msgid ""
+"\n"
+"<b>Size</b>: %s"
+msgstr ""
+"\n"
+"<b>Tamaño</b>: %s"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:123
+msgid "Please wait, this can take some time"
+msgstr "Por favor, espere, esto puede tomar un tiempo"
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:146
+msgid "B"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:148
+msgid "KB"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:150
+msgid "MB"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:152
+msgid "GB"
+msgstr ""
+
+msgid "Configure Openbox"
+msgstr "Configurar Openbox"
+
+msgid "Remote Desktop"
+msgstr "Escritorio remoto"
+
+msgid "Edit software sources"
+msgstr "Editar orígenes de software"
+
+msgid "Add/Remove programs with Synaptic"
+msgstr "Agregar o quitar programas con Synaptic"
+
+msgid "Power management"
+msgstr "Gestor de energía"
+
+msgid "Update Manager"
+msgstr "Gestor de actualizaciones"

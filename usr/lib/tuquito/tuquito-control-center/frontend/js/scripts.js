@@ -11,8 +11,8 @@ function changeCategory(category) {
     document.title = "nop";
 }
 
-function addItem(title, command, category) {
-    html = "<li id='" + command + "'><a href='javascript:changeTitle(\"exec:" + command + "\")'>" + title + "</a>";
+function addItem(title, command, category, icon) {
+    html = "<li id='" + command + "'><a href='javascript:changeTitle(\"exec:" + command + "\")'><img id='icon' src='" + icon + "' height='24'>&nbsp;&nbsp;&nbsp;&nbsp;" + title + "</a>";
     selector = "#" + category + " ul";
     $(selector).append(html);
 }
@@ -26,15 +26,34 @@ function removeItem(command, category) {
     setContent(category);
 }
 
-function editItem(title, old_command, new_command) {
-    html = "<li id='" + new_command + "'><a href='javascript:changeTitle(\"exec:" + new_command + "\")'>" + title + "</a>";
+function editItem(title, old_command, new_command, icon) {
     selector = "li#" + old_command;
-    $(selector).replaceWith(html);
+    html = "<a href='javascript:changeTitle(\"exec:" + new_command + "\")'><img id='icon' src='" + icon + "' height='24'>&nbsp;&nbsp;&nbsp;&nbsp;" + title + "</a>";
+    $(selector).html(html);
+    if (old_command != new_command) {
+        $(selector).attr('id', new_command);
+    }
 }
 
 function setContent(v) {
-    cont = $("#"+v).html();
+    cont = $("#" + v + ".category").html();
     $('#ajax').hide().html(cont).fadeIn();
+}
+
+function setLoading(command, status) {
+    selector = "#" + command;
+    if (status == "hide")
+        $(selector).removeClass('loading_app');
+    else
+        $(selector).addClass('loading_app');
+}
+
+function setSuggestions(category, status) {
+    selector = "span#" + category;
+    if (status == "show")
+        $(selector).removeClass('hidden');
+    else
+        $(selector).addClass('hidden');
 }
 
 $(document).ready(function () {
@@ -60,14 +79,15 @@ $(document).ready(function () {
         $('.menu').hide();
         $('#nav').animate({'width':'180px'}, {easing: 'easeOutBounce', duration: 800 });
         v = $(this).attr('rel');
-        changeCategory(v);
-        setContent(v);
+        if (v != "about") {
+            changeCategory(v);
+            setContent(v);
+        }
     });
 
     $('.back').click(function(){
         $('#ajax').fadeOut(50);
-        $('#nav').animate({width:'0'}, {queue:false, duration: 50})
-        $('#nav').fadeOut(80);
+        $('#nav').animate({width:'0'}, {queue:false, duration: 50}).fadeOut(80);
         $('.menu').fadeIn();
     });
 });

@@ -1,6 +1,23 @@
-Network connections|nm-connection-editor
-Network tools|gnome-nettool
-Network sites|nautilus --no-desktop network:
-Set up network proxy|gnome-network-properties
-Set up firewall|gufw
-Shared files and folders|gnome-file-share-properties
+{
+    "nm-connection-editor": {
+        "title": "Network connections", "owner": "system", "icon": "preferences-system-network"
+    },
+    "gnome-nettool": {
+        "title": "Network tools", "owner": "system", "icon": "gnome-nettool"
+    },
+    "nautilus --no-desktop network:": {
+        "title": "Network sites", "owner": "system", "icon": "folder-remote"
+    },
+    "gnome-network-properties": {
+        "title": "Set up network proxy", "owner": "system", "icon": "gnome-network-properties"
+    },
+    "gufw": {
+        "title": "Set up firewall", "owner": "system", "icon": "gufw_menu"
+    },
+    "gnome-file-share-properties": {
+        "title": "Shared files and folders", "owner": "system", "icon": "folder-remote"
+    },
+    "vino-preferences": {
+        "title": "Remote Desktop", "owner": "system", "icon": "preferences-desktop-remote-desktop"
+    }
+}

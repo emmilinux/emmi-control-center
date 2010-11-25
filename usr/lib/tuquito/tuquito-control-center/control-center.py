@@ -25,6 +25,7 @@ import commands
 import gettext
 import webkit
 import string
+import json
 from user import home
 
 # i18n
@@ -52,9 +53,10 @@ class ControlCenter():
         self.builder.add_from_file('/usr/lib/tuquito/tuquito-control-center/control-center.glade')
         self.window = self.builder.get_object('window')
         self.builder.get_object('window').set_title(_('Control Center'))
-        self.items_cache = []
         self.edit_handler_id = False
         self.add_handler_id = False
+        self.items_cache = []
+        self.theme = gtk.icon_theme_get_default()
 
         # Define treeview
         self.treeview_items = self.builder.get_object('treeview_items')
@@ -125,9 +127,11 @@ class ControlCenter():
 
         text['problems'] = _('Find and fix problems')
         text['edit_items'] = _('Edit items')
+        text['suggestions'] = _('Suggested programs')
 
-        template = open('/usr/lib/tuquito/tuquito-control-center/frontend/index.html').read()
-        html = string.Template(template).safe_substitute(text)
+        template = open('/usr/lib/tuquito/tuquito-control-center/frontend/index.html')
+        html = string.Template(template.read()).safe_substitute(text)
+        template.close()
         self.browser.load_html_string(html, 'file:/')
         self.browser.connect('title-changed', self.title_changed)
         self.window.show_all()
@@ -139,14 +143,13 @@ class ControlCenter():
         self.item_window.set_title(_('Add or remove items'))
         self.builder.get_object('toolbutton_restore').set_label(_('Resore original'))
         items_file = open(self.category_file)
-        for line in items_file:
-            line = str.strip(line).split('|')
-            title = line[0]
-            command = line[1]
-            try:
-                owner = line[2]
-            except:
-                owner = False
+        dic = json.load(items_file)
+        items_file.close()
+        for k, v in dic.iteritems():
+            command = k
+            title = v['title']
+            owner = v['owner']
+            icon = v['icon']
             command_clean = command.split(' ')[0]
             if command_clean != 'gksu':
                 command_search = command_clean
@@ -157,7 +160,7 @@ class ControlCenter():
                 iter = self.model.insert_before(None, None)
                 self.model.set_value(iter, 0, _(title))
                 self.model.set_value(iter, 1, command)
-                self.model.set_value(iter, 2, title)
+                self.model.set_value(iter, 2, icon)
         self.treeview_items.set_model(self.model)
         del self.model
         self.builder.connect_signals(self)
@@ -166,6 +169,7 @@ class ControlCenter():
     def add_item(self, widget):
         self.builder.get_object('title').set_text('')
         self.builder.get_object('code').set_text('')
+        self.builder.get_object('icon').set_text('applications-other')
         self.builder.get_object('add_item').set_title(_('Add item'))
         if self.edit_handler_id:
             self.builder.get_object('save').disconnect(self.edit_handler_id)
@@ -174,6 +178,8 @@ class ControlCenter():
         self.add_handler_id = self.builder.get_object('save').connect('clicked', self.save_item)
         self.builder.get_object('ltitle').set_label(_('Title: (eg Change Wallpaper)'))
         self.builder.get_object('lcode').set_label(_('Command app:'))
+        self.builder.get_object('licon').set_label(_('Icon file:'))
+        self.builder.get_object('lexpander').set_label(_('Options icon'))
         self.builder.get_object('add_item').show()
 
     def close_add_item(self, widget, data=None):
@@ -185,27 +191,44 @@ class ControlCenter():
         return True
 
     def save_item(self, widget):
-        print "save_item"
         title = self.builder.get_object('title').get_text().strip()
         command = self.builder.get_object('code').get_text().strip()
+        icon = self.builder.get_object('icon').get_text().strip()
+        no_exists = True
         if not os.path.isfile(self.home_file):
-            os.system('cp %s %s &' % (self.category_file, self.home_file))
+            os.system('cp %s %s' % (self.category_file, self.home_file))
             self.category_file = self.home_file
         if command != '' and title != '':
-            item = title + '|' + command + '|user'
-            exists = commands.getoutput('grep -wxs "%s" %s | wc -l' % (item, self.home_file))
-            if exists != '0':
-                message = MessageDialog('Error', _('The item <b>%s</b> already exists') % (title + '|' + command), gtk.MESSAGE_ERROR)
-                message.show()
-            else:
+            items_file = open(self.category_file)
+            dic = json.load(items_file)
+            items_file.close()
+            for k, v in dic.iteritems():
+                if k == command:
+                    no_exists = False
+                    message = MessageDialog('Error', _('The command <b>%s</b> already exists') % command, gtk.MESSAGE_ERROR)
+                    message.show()
+                if dic[k]['title'] == title:
+                    no_exists = False
+                    message = MessageDialog('Error', _('The title <b>%s</b> already exists') % title, gtk.MESSAGE_ERROR)
+                    message.show()
+            if no_exists:
+                if not os.path.isfile(icon):
+                    if self.theme.has_icon(icon):
+                        iconInfo = self.theme.lookup_icon(icon, 24, 0)
+                    else:
+                        iconInfo = self.theme.lookup_icon("applications-other", 24, 0)
+                    icon = iconInfo.get_filename()
+                dic[command] = dict([('title', title), ('owner', 'user'), ('icon', icon)])
                 self.model = self.treeview_items.get_model()
                 iter = self.model.insert_before(None, None)
                 self.model.set_value(iter, 0, title)
                 self.model.set_value(iter, 1, command)
-                os.system('echo "' + item + '" >>' + self.home_file)
-                self.browser.execute_script("addItem('%s','%s','%s')" % (_(title), command, self.category))
+                items_file = open(self.category_file, 'w')
+                json.dump(dic, items_file)
+                items_file.close()
+                self.browser.execute_script("addItem('%s','%s','%s','%s')" % (_(title), command, self.category, icon))
                 self.browser.execute_script("setContent('" + self.category + "')")
-                self.items_cache.append(title)
+                self.items_cache.append(command)
                 self.close_add_item(self)
                 del self.model
 
@@ -213,39 +236,46 @@ class ControlCenter():
         selection = self.treeview_items.get_selection()
         (self.model, iter) = selection.get_selected()
         if not os.path.isfile(self.home_file):
-            os.system('cp %s %s &' % (self.category_file,self.home_file))
+            os.system('cp %s %s' % (self.category_file,self.home_file))
             self.category_file = self.home_file
         if iter != None:
-            title = self.model.get_value(iter, 0)
             command = self.model.get_value(iter, 1)
-            item = title + '|' + command
-            os.system("sed '/|user$/ d' " + self.home_file + ' > ' + self.home_file + '.back')
-            os.system('mv ' + self.home_file + '.back ' + self.home_file)
+            items_file = open(self.category_file)
+            dic = json.load(items_file)
+            items_file.close()
+            dic.pop(command)
+            items_file = open(self.category_file, 'w')
+            json.dump(dic, items_file)
+            items_file.close()
             self.model.remove(iter)
             self.browser.execute_script("removeItem('" + command + "', '" + self.category + "')")
 
     def restore_items(self, widget):
         self.browser.execute_script("removeItem('all-items', '" + self.category + "')")
-        os.system('cp %s %s' % (self.base_file,self.home_file))
+        os.system('cp %s %s' % (self.base_file, self.home_file))
         items_file = open(self.category_file)
-        for line in items_file:
-            if line != '':
-                line = str.strip(line).split('|')
-                title = line[0]
-                command = line[1]
-                try:
-                    owner = line[2]
-                except:
-                    owner = False
-                command_clean = command.split(' ')[0]
-                if command_clean != 'gksu':
-                    command_search = command_clean
-                else:
-                     command_search = command.split(' ')[1]
-                cmd = commands.getoutput('which ' + command_search)
-                if cmd != '' or owner == 'user':
-                    self.browser.execute_script("addItem('%s','%s','%s')" % (_(title), command, self.category))
-                    self.items_cache.append(title)
+        dic = json.load(items_file)
+        for k, v in dic.iteritems():
+            command = k
+            title = v['title']
+            icon = v['icon']
+            command_clean = command.split(' ')[0]
+            if command_clean != 'gksu':
+                command_search = command_clean
+            else:
+                 command_search = command.split(' ')[1]
+            cmd = commands.getoutput('which ' + command_search)
+            if cmd != '':
+                if not os.path.isfile(icon):
+                    if self.theme.has_icon(icon):
+                        iconInfo = self.theme.lookup_icon(icon, 24, 0)
+                    else:
+                        iconInfo = self.theme.lookup_icon("applications-other", 24, 0)
+                    icon = iconInfo.get_filename()
+                self.browser.execute_script("addItem('%s','%s','%s','%s')" % (_(title), command, self.category, icon))
+                if command not in self.items_cache:
+                    self.items_cache.append(command)
+        items_file.close()
         self.browser.execute_script("setContent('" + self.category + "')")
         self.close_items(self)
 
@@ -255,9 +285,10 @@ class ControlCenter():
         if self.iter != None:
             title = self.model.get_value(self.iter, 0)
             command = self.model.get_value(self.iter, 1)
-            self.title_en = self.model.get_value(self.iter, 2)
+            icon = self.model.get_value(self.iter, 2)
             self.builder.get_object('title').set_text(title)
             self.builder.get_object('code').set_text(command)
+            self.builder.get_object('icon').set_text(icon)
             self.builder.get_object('add_item').set_title(_('Edit item'))
             if self.add_handler_id:
                 self.builder.get_object('save').disconnect(self.add_handler_id)
@@ -266,36 +297,83 @@ class ControlCenter():
             self.edit_handler_id = self.builder.get_object('save').connect('clicked', self.save_edited_item)
             self.builder.get_object('ltitle').set_label(_('Title: (eg Change Wallpaper)'))
             self.builder.get_object('lcode').set_label(_('Command app:'))
+            self.builder.get_object('licon').set_label(_('Icon file:'))
+            self.builder.get_object('lexpander').set_label(_('Options icon'))
             self.builder.get_object('add_item').show()
-            self.old_item = self.title_en + '|' + command
             self.old_command = command
 
     def save_edited_item(self, widget):
         title = self.builder.get_object('title').get_text().strip()
         command = self.builder.get_object('code').get_text().strip()
+        icon = self.builder.get_object('icon').get_text().strip()
         if not os.path.isfile(self.home_file):
-            os.system('cp %s %s &' % (self.category_file,self.home_file))
+            os.system('cp %s %s' % (self.category_file,self.home_file))
             self.category_file = self.home_file
         if command != '' and title != '':
-            new_item = title + '|' + command + '|user'
+            if not os.path.isfile(icon):
+                if self.theme.has_icon(icon):
+                    iconInfo = self.theme.lookup_icon(icon, 24, 0)
+                else:
+                    iconInfo = self.theme.lookup_icon("applications-other", 24, 0)
+                icon = iconInfo.get_filename()
+            items_file = open(self.category_file)
+            dic = json.load(items_file)
+            items_file.close()
+            items_file = open(self.category_file, 'w')
+            dic.pop(self.old_command)
+            dic[command] = dict([('title', title), ('owner', 'user'), ('icon', icon)])
             self.model.set_value(self.iter, 0, title)
             self.model.set_value(self.iter, 1, command)
-            self.model.set_value(self.iter, 2, title)
-            os.system("sed 's/" + self.old_item.replace('/', '\/') + "/" + new_item.replace('/', '\/') + "/' " + self.home_file + ' > ' + self.home_file + '.back')
-            os.system('mv ' + self.home_file + '.back ' + self.home_file)
-            #usage: editItem('title','old_command', 'new_command')
-            self.browser.execute_script("editItem('%s','%s', '%s')" % (_(title), self.old_command, command))
+            self.model.set_value(self.iter, 2, icon)
+            items_file = open(self.category_file, 'w')
+            json.dump(dic, items_file)
+            items_file.close()
+            #usage: editItem('title','old_command', 'new_command', 'icon', 'category')
+            self.browser.execute_script("editItem('%s','%s', '%s', '%s', '%s')" % (_(title), self.old_command, command, icon, self.category))
             self.browser.execute_script("setContent('" + self.category + "')")
-            self.items_cache.append(title)
+            if command not in self.items_cache:
+                self.items_cache.append(command)
         self.close_add_item(self)
         del self.model
+
+    def search_icon(self, widget):
+        self.builder.get_object('filechooserdialog').set_title(_('Control Center'))
+        self.builder.get_object('filechooserdialog').set_action(gtk.FILE_CHOOSER_ACTION_OPEN)
+        self.builder.get_object('filechooserdialog').show()
+
+    def on_search_ok(self, widget, data=None):
+        icon_file = self.builder.get_object('filechooserdialog').get_filename().strip()
+        if icon_file != '':
+            self.builder.get_object('icon').set_text(icon_file)
+        else:
+            print 'No hay icono seleccionado'
+        self.search_close(self)
+
+    def search_close(self, widget, data=None):
+        self.builder.get_object('filechooserdialog').hide()
+        return True
+
+    def about(self, widget):
+        abt = self.builder.get_object('about')
+        abt.connect('response', self.close_about)
+        abt.connect('delete-event', self.close_about)
+        abt.connect('destroy-event', self.close_about)
+        abt.set_name(_('Control Center'))
+        abt.set_comments(_('Configuration tool for Tuquito'))
+        abt.show()
+
+    def close_about(self, widget, data=None):
+        widget.hide()
+        return True
 
     def title_changed(self, view, frame, title):
         if title.startswith('exec:'):
             command = title.split(':')[1]
             cmd = commands.getoutput('which ' + command)
             if cmd != '':
+                self.browser.execute_script('setLoading("' + command + '", "show")')
                 os.system('%s &' % command)
+                self.browser.execute_script('setLoading("' + command + '", "hide")')
             else:
                 message = MessageDialog('Error', _('The command <b>%s</b> is not found or not is executable') % command, gtk.MESSAGE_ERROR)
                 message.show()
@@ -303,20 +381,28 @@ class ControlCenter():
             self.category = title.split(':')[1]
             self.home_file = os.path.join(home, '.tuquito/tuquito-control-center/items/' + self.category)
             self.base_file = os.path.join('/usr/lib/tuquito/tuquito-control-center/items/', self.category)
+            self.has_suggestions = False
             if os.path.isfile(self.home_file):
                 self.category_file = self.home_file
             else:
                 self.category_file = self.base_file
-            #add items
             items_file = open(self.category_file)
-            for line in items_file:
-                line = str.strip(line).split('|')
-                title = line[0]
-                command = line[1]
-                try:
-                    owner = line[2]
-                except:
-                    owner = False
+            dic = json.load(items_file)
+            for k, v in dic.iteritems():
+                command = k
+                title = v['title']
+                owner = v['owner']
+                icon = v['icon']
+                if not os.path.isfile(icon):
+                    if self.theme.has_icon(icon):
+                        iconInfo = self.theme.lookup_icon(icon, 24, 0)
+                        icon = iconInfo.get_filename()
+                    else:
+                        iconInfo = self.theme.lookup_icon("applications-other", 24, 0)
+                        if iconInfo and os.path.exists(iconInfo.get_filename()):
+                            icon = iconInfo.get_filename()
+                        else:
+                            icon = '/usr/lib/tuquito/tuquito-control-center/frontend/images/applications-other.png'
                 command_clean = command.split(' ')[0]
                 if command_clean != 'gksu':
                     command_search = command_clean
@@ -324,14 +410,20 @@ class ControlCenter():
                      command_search = command.split(' ')[1]
                 cmd = commands.getoutput('which ' + command_search)
                 if cmd != '' or owner == 'user':
-                    if title not in self.items_cache:
-                        self.items_cache.append(title)
-                        #usage: addItem(title, command, category)
-                        self.browser.execute_script("addItem('" + _(title) + "','" + command + "','" + self.category + "')")
+                    if command not in self.items_cache:
+                        self.items_cache.append(command)
+                        #usage: addItem(title, command, category, icon)
+                        self.browser.execute_script("addItem('%s','%s','%s','%s')" % (_(title), command, self.category, icon))
+                if cmd == '' and not self.has_suggestions:
+                    self.has_suggestions = True
+                    self.browser.execute_script("setSuggestions('" + self.category + "', 'show')")
+            items_file.close()
         elif title == 'add-item':
             self.items_window(self)
+        elif title == 'suggestions':
+            os.system('/usr/lib/tuquito/tuquito-control-center/suggestions.py %s &' % self.category)
         elif title == 'about':
-            os.system('/usr/lib/tuquito/tuquito-control-center/about.py &')
+            self.about(self)
 
 if __name__ == '__main__':
     category_list = ['accounts', 'appearance', 'hardware', 'network', 'programs', 'system']

@@ -1,3 +1,11 @@
-Add or remove user accounts|users-admin
-Set up Parental Control|tuquito-control-parental
-Set up startup screen|gdmsetup
+{
+    "users-admin": {
+        "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
+    },
+    "tuquito-control-parental": {
+        "title": "Set up Parental Control", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-control-parental/control.png"
+    },
+    "gdmsetup": {
+        "title": "Set up startup screen", "owner": "system", "icon": "gdmsetup"
+    }
+}
