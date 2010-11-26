@@ -86,7 +86,28 @@ class ControlCenter():
         text['about'] = _('About')
         text['back'] = _('Back to menu')
 
+        text['change_theme'] = _('Change the background and theme')
+        text['visual_efects'] = _('Configure visual effects')
+        text['resolution'] = _('Adjust the screen resolution')
+
+        text['connections'] = _('Network connections')
+        text['network_tools'] = _('Network tools')
+        text['network_places'] = _('Network sites')
+
+        text['add_users'] = _('Add or remove user accounts')
+        text['control_parental'] = _('Set up Parental Control')
+
+        text['drivers'] = _('Install drivers')
+        text['printer'] = _('View devices and printers')
+
+        text['status'] = _('Status computer')
+        text['backup'] = _('Make a backup')
+
+        text['add_programs'] = _('Add/Remove programs')
+        text['favorites'] = _('Set favorite applications')
+        text['trash'] = _('Remove unused files')
         text['problems'] = _('Find and fix problems')
+
         text['edit_items'] = _('Edit items')
         text['suggestions'] = _('Suggested programs')
 

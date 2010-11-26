@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-control-center 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-25 16:01-0300\n"
+"POT-Creation-Date: 2010-11-25 21:13-0300\n"
 "PO-Revision-Date: 2010-07-06 13:38-0300\n"
 "Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
 "Language-Team: Spanish\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:45
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:55
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:301
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:322
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:343
 #: usr/lib/tuquito/tuquito-control-center/suggestions.py:45
 #: usr/lib/tuquito/tuquito-control-center/suggestions.py:55
 msgid "Control Center"
@@ -72,69 +72,144 @@ msgid "Back to menu"
 msgstr "Volver al menú"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:89
+#: translations.py:5
+msgid "Change the background and theme"
+msgstr "Cambiar el fondo y el tema"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:90
+#: translations.py:6
+msgid "Configure visual effects"
+msgstr "Configurar efectos visuales"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:91
+#: translations.py:7
+msgid "Adjust the screen resolution"
+msgstr "Ajustar la resolución de pantalla"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:93
+#: translations.py:9
+msgid "Network connections"
+msgstr "Conexiones de red"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:94
+#: translations.py:10
+msgid "Network tools"
+msgstr "Herramientas de red"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:95
+#: translations.py:11
+msgid "Network sites"
+msgstr "Sitios de red"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:97
+#: translations.py:19
+msgid "Add or remove user accounts"
+msgstr "Agregar o eliminar usuarios"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:98
+#: translations.py:20
+msgid "Set up Parental Control"
+msgstr "Configurar el Control Parental"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:100
+#: translations.py:32
+msgid "Install drivers"
+msgstr "Instalar controladores"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:101
+#: translations.py:30
+msgid "View devices and printers"
+msgstr "Ver dispositivos e impresoras"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:103
+#: translations.py:25
+msgid "Status computer"
+msgstr "Estado del equipo"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:104
+#: translations.py:26
+msgid "Make a backup"
+msgstr "Hacer una copia de seguridad"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:106
+#: translations.py:15
+msgid "Add/Remove programs"
+msgstr "Agregar o quitar programas"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:107
+#: translations.py:16
+msgid "Set favorite applications"
+msgstr "Establecer aplicaciones favoritas"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:108
+#: translations.py:17
+msgid "Remove unused files"
+msgstr "Eliminar archivos sin uso"
+
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:109
 #: translations.py:38
 msgid "Find and fix problems"
 msgstr "Buscar y solucionar problemas"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:90
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:111
 msgid "Edit items"
 msgstr "Editar items"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:91
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:112
 msgid "Suggested programs"
 msgstr "Programas sugeridos"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:104
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:125
 msgid "Add or remove items"
 msgstr "Agregar o eliminar items"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:105
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:126
 msgid "Resore original"
 msgstr "Restaurar original"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:134
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:155
 msgid "Add item"
 msgstr "Agregar item"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:140
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:259
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:161
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:280
 msgid "Title: (eg Change Wallpaper)"
 msgstr "Título: (ej Cambiar Wallpaper)"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:141
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:260
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:162
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:281
 msgid "Command app:"
 msgstr "Comando de aplicación:"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:142
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:261
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:163
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:282
 msgid "Icon file:"
 msgstr "Archivo de ícono:"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:143
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:262
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:164
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:283
 msgid "Options icon"
 msgstr "Opciones de ícono:"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:169
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:190
 #, python-format
 msgid "The command <b>%s</b> already exists"
 msgstr "El comando <b>%s</b> ya existe"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:173
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:194
 #, python-format
 msgid "The title <b>%s</b> already exists"
 msgstr "El título <b>%s</b> ya existe"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:253
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:274
 msgid "Edit item"
 msgstr "Editar items"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:323
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:344
 msgid "Configuration tool for Tuquito"
 msgstr "Herramienta de configuración para Tuquito"
 
-#: usr/lib/tuquito/tuquito-control-center/control-center.py:339
+#: usr/lib/tuquito/tuquito-control-center/control-center.py:360
 #, python-format
 msgid "The command <b>%s</b> is not found or not is executable"
 msgstr "El comando  <b>%s</b> no se encuentra o no es ejecutable"
@@ -201,33 +276,9 @@ msgstr ""
 msgid "GB"
 msgstr ""
 
-#: translations.py:5
-msgid "Change the background and theme"
-msgstr "Cambiar el fondo y el tema"
-
-#: translations.py:6
-msgid "Configure visual effects"
-msgstr "Configurar efectos visuales"
-
-#: translations.py:7
-msgid "Adjust the screen resolution"
-msgstr "Ajustar la resolución de pantalla"
-
 #: translations.py:8
 msgid "Set up screensaver"
 msgstr "Configurar salvapantallas"
-
-#: translations.py:9
-msgid "Network connections"
-msgstr "Conexiones de red"
-
-#: translations.py:10
-msgid "Network tools"
-msgstr "Herramientas de red"
-
-#: translations.py:11
-msgid "Network sites"
-msgstr "Sitios de red"
 
 #: translations.py:12
 msgid "Set up network proxy"
@@ -241,29 +292,9 @@ msgstr "Configurar cortafuegos"
 msgid "Shared files and folders"
 msgstr "Archivos y carpetas compartidas"
 
-#: translations.py:15
-msgid "Add/Remove programs"
-msgstr "Agregar o quitar programas"
-
-#: translations.py:16
-msgid "Set favorite applications"
-msgstr "Establecer aplicaciones favoritas"
-
-#: translations.py:17
-msgid "Remove unused files"
-msgstr "Eliminar archivos sin uso"
-
 #: translations.py:18
 msgid "User accounts and access control"
 msgstr "Cuentas de usuario y control de acceso"
-
-#: translations.py:19
-msgid "Add or remove user accounts"
-msgstr "Agregar o eliminar usuarios"
-
-#: translations.py:20
-msgid "Set up Parental Control"
-msgstr "Configurar el Control Parental"
 
 #: translations.py:21
 msgid "Set up startup screen"
@@ -281,14 +312,6 @@ msgstr "Establecer idiomas"
 msgid "Set up startup"
 msgstr "Configurar el arranque"
 
-#: translations.py:25
-msgid "Status computer"
-msgstr "Estado del equipo"
-
-#: translations.py:26
-msgid "Make a backup"
-msgstr "Hacer una copia de seguridad"
-
 #: translations.py:27
 msgid "View system events"
 msgstr "Ver eventos del sistema"
@@ -301,17 +324,9 @@ msgstr "Establecer contraseñas y claves de cifrado"
 msgid "System information"
 msgstr "Información del sistema"
 
-#: translations.py:30
-msgid "View devices and printers"
-msgstr "Ver dispositivos e impresoras"
-
 #: translations.py:31
 msgid "Configure disks"
 msgstr "Configurar discos"
-
-#: translations.py:32
-msgid "Install drivers"
-msgstr "Instalar controladores"
 
 #: translations.py:33
 msgid "Wireless network drivers"

@@ -1,3 +1,9 @@
+tuquito-control-center (0.2-15) maverick; urgency=low
+
+  * fixed translations
+
+ -- Mario Colque <mario@tuquito.org.ar>  Thu, 25 Nov 2010 21:14:16 -0300
+
 tuquito-control-center (0.2-14) maverick; urgency=low
 
   * fixed items file
