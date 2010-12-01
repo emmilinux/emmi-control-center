@@ -9,13 +9,16 @@
         "title": "Network sites", "owner": "system", "icon": "folder-remote"
     },
     "gnome-network-properties": {
-        "title": "Set up network proxy", "owner": "system", "icon": "gnome-network-properties"
+        "title": "Proxy settings", "owner": "system", "icon": "gnome-network-properties"
     },
     "gufw": {
         "title": "Set up firewall", "owner": "system", "icon": "gufw_menu"
     },
-    "gnome-file-share-properties": {
+    "shares-admin": {
         "title": "Shared files and folders", "owner": "system", "icon": "folder-remote"
+    },
+    "lxproxy": {
+        "title": "Proxy settings", "owner": "system", "icon": "gnome-network-properties"
     },
     "vino-preferences": {
         "title": "Remote Desktop", "owner": "system", "icon": "preferences-desktop-remote-desktop"

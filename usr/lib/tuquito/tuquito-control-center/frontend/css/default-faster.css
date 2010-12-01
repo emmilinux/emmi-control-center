@@ -1,0 +1,155 @@
+* { -user-drag: none }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
+    font-size: 14px;
+    color: #64676A;
+    background: #fff url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
+}
+
+body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat; }
+
+.hidden { display: none; }
+
+.bold {
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+    color: #688200;
+}
+
+h2 {
+    text-shadow: white 1px 1px 0px;
+    color: #4B4B4B;
+}
+
+a {
+    color: #294f88;
+    text-decoration: none;
+}
+
+ul { list-style-type: none; }
+
+.logo-back {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    opacity: 0.6;
+    width: 155px;
+}
+
+/* Main Menu */
+#main {
+    color: #4B4B4B;
+    text-shadow: white 1px 1px 0px;
+    margin: 50px 10px auto 0;
+    padding: 0;
+}
+
+.main_menu {
+    width: 744px;
+    height: 450px;
+    margin: 0 auto 0 auto;
+}
+
+.main_menu li {
+    border: 1px solid rgba(255,255,255,0);
+    display: block;
+    width: 350px;
+    height: 120px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.main_menu img {
+    margin: 10px;
+    padding: 12px;
+    float: left;
+}
+
+/* Container */
+#container { border-top: 1px solid rgba(255,255,255,0); }
+
+#side {
+    background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/nav.png) repeat-x;
+    border-right: 1px dotted;
+    width: 190px;
+    float: left;
+    height: 519px;
+    text-shadow: #2D4B69 1px 1px 0px;
+}
+
+#side li {
+    border: 1px solid rgba(255,255,255,0);
+    width: 190px;
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+#side li:hover {
+    background-color: #243B51;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #FFF;
+}
+
+#side li a {
+    padding: 8px 20px 8px 10px;
+    float: left;
+    width: 150px;
+    background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/arrow-right2.gif) right 15px no-repeat;
+    color: #FFF;
+}
+
+.side_menu {
+    margin: 0;
+    padding: 0;
+}
+
+#ajax {
+    display: block;
+    margin-left: 190px;
+    display: block;
+    height: 500px;
+    padding: 0 20px;
+}
+
+#ajax ul {
+    list-style-type: none;
+    float: left;
+    margin: 20px 10px 30px 0;
+    padding: 0 10px 0 20px;
+    width: 630px;
+    height: 400px;
+    overflow: auto;
+}
+
+#ajax li {
+    width: 350px;
+    float: left;
+    padding: 0;
+
+}
+
+#ajax li a {
+    padding: 8px 20px 8px 10px;
+    width: 350px;
+    float: left;
+}
+
+#ajax li a:hover {
+    padding: 7px 19px 7px 9px;
+    color: #2D4B69;
+    text-shadow: #EEE 1px 1px 0px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+}

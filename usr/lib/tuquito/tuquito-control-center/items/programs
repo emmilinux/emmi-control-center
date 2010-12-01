@@ -17,6 +17,12 @@
     "libfm-pref-apps": {
         "title": "Set favorite applications", "owner": "system", "icon": "preferences-desktop"
     },
+    "lxsession-edit": {
+        "title": "Startup Applications", "owner": "system", "icon": "session-properties"
+    },
+    "gnome-session-properties": {
+        "title": "Startup Applications", "owner": "system", "icon": "session-properties"
+    },
     "bleachbit": {
         "title": "Remove unused files", "owner": "system", "icon": "bleachbit"
     }

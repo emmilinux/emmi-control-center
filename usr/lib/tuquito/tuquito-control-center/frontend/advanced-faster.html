@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/usr/lib/tuquito/tuquito-control-center/frontend/js/advanced-faster.js"></script>
+    <link href="/usr/lib/tuquito/tuquito-control-center/frontend/css/advanced-faster.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+<article id="advanced_html">
+    <ul id="advanced_ul">$li_content</ul>
+    <footer>&nbsp;
+        <a href='javascript:showOptions()'>$options</a>&nbsp;|&nbsp;
+        <a href='javascript:changeTitle("edit-item")'>$edit_items</a>
+        <span id="appearance_span" class="$has_suggestions">&nbsp;|&nbsp;<a href='javascript:changeTitle("suggestions")'>$suggestions</a></span>
+    </footer>
+    <img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/advanced.svg" class="logo-back">
+</article>
+
+<article id="options_html" class="hidden">
+    <h2>$options</h2>
+    <p>
+        <h4>$mode</h4>
+        <input id="mode" type="radio" name="mode" $input_mode_id> $normal_mode
+        <input type="radio" name="mode" $input_mode> $advanced_mode<br>
+    </p>
+    <p>
+        <h4>$suggestions</h4>
+        <input id="show_suggestions" type="checkbox" name="suggestions" $input_suggestions> $show_suggestions
+    </p>
+    <p>
+        <h4>$visual</h4>
+        <input id="visual_effects" type="checkbox" name="visual" $input_visual> $nice<br>
+        <small>$note_visual</small>
+    </p>
+    <p><a href='javascript:saveOptions()'>$apply</a></p>
+    <img src="/usr/lib/tuquito/tuquito-control-center/frontend/images/menu/preferences.svg" class="logo-back">
+</article>
+</body>
+</html>

@@ -1,0 +1,104 @@
+* { -user-drag: none }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
+    font-size: 14px;
+    color: #64676A;
+    background: #fff url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
+}
+
+body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat; }
+
+.hidden { display: none; }
+
+.bold {
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+    color: #688200;
+}
+
+h2 {
+    text-shadow: white 1px 1px 0px;
+    color: #4B4B4B;
+}
+
+a {
+    color: #294f88;
+    text-decoration: none;
+}
+
+.item {
+    width: 350px;
+    height: 28px;
+    padding: 0;
+    dsplay: block;
+    margin-bottom: 2px;
+}
+
+.item:hover {
+    height: 30px;
+    dsplay: block;
+}
+
+ul { list-style-type: none; }
+
+.logo-back {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    opacity: 0.6;
+    width: 155px;
+}
+
+/* Container */
+#container { border-top: 1px solid rgba(255,255,255,0); }
+
+#advanced_ul {
+    display: block;
+    display: block;
+    height: 460px;
+    margin-right: 12px;
+    padding: 0 20px;
+    overflow: auto;
+}
+
+#advanced_ul ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 620px;
+}
+
+#advanced_ul li {
+    width: 350px;
+    float: left;
+    padding: 0;
+    margin-left: 35px;
+}
+
+#advanced_ul li a {
+    padding: 8px 20px 8px 10px;
+    width: 350px;
+    float: left;
+}
+
+#advanced_ul li a:hover {
+    padding: 7px 19px 7px 9px;
+    color: #2D4B69;
+    text-shadow: #EEE 1px 1px 0px;
+}
+
+#options_html {
+    padding-left: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+}

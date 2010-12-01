@@ -2,7 +2,7 @@
     "time-admin": {
         "title": "Set date and time", "owner": "system", "icon": "time-admin"
     },
-    "gnome-language-selector": {
+    "gnome-language-selector -n": {
         "title": "Set up languages", "owner": "system", "icon": "config-language"
     },
     "gksu tuquito-update": {
@@ -17,7 +17,7 @@
     "lxtask": {
         "title": "Status computer", "owner": "system", "icon": "utilities-system-monitor"
     },
-    "gksu /usr/lib/tuquito/garfio/garfio.py -D 'Garfio'": {
+    "gksu garfio --gui": {
         "title": "Make a backup", "owner": "system", "icon": "/usr/lib/tuquito/garfio/logo.png"
     },
     "gnome-system-log": {
@@ -25,5 +25,8 @@
     },
     "seahorse": {
         "title": "Set passwords and encryption keys", "owner": "system", "icon": "seahorse"
+    },
+    "update-manager": {
+        "title": "Update Manager", "owner": "system", "icon": "update-manager"
     }
 }

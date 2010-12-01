@@ -5,6 +5,9 @@
     "lxappearance": {
         "title": "Change the background and theme", "owner": "system", "icon": "preferences-desktop-theme"
     },
+    "pcmanfm --desktop-pref": {
+        "title": "Change the background", "owner": "system", "icon": "preferences-desktop-wallpaper"
+    },
     "obconf": {
         "title": "Configure Openbox", "owner": "system", "icon": "preferences-desktop-theme"
     },

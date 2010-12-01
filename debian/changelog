@@ -1,3 +1,22 @@
+tuquito-control-center (0.3) maverick; urgency=low
+
+  * new modes: Normal, Advanced
+  * new effects swtich
+  * new section: Options
+  * more applications
+  * better support for LXDE
+  * css optimized
+  * javascript optimized
+  * new interfaces
+
+ -- Mario Colque <mario@tuquito.org.ar>  Wed, 01 Dec 2010 20:33:44 -0300
+
+tuquito-control-center (0.2-17-testing) maverick; urgency=low
+
+  * new interfaces for lubuntu
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 26 Nov 2010 19:27:01 -0300
+
 tuquito-control-center (0.2-15) maverick; urgency=low
 
   * fixed translations
