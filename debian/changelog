@@ -1,3 +1,9 @@
+tuquito-control-center (0.3-4) maverick; urgency=low
+
+  * fixed css
+
+ -- Mario Colque <mario@tuquito.org.ar>  Thu, 02 Dec 2010 11:07:58 -0300
+
 tuquito-control-center (0.3-3) maverick; urgency=low
 
   * new version
