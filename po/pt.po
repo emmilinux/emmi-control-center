@@ -234,7 +234,7 @@ msgstr "Ícone do arquivo:"
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:253
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:373
 msgid "Options icon"
-msgstr "Icone opções"
+msgstr "Ícone opções"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:279
 #, python-format
