@@ -1,3 +1,9 @@
+tuquito-control-center (0.3-1) maverick; urgency=low
+
+  * new translations
+
+ -- Mario Colque <mario@tuquito.org.ar>  Wed, 01 Dec 2010 22:38:36 -0300
+
 tuquito-control-center (0.3) maverick; urgency=low
 
   * new modes: Normal, Advanced

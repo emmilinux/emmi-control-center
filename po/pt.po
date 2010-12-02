@@ -154,7 +154,7 @@ msgstr "Adicionar ou remover usuários"
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:115
 #: translations.py:19
 msgid "Set up Parental Control"
-msgstr "Configurar Filtros de Conteúdo do Tuquito"
+msgstr "Configurar Filtros de Conteúdo"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:117
 #: translations.py:31
@@ -391,7 +391,7 @@ msgstr "Configurar Openbox"
 
 #: translations.py:39
 msgid "Remote Desktop"
-msgstr "Remote Deskto"
+msgstr ""
 
 #: translations.py:40
 msgid "Edit software sources"
@@ -407,7 +407,7 @@ msgstr "Gerenciador de energia"
 
 #: translations.py:43
 msgid "Update Manager"
-msgstr "Gestor de Actualizações"
+msgstr "Gestor de Atualizações"
 
 #: translations.py:44
 msgid "Configure joystick"
