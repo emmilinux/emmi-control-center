@@ -1,3 +1,16 @@
+tuquito-control-center (0.3-7) natty; urgency=low
+
+  * several improvements
+  * performance improvements
+  * added deja-dup
+  * added ubuntuone
+  * added gnoome-about-me
+  * added gnome-lirc-properties
+  * software-center icon fixed
+  * better html5 and css3
+
+ -- Mario Colque <mario@tuquito.org.ar>  Sun, 07 Aug 2011 15:14:37 -0300
+
 tuquito-control-center (0.3-6) natty; urgency=low
 
   * Pampa branch

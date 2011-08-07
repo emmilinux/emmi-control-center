@@ -3,7 +3,7 @@
         "title": "Add/Remove programs", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-software-manager/logo.svg"
     },
     "software-center": {
-        "title": "Add/Remove programs", "owner": "system", "icon": "software-center"
+        "title": "Add/Remove programs", "owner": "system", "icon": "softwarecenter"
     },
     "gksu synaptic": {
         "title": "Add/Remove programs with Synaptic", "owner": "system", "icon": "synaptic"

@@ -22,5 +22,8 @@
     },
     "vino-preferences": {
         "title": "Remote Desktop", "owner": "system", "icon": "preferences-desktop-remote-desktop"
+    },
+    "ubuntuone-control-panel-gtk": {
+        "title": "Ubuntu One", "owner": "system", "icon": "ubuntuone"
     }
 }

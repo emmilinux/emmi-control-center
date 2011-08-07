@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-01 20:37-0300\n"
+"POT-Creation-Date: 2011-08-07 15:11-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,7 +192,7 @@ msgid "Remove unused files"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:126
-#: translations.py:37
+#: translations.py:38
 msgid "Find and fix problems"
 msgstr ""
 
@@ -294,23 +294,19 @@ msgid ""
 "<b>Size</b>: %s"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:123
-msgid "Please wait, this can take some time"
-msgstr ""
-
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:145
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:143
 msgid "B"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:147
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:145
 msgid "KB"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:149
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:147
 msgid "MB"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:151
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:149
 msgid "GB"
 msgstr ""
 
@@ -367,57 +363,73 @@ msgid "Configure keyboard"
 msgstr ""
 
 #: translations.py:34
-msgid "Configure mouse"
+msgid "Configure keyboard and mouse"
 msgstr ""
 
 #: translations.py:35
-msgid "Sound Preferences"
+msgid "Configure mouse"
 msgstr ""
 
 #: translations.py:36
+msgid "Sound Preferences"
+msgstr ""
+
+#: translations.py:37
 msgid "Configure bluetooth"
 msgstr ""
 
-#: translations.py:38
+#: translations.py:39
 msgid "Configure Openbox"
 msgstr ""
 
-#: translations.py:39
+#: translations.py:40
 msgid "Remote Desktop"
 msgstr ""
 
-#: translations.py:40
+#: translations.py:41
 msgid "Edit software sources"
 msgstr ""
 
-#: translations.py:41
+#: translations.py:42
 msgid "Add/Remove programs with Synaptic"
 msgstr ""
 
-#: translations.py:42
+#: translations.py:43
 msgid "Power management"
 msgstr ""
 
-#: translations.py:43
+#: translations.py:44
 msgid "Update Manager"
 msgstr ""
 
-#: translations.py:44
-msgid "Configure joystick"
-msgstr ""
-
 #: translations.py:45
-msgid "Font manager"
+msgid "Backup utility"
 msgstr ""
 
 #: translations.py:46
-msgid "Change the background"
+msgid "Configure joystick"
 msgstr ""
 
 #: translations.py:47
-msgid "Proxy settings"
+msgid "Configure IR devices"
 msgstr ""
 
 #: translations.py:48
+msgid "Font manager"
+msgstr ""
+
+#: translations.py:49
+msgid "Change the background"
+msgstr ""
+
+#: translations.py:50
+msgid "Proxy settings"
+msgstr ""
+
+#: translations.py:51
 msgid "Startup Applications"
+msgstr ""
+
+#: translations.py:52
+msgid "About me"
 msgstr ""

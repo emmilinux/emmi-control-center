@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
- Tuquito Control Center 0.3-5
+ Tuquito Control Center 0.3-7
  Copyright (C) 2010
  Author: Mario Colque <mario@tuquito.org.ar>
  Tuquito Team! - www.tuquito.org.ar
@@ -12,7 +12,7 @@
  the Free Software Foundation; version 3 of the License.
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  GNU General Public License for more details.
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software
@@ -20,9 +20,9 @@
 """
 
 import gtk
+import gettext
 import os
 import commands
-import gettext
 import webkit
 import string
 import json
@@ -476,7 +476,7 @@ class ControlCenter():
                 self.has_suggestions = True
                 self.text['has_suggestions'] = ''
             if cmd != '' or owner == 'user':
-                content = "<li id='" + command + "'><a href='javascript:changeTitle(\"exec:" + command + "\")' class='item'><img src='" + icon + "' height='24'>&nbsp;&nbsp;&nbsp;&nbsp;" + _(title) + "</a>"
+                content = "<li id='" + command + "' onclick='javascript:changeTitle(\"exec:" + command + "\")' class='item' style='background-image: url(" + icon + ")'>" + _(title) + "</li>"
                 li_content.append(content)
                 self.items_cache.append(command)
         self.text['li_content'] = '\n'.join(li_content)
@@ -495,7 +495,6 @@ class ControlCenter():
             self.category = title.split(':')[1]
             self.home_file = os.path.join(home, '.tuquito/tuquito-control-center/items/' + self.category)
             self.base_file = os.path.join('/usr/lib/tuquito/tuquito-control-center/items/', self.category)
-            self.has_suggestions = False
             if os.path.isfile(self.home_file):
                 self.category_file = self.home_file
             else:
@@ -530,8 +529,7 @@ class ControlCenter():
                         self.items_cache.append(command)
                         #usage: addItem(title, command, category, icon)
                         self.browser.execute_script("addItem('%s','%s','%s','%s')" % (_(title), command, self.category, icon))
-                if cmd == '' and not self.has_suggestions and self.show_suggestions:
-                    self.has_suggestions = True
+                if cmd == '' and self.show_suggestions:
                     self.browser.execute_script("setSuggestions('" + self.category + "', 'show')")
             self.browser.execute_script("setContent('" + self.category + "')")
         elif title == 'edit-item':

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
- Centro de Control 0.3-5
+ Tuquito Control Center 0.3-7
  Copyright (C) 2010
  Author: Mario Colque <mario@tuquito.org.ar>
  Tuquito Team! - www.tuquito.org.ar
@@ -21,11 +21,11 @@
 
 import gtk
 import gettext
+import os
+import commands
 import apt
 import sys
-import os
 import json
-import commands
 import tempfile
 from subprocess import Popen, PIPE
 
@@ -85,10 +85,10 @@ class Suggestions:
             else:
                  command_search = command.split(' ')[1]
             cmd = commands.getoutput('which ' + command_search)
-            if cmd == '' and (command in self.cache):
+            if cmd == '' and (command_search in self.cache):
                 iter = self.model.insert_before(None, None)
                 self.model.set_value(iter, 0, _(title))
-                self.model.set_value(iter, 1, command)
+                self.model.set_value(iter, 1, command_search)
                 self.suggestions.append(command)
         self.treeview_items.set_model(self.model)
         del self.model
@@ -119,8 +119,6 @@ class Suggestions:
             self.window.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
             self.window.set_sensitive(False)
             cmd = ['gksu', '\'/usr/sbin/synaptic', '--hide-main-window', '--non-interactive']
-            cmd.append('--progress-str')
-            cmd.append('"' + _('Please wait, this can take some time') + '"')
             f = tempfile.NamedTemporaryFile()
             f.write('%s\tinstall\n' % command)
             cmd.append('--set-selections-file')

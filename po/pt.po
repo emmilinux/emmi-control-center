@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-control-center 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-01 20:37-0300\n"
+"POT-Creation-Date: 2011-08-07 15:11-0300\n"
 "PO-Revision-Date: 2010-07-06 13:58-0300\n"
 "Last-Translator: Carlos Felipe P. de Araújo <carlosfelipe@tuquito.org.ar>\n"
 "Language-Team: Portuguese\n"
@@ -110,7 +110,9 @@ msgstr "Use efeitos visuais (mais lento)"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:102
 msgid "If you want better performance (faster), disable visual effects."
-msgstr "Se você quiser um melhor desempenho (mais rápido), desabilite os efeitos visuais."
+msgstr ""
+"Se você quiser um melhor desempenho (mais rápido), desabilite os efeitos "
+"visuais."
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:103
 msgid "Apply"
@@ -192,7 +194,7 @@ msgid "Remove unused files"
 msgstr "Remover arquivos sem uso"
 
 #: usr/lib/tuquito/tuquito-control-center/control-center.py:126
-#: translations.py:37
+#: translations.py:38
 msgid "Find and fix problems"
 msgstr "Buscar e solucionar problemas"
 
@@ -301,23 +303,19 @@ msgstr ""
 "\n"
 "<b>Tamanho</b>: %s"
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:123
-msgid "Please wait, this can take some time"
-msgstr ""
-
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:145
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:143
 msgid "B"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:147
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:145
 msgid "KB"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:149
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:147
 msgid "MB"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-control-center/suggestions.py:151
+#: usr/lib/tuquito/tuquito-control-center/suggestions.py:149
 msgid "GB"
 msgstr ""
 
@@ -374,57 +372,73 @@ msgid "Configure keyboard"
 msgstr "Configurar teclado"
 
 #: translations.py:34
+msgid "Configure keyboard and mouse"
+msgstr "Configurar teclado e mouse"
+
+#: translations.py:35
 msgid "Configure mouse"
 msgstr "Configurar mouse"
 
-#: translations.py:35
+#: translations.py:36
 msgid "Sound Preferences"
 msgstr "Preferências de som"
 
-#: translations.py:36
+#: translations.py:37
 msgid "Configure bluetooth"
 msgstr "Configurar bluetooth"
 
-#: translations.py:38
+#: translations.py:39
 msgid "Configure Openbox"
 msgstr "Configurar Openbox"
 
-#: translations.py:39
+#: translations.py:40
 msgid "Remote Desktop"
 msgstr ""
 
-#: translations.py:40
+#: translations.py:41
 msgid "Edit software sources"
 msgstr "Edite as fontes de software"
 
-#: translations.py:41
+#: translations.py:42
 msgid "Add/Remove programs with Synaptic"
 msgstr "Adicionar ou remover programas com o Synaptic"
 
-#: translations.py:42
+#: translations.py:43
 msgid "Power management"
 msgstr "Gerenciador de energia"
 
-#: translations.py:43
+#: translations.py:44
 msgid "Update Manager"
 msgstr "Gestor de Atualizações"
 
-#: translations.py:44
+#: translations.py:45
+msgid "Backup utility"
+msgstr "Ferramenta de backup"
+
+#: translations.py:46
 msgid "Configure joystick"
 msgstr "Configurar joystick"
 
-#: translations.py:45
+#: translations.py:47
+msgid "Configure IR devices"
+msgstr "Configurar dispositivos IR"
+
+#: translations.py:48
 msgid "Font manager"
 msgstr "Gerenciador de fontes"
 
-#: translations.py:46
+#: translations.py:49
 msgid "Change the background"
 msgstr "Mude o papel de parede"
 
-#: translations.py:47
+#: translations.py:50
 msgid "Proxy settings"
 msgstr "Configurações de proxy"
 
-#: translations.py:48
+#: translations.py:51
 msgid "Startup Applications"
 msgstr "Aplicativos de inicialização"
+
+#: translations.py:52
+msgid "About me"
+msgstr "Sobre mim"

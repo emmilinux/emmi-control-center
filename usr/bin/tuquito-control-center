@@ -1,6 +1,2 @@
 #!/bin/sh
-if [ "$1" = "fast" ]; then
-    /usr/lib/tuquito/tuquito-control-center/control-center2.py
-else
-    /usr/lib/tuquito/tuquito-control-center/control-center.py
-fi
+/usr/lib/tuquito/tuquito-control-center/control-center.py &

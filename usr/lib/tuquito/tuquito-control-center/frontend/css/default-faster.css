@@ -1,4 +1,7 @@
-* { -user-drag: none }
+* {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
 
 html, body {
     margin: 0;
@@ -9,14 +12,14 @@ html {
     font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
     font-size: 14px;
     color: #64676A;
-    background: #fff url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
+    background: white url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
 }
 
 body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat; }
 
 .hidden { display: none; }
 
-.bold {
+.btn div > p {
     font-size: 20px;
     margin: 5px 0 10px 0;
     color: #688200;
@@ -28,9 +31,13 @@ h2 {
 }
 
 a {
-    color: #294f88;
+    color: #294F88;
+    outline: 0;
     text-decoration: none;
+    cursor: pointer;
 }
+
+a:hover { text-decoration: underline; }
 
 ul { list-style-type: none; }
 
@@ -73,19 +80,19 @@ ul { list-style-type: none; }
 }
 
 /* Container */
-#container { border-top: 1px solid rgba(255,255,255,0); }
+#container { border-top: 1px solid white; }
 
 #side {
-    background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/nav.png) repeat-x;
-    border-right: 1px dotted;
-    width: 190px;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#6FA1D5),to(#3E73AE));
+    border-right: 1px solid #3E73AE;
+    width: 0;
     float: left;
     height: 519px;
     text-shadow: #2D4B69 1px 1px 0px;
 }
 
 #side li {
-    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid transparent;
     width: 190px;
     float: left;
     padding: 0 10px 0 0;
@@ -95,7 +102,7 @@ ul { list-style-type: none; }
     background-color: #243B51;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: #FFF;
+    color: white;
 }
 
 #side li a {
@@ -103,7 +110,12 @@ ul { list-style-type: none; }
     float: left;
     width: 150px;
     background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/arrow-right2.gif) right 15px no-repeat;
-    color: #FFF;
+    color: white;
+}
+
+#side li:hover a {
+    padding-right: 32px;
+    text-decoration: none;
 }
 
 .side_menu {
@@ -130,20 +142,20 @@ ul { list-style-type: none; }
 }
 
 #ajax li {
-    width: 350px;
-    float: left;
-    padding: 0;
-
+    width: 300px;
+    height: 32px;
+    display: block;
+    cursor: pointer;
+    padding-left: 32px;
+    line-height: 32px;
+    border: 1px solid transparent;
+    margin-bottom: 4px;
+    background-position: 4px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
 }
 
-#ajax li a {
-    padding: 8px 20px 8px 10px;
-    width: 350px;
-    float: left;
-}
-
-#ajax li a:hover {
-    padding: 7px 19px 7px 9px;
+#ajax li:hover {
     color: #2D4B69;
     text-shadow: #EEE 1px 1px 0px;
 }
@@ -152,4 +164,21 @@ footer {
     position: absolute;
     bottom: 10px;
     font-size: 13px;
+    padding-left: 10px;
+}
+
+.button {
+    color: #333;
+    background: #EFEFEF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#DFDFDF));
+    -webkit-box-shadow: 0 1px 2px #888;
+    padding: 4px 10px;
+    border: 1px solid #E4E4E4;
+    -webkit-border-radius: 2px;
+}
+
+.button:hover {
+    text-decoration: none;
+    border-color: #CCC;
+    -webkit-box-shadow: 0 1px 2px #666;
 }

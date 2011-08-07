@@ -8,6 +8,9 @@
     "gdmsetup": {
         "title": "Set up startup screen", "owner": "system", "icon": "gdmsetup"
     },
+    "gnome-about-me": {
+        "title": "About me", "owner": "system", "icon": "user-info"
+    },
     "gnome-appearance-properties": {
         "title": "Change the background and theme", "owner": "system", "icon": "preferences-desktop-theme"
     },
@@ -62,11 +65,14 @@
     "vino-preferences": {
         "title": "Remote Desktop", "owner": "system", "icon": "preferences-desktop-remote-desktop"
     },
+    "ubuntuone-control-panel-gtk": {
+        "title": "Ubuntu One", "owner": "system", "icon": "ubuntuone"
+    },
     "tuquito-software-manager": {
         "title": "Add/Remove programs", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-software-manager/logo.svg"
     },
     "software-center": {
-        "title": "Add/Remove programs", "owner": "system", "icon": "software-center"
+        "title": "Add/Remove programs", "owner": "system", "icon": "softwarecenter"
     },
     "gksu synaptic": {
         "title": "Add/Remove programs with Synaptic", "owner": "system", "icon": "synaptic"
@@ -119,6 +125,9 @@
     "update-manager": {
         "title": "Update Manager", "owner": "system", "icon": "update-manager"
     },
+    "deja-dup": {
+        "title": "Backup utility", "owner": "system", "icon": "deja-dup"
+    },
     "hardinfo": {
         "title": "System information", "owner": "system", "icon": "hardinfo"
     },
@@ -160,5 +169,8 @@
     },
     "jstest-gtk": {
         "title": "Configure joystick", "owner": "system", "icon": "joystick"
+    },
+    "gnome-lirc-properties": {
+        "title": "Configure IR devices", "owner": "system", "icon": "gnome-lirc-properties"
     }
 }

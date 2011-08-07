@@ -28,5 +28,8 @@
     },
     "update-manager": {
         "title": "Update Manager", "owner": "system", "icon": "update-manager"
+    },
+    "deja-dup": {
+        "title": "Backup utility", "owner": "system", "icon": "deja-dup"
     }
 }

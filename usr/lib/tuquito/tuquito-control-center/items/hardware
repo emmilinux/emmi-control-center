@@ -14,19 +14,16 @@
     "jockey-gtk": {
         "title": "Install drivers", "owner": "system", "icon": "jockey"
     },
-    "gksu /usr/sbin/ndisgtk": {
+    "gksu ndisgtk": {
         "title": "Wireless network drivers", "owner": "system", "icon": "ndisgtk"
     },
     "gnome-keyboard-properties": {
         "title": "Configure keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
     },
     "lxinput": {
-        "title": "Configure keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+        "title": "Configure keyboard and mouse", "owner": "system", "icon": "preferences-desktop-keyboard"
     },
     "gnome-mouse-properties": {
-        "title": "Configure mouse", "owner": "system", "icon": "input-mouse"
-    },
-    "lxinput": {
         "title": "Configure mouse", "owner": "system", "icon": "input-mouse"
     },
     "gnome-volume-control": {
@@ -40,5 +37,8 @@
     },
     "jstest-gtk": {
         "title": "Configure joystick", "owner": "system", "icon": "joystick"
+    },
+    "gnome-lirc-properties": {
+        "title": "Configure IR devices", "owner": "system", "icon": "gnome-lirc-properties"
     }
 }
