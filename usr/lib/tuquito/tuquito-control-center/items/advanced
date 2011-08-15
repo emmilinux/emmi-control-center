@@ -107,7 +107,7 @@
     "lxtask": {
         "title": "Status computer", "owner": "system", "icon": "utilities-system-monitor"
     },
-    "gksu /usr/lib/tuquito/garfio/garfio.py -D 'Garfio'": {
+    "garfio": {
         "title": "Make a backup", "owner": "system", "icon": "/usr/lib/tuquito/garfio/logo.png"
     },
     "gnome-system-log": {

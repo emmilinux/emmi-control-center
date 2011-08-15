@@ -1,3 +1,9 @@
+tuquito-control-center (0.3-9) natty; urgency=low
+
+  * new garfio name
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 15 Aug 2011 16:38:54 -0300
+
 tuquito-control-center (0.3-8) natty; urgency=low
 
   * garfio integration fixed
