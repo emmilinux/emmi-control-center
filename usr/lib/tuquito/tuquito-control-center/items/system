@@ -17,7 +17,7 @@
     "lxtask": {
         "title": "Status computer", "owner": "system", "icon": "utilities-system-monitor"
     },
-    "gksu garfio --gui": {
+    "gksu garfio-gui": {
         "title": "Make a backup", "owner": "system", "icon": "/usr/lib/tuquito/garfio/logo.png"
     },
     "gnome-system-log": {

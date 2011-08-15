@@ -397,7 +397,7 @@ msgstr ""
 
 #: translations.py:41
 msgid "Edit software sources"
-msgstr "Edite as fontes de software"
+msgstr "Editar as fontes de software"
 
 #: translations.py:42
 msgid "Add/Remove programs with Synaptic"
