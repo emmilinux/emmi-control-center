@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-07 15:11-0300\n"
+"POT-Creation-Date: 2012-05-24 12:57-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -432,4 +432,64 @@ msgstr ""
 
 #: translations.py:52
 msgid "About me"
+msgstr ""
+
+#: translations.py:54
+msgid "Displays"
+msgstr ""
+
+#: translations.py:55
+msgid "Cinnamon Settings"
+msgstr ""
+
+#: translations.py:56
+msgid "Network"
+msgstr ""
+
+#: translations.py:57
+msgid "Universal Access"
+msgstr ""
+
+#: translations.py:58
+msgid "Power"
+msgstr ""
+
+#: translations.py:59
+msgid "Privacy"
+msgstr ""
+
+#: translations.py:60
+msgid "Power Statics"
+msgstr ""
+
+#: translations.py:61
+msgid "Details"
+msgstr ""
+
+#: translations.py:62
+msgid "Brightness and Lock"
+msgstr ""
+
+#: translations.py:63
+msgid "Keyboard"
+msgstr ""
+
+#: translations.py:64
+msgid "Change printer settings"
+msgstr ""
+
+#: translations.py:65
+msgid "Sound"
+msgstr ""
+
+#: translations.py:66
+msgid "Wacom Graphics Tablet"
+msgstr ""
+
+#: translations.py:67
+msgid "Mouse and Touchpad"
+msgstr ""
+
+#: translations.py:68
+msgid "Keyboard Layout"
 msgstr ""

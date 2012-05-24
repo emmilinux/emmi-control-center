@@ -172,5 +172,69 @@
     },
     "gnome-lirc-properties": {
         "title": "Configure IR devices", "owner": "system", "icon": "gnome-lirc-properties"
+    },
+
+    "cinnamon-settings": {
+        "title": "Cinnamon Settings", "owner": "system", "icon": "preferences-system"
+    },
+    "gnome-control-center background": {
+        "title": "Appearance", "owner": "system", "icon": "preferences-desktop-wallpaper"
+    },
+    "gnome-control-center display": {
+        "title": "Displays", "owner": "system", "icon": "preferences-desktop-display"
+    },
+    "gnome-control-center printers": {
+        "title": "Change printer settings", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center wacom": {
+        "title": "Wacom Graphics Tablet", "owner": "system", "icon": "input-tablet"
+    },
+    "gnome-control-center mouse": {
+        "title": "Mouse and Touchpad", "owner": "system", "icon": "input-mouse"
+    },
+    "gnome-control-center keyboard": {
+        "title": "Keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "hp-toolbox": {
+        "title": "HPLIP Toolbox", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center bluetooth": {
+        "title": "Bluetooth", "owner": "system", "icon": "bluetooth"
+    },
+    "gnome-control-center sound": {
+        "title": "Sound", "owner": "system", "icon": "multimedia-volume-control"
+    },
+    "gnome-control-center color": {
+        "title": "Color", "owner": "system", "icon": "preferences-color"
+    },
+    "gnome-control-center region": {
+        "title": "Keyboard Layout", "owner": "system", "icon": "key_bindings"
+    },
+    "gnome-control-center power": {
+        "title": "Power", "owner": "system", "icon": "gnome-power-manager"
+    },
+    "gnome-control-center datetime": {
+        "title": "Set date and time", "owner": "system", "icon": "preferences-system-time"
+    },
+    "gnome-control-center screen": {
+        "title": "Brightness and Lock", "owner": "system", "icon": "system-lock-screen"
+    },
+    "gnome-control-center info": {
+        "title": "Details", "owner": "system", "icon": "applications-system"
+    },
+    "gnome-control-center activity-log-manager": {
+        "title": "Privacy", "owner": "system", "icon": "activity-log-manager"
+    },
+    "gnome-power-statistics": {
+        "title": "Power Statistics", "owner": "system", "icon": "gnome-power-statistics"
+    },
+    "gnome-control-center universal-access": {
+        "title": "Universal Access", "owner": "system", "icon": "preferences-desktop-accessibility"
+    },
+    "gnome-control-center network": {
+        "title": "Network", "owner": "system", "icon": "network-workgroup"
+    },
+    "gnome-control-center user-accounts": {
+        "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
     }
 }

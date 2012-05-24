@@ -2,7 +2,7 @@
     "time-admin": {
         "title": "Set date and time", "owner": "system", "icon": "time-admin"
     },
-    "gnome-language-selector -n": {
+    "gnome-language-selector": {
         "title": "Set up languages", "owner": "system", "icon": "config-language"
     },
     "gksu tuquito-update": {
@@ -29,7 +29,29 @@
     "update-manager": {
         "title": "Update Manager", "owner": "system", "icon": "update-manager"
     },
-    "deja-dup": {
+    "deja-dup-preferences": {
         "title": "Backup utility", "owner": "system", "icon": "deja-dup"
+    },
+
+    "gnome-control-center power": {
+        "title": "Power", "owner": "system", "icon": "gnome-power-manager"
+    },
+    "gnome-control-center datetime": {
+        "title": "Set date and time", "owner": "system", "icon": "preferences-system-time"
+    },
+    "gnome-control-center screen": {
+        "title": "Brightness and Lock", "owner": "system", "icon": "system-lock-screen"
+    },
+    "gnome-control-center info": {
+        "title": "Details", "owner": "system", "icon": "applications-system"
+    },
+    "gnome-control-center activity-log-manager": {
+        "title": "Privacy", "owner": "system", "icon": "activity-log-manager"
+    },
+    "gnome-power-statistics": {
+        "title": "Power Statistics", "owner": "system", "icon": "gnome-power-statistics"
+    },
+    "gnome-control-center universal-access": {
+        "title": "Universal Access", "owner": "system", "icon": "preferences-desktop-accessibility"
     }
 }

@@ -10,5 +10,9 @@
     },
     "gnome-about-me": {
         "title": "About me", "owner": "system", "icon": "user-info"
+    },
+
+    "gnome-control-center user-accounts": {
+        "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
     }
 }

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-control-center 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-07 15:11-0300\n"
+"POT-Creation-Date: 2012-05-24 12:57-0300\n"
 "PO-Revision-Date: 2010-07-06 13:58-0300\n"
 "Last-Translator: Carlos Felipe P. de Araújo <carlosfelipe@tuquito.org.ar>\n"
 "Language-Team: Portuguese\n"
@@ -442,3 +442,65 @@ msgstr "Aplicativos de inicialização"
 #: translations.py:52
 msgid "About me"
 msgstr "Sobre mim"
+
+#: translations.py:54
+msgid "Displays"
+msgstr ""
+
+#: translations.py:55
+#, fuzzy
+msgid "Cinnamon Settings"
+msgstr "Configurações de proxy"
+
+#: translations.py:56
+#, fuzzy
+msgid "Network"
+msgstr "Ferramentas de rede"
+
+#: translations.py:57
+msgid "Universal Access"
+msgstr ""
+
+#: translations.py:58
+msgid "Power"
+msgstr ""
+
+#: translations.py:59
+msgid "Privacy"
+msgstr ""
+
+#: translations.py:60
+msgid "Power Statics"
+msgstr ""
+
+#: translations.py:61
+msgid "Details"
+msgstr ""
+
+#: translations.py:62
+msgid "Brightness and Lock"
+msgstr ""
+
+#: translations.py:63
+msgid "Keyboard"
+msgstr ""
+
+#: translations.py:64
+msgid "Change printer settings"
+msgstr ""
+
+#: translations.py:65
+msgid "Sound"
+msgstr ""
+
+#: translations.py:66
+msgid "Wacom Graphics Tablet"
+msgstr ""
+
+#: translations.py:67
+msgid "Mouse and Touchpad"
+msgstr ""
+
+#: translations.py:68
+msgid "Keyboard Layout"
+msgstr ""

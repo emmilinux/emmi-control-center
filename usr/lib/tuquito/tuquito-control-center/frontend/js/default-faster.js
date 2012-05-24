@@ -10,15 +10,15 @@ function changeCategory(category) {
         cat = category;
         document.title = 'category:' + category;
         document.title = 'nop';
-        if (!side) {
-            side = true;
-            document.getElementById('side').style.width = '190px';
-        }
         setContent(category);
     }
 }
 
 function setContent(category) {
+    if (!side) {
+        side = true;
+        document.getElementById('side').style.width = '190px';
+    }
     ajax = document.getElementById('ajax');
     ajax.innerHTML = document.getElementById(category + '_html').innerHTML;
     ajax.style.display = 'block';

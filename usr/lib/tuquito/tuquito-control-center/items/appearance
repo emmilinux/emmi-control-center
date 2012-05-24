@@ -28,5 +28,15 @@
     },
     "font-manager": {
         "title": "Font Manager", "owner": "system", "icon": "preferences-desktop-font"
+    },
+
+    "cinnamon-settings": {
+        "title": "Cinnamon Settings", "owner": "system", "icon": "preferences-system"
+    },
+    "gnome-control-center background": {
+        "title": "Appearance", "owner": "system", "icon": "preferences-desktop-wallpaper"
+    },
+    "gnome-control-center display": {
+        "title": "Displays", "owner": "system", "icon": "preferences-desktop-display"
     }
 }

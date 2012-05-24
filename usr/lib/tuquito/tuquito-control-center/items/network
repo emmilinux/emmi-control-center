@@ -25,5 +25,9 @@
     },
     "ubuntuone-control-panel-gtk": {
         "title": "Ubuntu One", "owner": "system", "icon": "ubuntuone"
+    },
+
+    "gnome-control-center network": {
+        "title": "Network", "owner": "system", "icon": "network-workgroup"
     }
 }

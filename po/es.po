@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-control-center 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-07 15:11-0300\n"
+"POT-Creation-Date: 2012-05-24 12:57-0300\n"
 "PO-Revision-Date: 2010-07-06 13:38-0300\n"
 "Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
 "Language-Team: Spanish\n"
@@ -441,6 +441,66 @@ msgstr "Aplicaciones al inicio"
 #: translations.py:52
 msgid "About me"
 msgstr "Acerca de mi"
+
+#: translations.py:54
+msgid "Displays"
+msgstr "Monitores"
+
+#: translations.py:55
+msgid "Cinnamon Settings"
+msgstr "Preferencias de Cinnamon"
+
+#: translations.py:56
+msgid "Network"
+msgstr "Red"
+
+#: translations.py:57
+msgid "Universal Access"
+msgstr "Acceso Universal"
+
+#: translations.py:58
+msgid "Power"
+msgstr "Energía"
+
+#: translations.py:59
+msgid "Privacy"
+msgstr "Privacidad"
+
+#: translations.py:60
+msgid "Power Statics"
+msgstr "Estadísticas de energía"
+
+#: translations.py:61
+msgid "Details"
+msgstr "Detalles"
+
+#: translations.py:62
+msgid "Brightness and Lock"
+msgstr "Brillo y bloqueo"
+
+#: translations.py:63
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: translations.py:64
+msgid "Change printer settings"
+msgstr "Impresoras"
+
+#: translations.py:65
+msgid "Sound"
+msgstr "Sonido"
+
+#: translations.py:66
+msgid "Wacom Graphics Tablet"
+msgstr "Tableta gráfica Wacom"
+
+#: translations.py:67
+msgid "Mouse and Touchpad"
+msgstr "Ratón y touchpad"
+
+#: translations.py:68
+msgid "Keyboard Layout"
+msgstr "Distribución del teclado"
 
 #~ msgid "Please wait, this can take some time"
 #~ msgstr "Por favor, espere, esto puede tomar un tiempo"

@@ -1,184 +1,155 @@
 * {
-    -webkit-user-select: none;
     -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
-
 html, body {
     margin: 0;
     padding: 0;
 }
-
 html {
-    font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
-    font-size: 14px;
     color: #64676A;
-    background: white url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    background: #FFF url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
 }
-
-body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat; }
-
-.hidden { display: none; }
-
+body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat }
+.hidden { display: none }
 .btn div > p {
+    color: #688200;
     font-size: 20px;
     margin: 5px 0 10px 0;
-    color: #688200;
 }
-
 h2 {
-    text-shadow: white 1px 1px 0px;
     color: #4B4B4B;
+    text-shadow: #FFF 1px 1px 0;
 }
-
 a {
     color: #294F88;
+    cursor: pointer;
     outline: 0;
     text-decoration: none;
-    cursor: pointer;
 }
-
-a:hover { text-decoration: underline; }
-
-ul { list-style-type: none; }
-
+a:hover { text-decoration: underline }
+ul { list-style-type: none }
 .logo-back {
-    position: absolute;
     bottom: 10px;
+    opacity: .6;
+    position: absolute;
     right: 40px;
-    opacity: 0.6;
     width: 155px;
 }
-
 /* Main Menu */
 #main {
     color: #4B4B4B;
-    text-shadow: white 1px 1px 0px;
     margin: 0;
     padding-top: 50px;
+    text-shadow: #FFF 1px 1px 0;
 }
-
 .main_menu {
-    width: 744px;
-    height: 450px;
     margin: 0 auto 0 auto;
+    height: 450px;
+    width: 744px;
 }
-
 .main_menu li {
-    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid transparent;
+    cursor: pointer;
     display: block;
-    width: 350px;
+    float: left;
     height: 120px;
     margin: 10px;
-    float: left;
-    cursor: pointer;
+    width: 350px;
 }
-
 .main_menu img {
+    float: left;
     margin: 10px;
     padding: 12px;
-    float: left;
 }
-
 /* Container */
-#container { border-top: 1px solid white; }
-
+#container { border-top: 1px solid #FFF }
 #side {
     background: -webkit-gradient(linear,0 0,0 100%,from(#6FA1D5),to(#3E73AE));
     border-right: 1px solid #3E73AE;
-    width: 0;
     float: left;
     height: 519px;
-    text-shadow: #2D4B69 1px 1px 0px;
+    text-shadow: #2D4B69 1px 1px 0;
+    width: 0;
 }
-
 #side li {
     border: 1px solid transparent;
-    width: 190px;
     float: left;
     padding: 0 10px 0 0;
+    width: 190px;
 }
-
 #side li:hover {
     background-color: #243B51;
-    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: white;
+    border-top-right-radius: 5px;
+    color: #FFF;
 }
-
 #side li a {
-    padding: 8px 20px 8px 10px;
+    background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/arrow-right2.gif) right center no-repeat;
+    color: #FFF;
     float: left;
+    padding: 8px 20px 8px 10px;
     width: 150px;
-    background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/arrow-right2.gif) right 15px no-repeat;
-    color: white;
 }
-
 #side li:hover a {
     padding-right: 32px;
     text-decoration: none;
 }
-
 .side_menu {
     margin: 0;
     padding: 0;
 }
-
 #ajax {
     display: block;
-    margin-left: 190px;
-    display: block;
     height: 500px;
+    margin-left: 190px;
     padding: 0 20px;
 }
-
 #ajax ul {
-    list-style-type: none;
     float: left;
+    height: 400px;
+    list-style-type: none;
     margin: 20px 10px 30px 0;
+    overflow: auto;
     padding: 0 10px 0 20px;
     width: 630px;
-    height: 400px;
-    overflow: auto;
 }
-
 #ajax li {
-    width: 300px;
-    height: 32px;
-    display: block;
-    cursor: pointer;
-    padding-left: 32px;
-    line-height: 32px;
-    border: 1px solid transparent;
-    margin-bottom: 4px;
     background-position: 4px center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 32px;
+    margin-bottom: 4px;
+    width: 300px;
 }
-
 #ajax li:hover {
     color: #2D4B69;
-    text-shadow: #EEE 1px 1px 0px;
+    text-shadow: #EEE 1px 1px 0;
 }
-
 footer {
-    position: absolute;
     bottom: 10px;
     font-size: 13px;
     padding-left: 10px;
+    position: absolute;
 }
-
 .button {
-    color: #333;
     background: #EFEFEF;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#DFDFDF));
-    -webkit-box-shadow: 0 1px 2px #888;
-    padding: 4px 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DFDFDF));
     border: 1px solid #E4E4E4;
-    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #888;
+    color: #333;
+    padding: 4px 10px;
 }
-
 .button:hover {
-    text-decoration: none;
     border-color: #CCC;
-    -webkit-box-shadow: 0 1px 2px #666;
+    box-shadow: 0 1px 2px #666;
+    text-decoration: none;
 }

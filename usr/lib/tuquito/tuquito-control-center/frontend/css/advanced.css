@@ -1,117 +1,98 @@
 * {
-    -webkit-user-select: none;
     -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
-
 html, body {
     margin: 0;
     padding: 0;
 }
-
 html {
-    font-family: "Ubuntu", Trebuchet MS, Verdana, Arial,"Lucida Grande","Bitstream Vera Sans",sans-serif;
-    font-size: 14px;
+    background: #FFF url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
     color: #64676A;
-    background: white url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
 }
-
-body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat; }
-
-.hidden { display: none; }
-
+body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat }
+.hidden { display: none }
 ::-webkit-scrollbar {
+    border-radius: 1ex;
     width: 10px;
-    -webkit-border-radius: 1ex;
 }
-
 ::-webkit-scrollbar-thumb {
-    border-top: 1px solid white;
-    background: #6FA1D5 -webkit-gradient(linear,0% 0%, 0% 100%, from(rgba(250, 250, 250, 0.1)), to(rgba(180, 180, 180, 0.1)));
-    -webkit-border-radius: 1ex;
+    background: #6FA1D5 -webkit-gradient(linear,0% 0%, 0% 100%, from(rgba(250,250,250,.1)), to(rgba(180,180,180,.1)));
     border: 1px solid #3E73AE;
+    border-radius: 1ex;
+    border-top: 1px solid #FFF;
     margin-right: 10px;
 }
-
 a {
     color: #294f88;
+    cursor: pointer;
     outline: 0;
     text-decoration: none;
-    cursor: pointer;
 }
-
-a:hover { text-decoration: underline; }
-
-ul { list-style-type: none; }
-
+a:hover { text-decoration: underline }
+ul { list-style-type: none }
 .logo-back {
-    position: absolute;
     bottom: 10px;
+    opacity: .6;
+    position: absolute;
     right: 40px;
-    opacity: 0.6;
     width: 155px;
 }
-
 /* Container */
-#container { border-top: 1px solid transparent; }
-
+#container { border-top: 1px solid transparent }
 #advanced_ul {
-    padding: 0 10px;
-    margin-right: 10px;
-    display: block;
     height: 460px;
-    overflow: auto;
-}
-
-.item {
     display: block;
-    cursor: pointer;
-    border: 1px solid transparent;
-    margin-bottom: 4px;
-    margin-left: 45px;
-    width: 310px;
-    float: left;
-    padding-left: 32px;
-    height: 32px;
-    line-height: 32px;
+    margin-right: 10px;
+    overflow: auto;
+    padding: 0 10px;
+}
+.item {
     background-position: 4px center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
-    -webkit-border-radius: 3px;
-    -webkit-transition: all 0.20s ease;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 4px;
+    margin-left: 45px;
+    padding-left: 32px;
+    width: 310px;
+    -webkit-transition: all .20s ease;
 }
-
 .item:hover {
-    background-color: rgba(247, 247, 247, 0.6);
+    background-color: rgba(247,247,247,.6);
     border-color: #BBB;
 }
-
-#options_html { padding-left: 30px; }
-
+#options_html { padding-left: 30px }
 footer {
-    position: absolute;
     bottom: 10px;
     font-size: 13px;
+    position: absolute;
     padding-left: 10px;
 }
-
 .red {
     background-color: #CF5050;
     border: 1px solid #B10C0C;
-    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
-
 .button {
-    color: #333;
     background: #EFEFEF;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#DFDFDF));
-    -webkit-box-shadow: 0 1px 2px #888;
-    padding: 4px 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DFDFDF));
     border: 1px solid #E4E4E4;
-    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #888;
+    color: #333;
+    padding: 4px 10px;
 }
-
 .button:hover {
-    text-decoration: none;
     border-color: #CCC;
-    -webkit-box-shadow: 0 1px 2px #666;
+    box-shadow: 0 1px 2px #666;
+    text-decoration: none;
 }

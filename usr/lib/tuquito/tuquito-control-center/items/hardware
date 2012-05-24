@@ -40,5 +40,33 @@
     },
     "gnome-lirc-properties": {
         "title": "Configure IR devices", "owner": "system", "icon": "gnome-lirc-properties"
+    },
+
+    "gnome-control-center printers": {
+        "title": "Change printer settings", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center wacom": {
+        "title": "Wacom Graphics Tablet", "owner": "system", "icon": "input-tablet"
+    },
+    "gnome-control-center mouse": {
+        "title": "Mouse and Touchpad", "owner": "system", "icon": "input-mouse"
+    },
+    "gnome-control-center keyboard": {
+        "title": "Keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "hp-toolbox": {
+        "title": "HPLIP Toolbox", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center bluetooth": {
+        "title": "Bluetooth", "owner": "system", "icon": "bluetooth"
+    },
+    "gnome-control-center sound": {
+        "title": "Sound", "owner": "system", "icon": "multimedia-volume-control"
+    },
+    "gnome-control-center color": {
+        "title": "Color", "owner": "system", "icon": "preferences-color"
+    },
+    "gnome-control-center region": {
+        "title": "Keyboard Layout", "owner": "system", "icon": "key_bindings"
     }
 }
