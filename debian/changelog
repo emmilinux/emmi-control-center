@@ -1,3 +1,9 @@
+tuquito-control-center (0.3-11) precise; urgency=low
+
+  * Translations pt_BR
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 28 May 2012 12:56:37 -0300
+
 tuquito-control-center (0.3-10) precise; urgency=low
 
   * Guarani branch

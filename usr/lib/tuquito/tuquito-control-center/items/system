@@ -49,7 +49,7 @@
         "title": "Privacy", "owner": "system", "icon": "activity-log-manager"
     },
     "gnome-power-statistics": {
-        "title": "Power Statistics", "owner": "system", "icon": "gnome-power-statistics"
+        "title": "Power Statics", "owner": "system", "icon": "gnome-power-statistics"
     },
     "gnome-control-center universal-access": {
         "title": "Universal Access", "owner": "system", "icon": "preferences-desktop-accessibility"

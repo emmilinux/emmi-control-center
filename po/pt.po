@@ -445,62 +445,60 @@ msgstr "Sobre mim"
 
 #: translations.py:54
 msgid "Displays"
-msgstr ""
+msgstr "Monitores"
 
 #: translations.py:55
-#, fuzzy
 msgid "Cinnamon Settings"
-msgstr "Configurações de proxy"
+msgstr "Preferências de Cinnamon"
 
 #: translations.py:56
-#, fuzzy
 msgid "Network"
-msgstr "Ferramentas de rede"
+msgstr "Rede"
 
 #: translations.py:57
 msgid "Universal Access"
-msgstr ""
+msgstr "Acceso Universal"
 
 #: translations.py:58
 msgid "Power"
-msgstr ""
+msgstr "Energia"
 
 #: translations.py:59
 msgid "Privacy"
-msgstr ""
+msgstr "Privacidade"
 
 #: translations.py:60
 msgid "Power Statics"
-msgstr ""
+msgstr "Estatísticas de energia"
 
 #: translations.py:61
 msgid "Details"
-msgstr ""
+msgstr "Detalhes"
 
 #: translations.py:62
 msgid "Brightness and Lock"
-msgstr ""
+msgstr "Brilho e bloqueio"
 
 #: translations.py:63
 msgid "Keyboard"
-msgstr ""
+msgstr "Teclado"
 
 #: translations.py:64
 msgid "Change printer settings"
-msgstr ""
+msgstr "Impressoras"
 
 #: translations.py:65
 msgid "Sound"
-msgstr ""
+msgstr "Multimídia"
 
 #: translations.py:66
 msgid "Wacom Graphics Tablet"
-msgstr ""
+msgstr "Mesa digitalizadora Wacom"
 
 #: translations.py:67
 msgid "Mouse and Touchpad"
-msgstr ""
+msgstr "Mouse e touchpad"
 
 #: translations.py:68
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Distribuição do teclado"
