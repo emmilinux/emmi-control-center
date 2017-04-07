@@ -1,5 +1,5 @@
 #!/bin/bash
-xgettext --language=Python --keyword=_ --output=po/tuquito-control-center.pot usr/lib/tuquito/tuquito-control-center/control-center.py usr/lib/tuquito/tuquito-control-center/suggestions.py translations.py --from-code=utf-8
+xgettext --language=Python --keyword=_ --output=po/emmi-control-center.pot usr/lib/emmi/emmi-control-center/control-center.py usr/lib/emmi/emmi-control-center/suggestions.py translations.py --from-code=utf-8
 cd po
-msgmerge es.po tuquito-control-center.pot -o es.po
-msgmerge pt.po tuquito-control-center.pot -o pt.po
+msgmerge es.po emmi-control-center.pot -o es.po
+msgmerge pt.po emmi-control-center.pot -o pt.po

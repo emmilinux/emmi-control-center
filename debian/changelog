@@ -1,29 +1,29 @@
-tuquito-control-center (0.3-11) precise; urgency=low
+emmi-control-center (0.3-11) precise; urgency=low
 
   * Translations pt_BR
 
- -- Mario Colque <mario@tuquito.org.ar>  Mon, 28 May 2012 12:56:37 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Mon, 28 May 2012 12:56:37 -0300
 
-tuquito-control-center (0.3-10) precise; urgency=low
+emmi-control-center (0.3-10) precise; urgency=low
 
   * Guarani branch
   * Gnome Shell apps added
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 24 May 2012 14:22:52 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 24 May 2012 14:22:52 -0300
 
-tuquito-control-center (0.3-9) natty; urgency=low
+emmi-control-center (0.3-9) natty; urgency=low
 
   * new garfio name
 
- -- Mario Colque <mario@tuquito.org.ar>  Mon, 15 Aug 2011 16:38:54 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Mon, 15 Aug 2011 16:38:54 -0300
 
-tuquito-control-center (0.3-8) natty; urgency=low
+emmi-control-center (0.3-8) natty; urgency=low
 
   * garfio integration fixed
 
- -- Mario Colque <mario@tuquito.org.ar>  Mon, 15 Aug 2011 16:35:24 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Mon, 15 Aug 2011 16:35:24 -0300
 
-tuquito-control-center (0.3-7) natty; urgency=low
+emmi-control-center (0.3-7) natty; urgency=low
 
   * several improvements
   * performance improvements
@@ -34,45 +34,45 @@ tuquito-control-center (0.3-7) natty; urgency=low
   * software-center icon fixed
   * better html5 and css3
 
- -- Mario Colque <mario@tuquito.org.ar>  Sun, 07 Aug 2011 15:14:37 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Sun, 07 Aug 2011 15:14:37 -0300
 
-tuquito-control-center (0.3-6) natty; urgency=low
+emmi-control-center (0.3-6) natty; urgency=low
 
   * Pampa branch
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 22 Jul 2011 03:35:59 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 22 Jul 2011 03:35:59 -0300
 
-tuquito-control-center (0.3-5) maverick; urgency=low
+emmi-control-center (0.3-5) maverick; urgency=low
 
   * version 0.3-5
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 24 Dec 2010 01:44:46 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 24 Dec 2010 01:44:46 -0300
 
-tuquito-control-center (0.3-4) maverick; urgency=low
+emmi-control-center (0.3-4) maverick; urgency=low
 
   * fixed css
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 02 Dec 2010 11:07:58 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 02 Dec 2010 11:07:58 -0300
 
-tuquito-control-center (0.3-3) maverick; urgency=low
+emmi-control-center (0.3-3) maverick; urgency=low
 
   * new version
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 02 Dec 2010 01:25:52 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 02 Dec 2010 01:25:52 -0300
 
-tuquito-control-center (0.3-2) maverick; urgency=low
+emmi-control-center (0.3-2) maverick; urgency=low
 
   * fixed pt translations
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 01 Dec 2010 23:03:24 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 01 Dec 2010 23:03:24 -0300
 
-tuquito-control-center (0.3-1) maverick; urgency=low
+emmi-control-center (0.3-1) maverick; urgency=low
 
   * new translations
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 01 Dec 2010 22:38:36 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 01 Dec 2010 22:38:36 -0300
 
-tuquito-control-center (0.3) maverick; urgency=low
+emmi-control-center (0.3) maverick; urgency=low
 
   * new modes: Normal, Advanced
   * new effects swtich
@@ -83,35 +83,35 @@ tuquito-control-center (0.3) maverick; urgency=low
   * javascript optimized
   * new interfaces
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 01 Dec 2010 20:33:44 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 01 Dec 2010 20:33:44 -0300
 
-tuquito-control-center (0.2-17-testing) maverick; urgency=low
+emmi-control-center (0.2-17-testing) maverick; urgency=low
 
   * new interfaces for lubuntu
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 26 Nov 2010 19:27:01 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 26 Nov 2010 19:27:01 -0300
 
-tuquito-control-center (0.2-15) maverick; urgency=low
+emmi-control-center (0.2-15) maverick; urgency=low
 
   * fixed translations
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 25 Nov 2010 21:14:16 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 25 Nov 2010 21:14:16 -0300
 
-tuquito-control-center (0.2-14) maverick; urgency=low
+emmi-control-center (0.2-14) maverick; urgency=low
 
   * fixed items file
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 25 Nov 2010 17:50:38 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 25 Nov 2010 17:50:38 -0300
 
-tuquito-control-center (0.2-13) maverick; urgency=low
+emmi-control-center (0.2-13) maverick; urgency=low
 
   * added jstest-gtk
   * added font-manager
   * added depends synaptic
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 25 Nov 2010 15:41:14 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 25 Nov 2010 15:41:14 -0300
 
-tuquito-control-center (0.2-12) maverick; urgency=low
+emmi-control-center (0.2-12) maverick; urgency=low
 
   * added json
   * added new items
@@ -120,145 +120,145 @@ tuquito-control-center (0.2-12) maverick; urgency=low
   * added icon edit function
   * several improvements in html and javascript
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 25 Nov 2010 02:01:56 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 25 Nov 2010 02:01:56 -0300
 
-tuquito-control-center (0.2-11) maverick; urgency=low
+emmi-control-center (0.2-11) maverick; urgency=low
 
   * new version -11
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 20:55:46 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 19 Nov 2010 20:55:46 -0300
 
-tuquito-control-center (0.2-10) maverick; urgency=low
+emmi-control-center (0.2-10) maverick; urgency=low
 
   * fixed icons :P
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 20:50:53 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 19 Nov 2010 20:50:53 -0300
 
-tuquito-control-center (0.2-9) maverick; urgency=low
+emmi-control-center (0.2-9) maverick; urgency=low
 
   * new translations
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 16:26:32 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 19 Nov 2010 16:26:32 -0300
 
-tuquito-control-center (0.2-8) maverick; urgency=low
+emmi-control-center (0.2-8) maverick; urgency=low
 
   * added repeat items control
   * new applications
   * support for LXDE edition
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 16:15:56 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 19 Nov 2010 16:15:56 -0300
 
-tuquito-control-center (0.2-7) maverick; urgency=low
+emmi-control-center (0.2-7) maverick; urgency=low
 
   * new function added: edit items
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 12:30:39 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 19 Nov 2010 12:30:39 -0300
 
-tuquito-control-center (0.2-6) maverick; urgency=low
+emmi-control-center (0.2-6) maverick; urgency=low
 
   * added user items control
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 19 Nov 2010 00:54:33 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 19 Nov 2010 00:54:33 -0300
 
-tuquito-control-center (0.2-5) maverick; urgency=low
+emmi-control-center (0.2-5) maverick; urgency=low
 
   * new icons
   * new function add,remove item
   * new items list
   * new function restore list
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 18 Nov 2010 23:26:47 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 18 Nov 2010 23:26:47 -0300
 
-tuquito-control-center (0.2-4) maverick; urgency=low
+emmi-control-center (0.2-4) maverick; urgency=low
 
   * added libjs-jquery
 
- -- Mario Colque <mario@tuquito.org.ar>  Mon, 18 Oct 2010 10:45:32 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Mon, 18 Oct 2010 10:45:32 -0300
 
-tuquito-control-center (0.2-3) maverick; urgency=low
+emmi-control-center (0.2-3) maverick; urgency=low
 
   * several improvements
 
- -- Mario Colque <mario@tuquito.org.ar>  Mon, 11 Oct 2010 12:32:33 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Mon, 11 Oct 2010 12:32:33 -0300
 
-tuquito-control-center (0.2-2) maverick; urgency=low
+emmi-control-center (0.2-2) maverick; urgency=low
 
   * garfio deleted
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 17 Sep 2010 14:49:15 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 17 Sep 2010 14:49:15 -0300
 
-tuquito-control-center (0.2-1) maverick; urgency=low
+emmi-control-center (0.2-1) maverick; urgency=low
 
   * implementation of html5
   * lock selection
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 15 Sep 2010 21:56:59 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 15 Sep 2010 21:56:59 -0300
 
-tuquito-control-center (0.1-11) lucid; urgency=low
+emmi-control-center (0.1-11) lucid; urgency=low
 
   * Corrección de apretura de software-manager
   * Idioma pt_BR añadido
 
- -- Mario Colque <mario@tuquito.org.ar>  Mon, 19 Jul 2010 16:16:58 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Mon, 19 Jul 2010 16:16:58 -0300
 
-tuquito-control-center (0.1-10) lucid; urgency=low
+emmi-control-center (0.1-10) lucid; urgency=low
 
   * Implementación de i18n
   * nueva resolución
 
- -- Mario Colque <mario@tuquito.org.ar>  Tue, 06 Jul 2010 14:07:08 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Tue, 06 Jul 2010 14:07:08 -0300
 
-tuquito-control-center (0.1-9) lucid; urgency=low
+emmi-control-center (0.1-9) lucid; urgency=low
 
   * Idiomas en .desktop
 
- -- Mario Colque <mario@tuquito.org.ar>  Sun, 04 Jul 2010 18:38:10 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Sun, 04 Jul 2010 18:38:10 -0300
 
-tuquito-control-center (0.1-8) lucid; urgency=low
+emmi-control-center (0.1-8) lucid; urgency=low
 
   * correccion en archivo .desktop
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 16 Jun 2010 01:29:21 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 16 Jun 2010 01:29:21 -0300
 
-tuquito-control-center (0.1-7) lucid; urgency=low
+emmi-control-center (0.1-7) lucid; urgency=low
 
   * correccion en rules
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 16 Jun 2010 01:21:17 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 16 Jun 2010 01:21:17 -0300
 
-tuquito-control-center (0.1-6) lucid; urgency=low
+emmi-control-center (0.1-6) lucid; urgency=low
 
   * Nueva interfaz grafica con webkit
   * Nuevo concepto de seleccion de aplicaciones
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 16 Jun 2010 00:50:37 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 16 Jun 2010 00:50:37 -0300
 
-tuquito-control-center (0.1-5) lucid; urgency=low
+emmi-control-center (0.1-5) lucid; urgency=low
 
   * cambio en empaquetado
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 21 May 2010 11:31:28 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 21 May 2010 11:31:28 -0300
 
-tuquito-control-center (0.1-4) lucid; urgency=low
+emmi-control-center (0.1-4) lucid; urgency=low
 
   * Modificacion en visibilidad
 
- -- Mario Colque <mario@tuquito.org.ar>  Fri, 21 May 2010 11:03:03 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Fri, 21 May 2010 11:03:03 -0300
 
-tuquito-control-center (0.1-3) lucid; urgency=low
+emmi-control-center (0.1-3) lucid; urgency=low
 
   * Arreglo en la visibilidad
 
- -- Mario Colque <mario@tuquito.org.ar>  Thu, 20 May 2010 19:26:06 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Thu, 20 May 2010 19:26:06 -0300
 
-tuquito-control-center (0.1-2) lucid; urgency=low
+emmi-control-center (0.1-2) lucid; urgency=low
 
   * arreglado problema de sobreescritura
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 19 May 2010 19:16:37 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 19 May 2010 19:16:37 -0300
 
-tuquito-control-center (0.1-1) lucid; urgency=low
+emmi-control-center (0.1-1) lucid; urgency=low
 
   * Version inicial
 
- -- Mario Colque <mario@tuquito.org.ar>  Wed, 19 May 2010 18:30:34 -0300
+ -- Mario Colque <mario@emmi.org.ar>  Wed, 19 May 2010 18:30:34 -0300

@@ -39,9 +39,9 @@ install: build
 	dh_prep  
 	dh_installdirs
 
-	# Add here commands to install the package into debian/tuquito-control-center.
-	#$(MAKE) DESTDIR=$(CURDIR)/debian/tuquito-control-center install
-	cp -af usr $(CURDIR)/debian/tuquito-control-center/
+	# Add here commands to install the package into debian/emmi-control-center.
+	#$(MAKE) DESTDIR=$(CURDIR)/debian/emmi-control-center install
+	cp -af usr $(CURDIR)/debian/emmi-control-center/
 
 
 # Build architecture-independent files here.

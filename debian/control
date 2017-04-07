@@ -1,13 +1,13 @@
-Source: tuquito-control-center
+Source: emmi-control-center
 Section: gnome
 Priority: extra
-Maintainer: Mario Colque <mario@tuquito.org.ar>
+Maintainer: Mario Colque <mario@emmi.org.ar>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.1
 
-Package: tuquito-control-center
+Package: emmi-control-center
 Architecture: all
-Depends: gnome-disk-utility, tuquito-control-parental, hardinfo, libjs-jquery, synaptic
-Description: Centro de control de tuquito
- Menú de centro de control de Tuquito
- * Tuquito Team! - 2010
+Depends: gnome-disk-utility, emmi-control-parental, hardinfo, libjs-jquery, synaptic
+Description: Centro de control de emmi
+ Menú de centro de control de Emmi
+ * Emmi Team! - 2017
