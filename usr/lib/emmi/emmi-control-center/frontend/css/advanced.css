@@ -7,12 +7,12 @@ html, body {
     padding: 0;
 }
 html {
-    background: #FFF url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
+    background: #FFF url(/usr/lib/emmi/emmi-control-center/frontend/images/bg.png) repeat-x top;
     color: #64676A;
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
 }
-body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat }
+body { background: url(/usr/lib/emmi/emmi-control-center/frontend/images/clouds.png) top right no-repeat }
 .hidden { display: none }
 ::-webkit-scrollbar {
     border-radius: 1ex;

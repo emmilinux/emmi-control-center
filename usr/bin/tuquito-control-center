@@ -1,2 +1,0 @@
-#!/bin/sh
-/usr/lib/tuquito/tuquito-control-center/control-center.py &

@@ -2,8 +2,8 @@
     "users-admin": {
         "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
     },
-    "tuquito-control-parental": {
-        "title": "Set up Parental Control", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-control-parental/control.png"
+    "emmi-control-parental": {
+        "title": "Set up Parental Control", "owner": "system", "icon": "/usr/lib/emmi/emmi-control-parental/control.png"
     },
     "gdmsetup": {
         "title": "Set up startup screen", "owner": "system", "icon": "gdmsetup"

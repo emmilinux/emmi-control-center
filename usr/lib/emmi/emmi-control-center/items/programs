@@ -1,6 +1,6 @@
 {
-    "tuquito-software-manager": {
-        "title": "Add/Remove programs", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-software-manager/logo.svg"
+    "emmi-software-manager": {
+        "title": "Add/Remove programs", "owner": "system", "icon": "/usr/lib/emmi/emmi-software-manager/logo.svg"
     },
     "software-center": {
         "title": "Add/Remove programs", "owner": "system", "icon": "softwarecenter"

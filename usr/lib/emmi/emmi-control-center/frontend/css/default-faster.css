@@ -7,20 +7,13 @@ html, body {
     padding: 0;
 }
 html {
-    background: #FFF url(/usr/lib/tuquito/tuquito-control-center/frontend/images/bg.png) repeat-x top;
     color: #64676A;
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
+    background: #FFF url(/usr/lib/emmi/emmi-control-center/frontend/images/bg.png) repeat-x top;
 }
-body { background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/clouds.png) top right no-repeat }
+body { background: url(/usr/lib/emmi/emmi-control-center/frontend/images/clouds.png) top right no-repeat }
 .hidden { display: none }
-.logo-back {
-    bottom: 10px;
-    opacity: .6;
-    position: absolute;
-    right: 40px;
-    width: 100px;
-}
 .btn div > p {
     color: #688200;
     font-size: 20px;
@@ -38,6 +31,13 @@ a {
 }
 a:hover { text-decoration: underline }
 ul { list-style-type: none }
+.logo-back {
+    bottom: 10px;
+    opacity: .6;
+    position: absolute;
+    right: 40px;
+    width: 155px;
+}
 /* Main Menu */
 #main {
     color: #4B4B4B;
@@ -46,11 +46,12 @@ ul { list-style-type: none }
     text-shadow: #FFF 1px 1px 0;
 }
 .main_menu {
-    height: 450px;
     margin: 0 auto 0 auto;
+    height: 450px;
     width: 744px;
 }
 .main_menu li {
+    border: 1px solid transparent;
     cursor: pointer;
     display: block;
     float: left;
@@ -64,7 +65,7 @@ ul { list-style-type: none }
     padding: 12px;
 }
 /* Container */
-#container { border-top: 1px solid transparent }
+#container { border-top: 1px solid #FFF }
 #side {
     background: -webkit-gradient(linear,0 0,0 100%,from(#6FA1D5),to(#3E73AE));
     border-right: 1px solid #3E73AE;
@@ -74,25 +75,28 @@ ul { list-style-type: none }
     width: 0;
 }
 #side li {
-    border: 1px;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
+    border: 1px solid transparent;
     float: left;
-    padding-right: 10px;
+    padding: 0 10px 0 0;
     width: 190px;
-    -webkit-transition: all .18s ease;
 }
-#side li:hover { background: rgba(0,0,0,.55) }
+#side li:hover {
+    background-color: #243B51;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #FFF;
+}
 #side li a {
-    background: url(/usr/lib/tuquito/tuquito-control-center/frontend/images/arrow-right2.gif) right center no-repeat;
+    background: url(/usr/lib/emmi/emmi-control-center/frontend/images/arrow-right2.gif) right center no-repeat;
     color: #FFF;
     float: left;
     padding: 8px 20px 8px 10px;
-    text-decoration: none;
     width: 150px;
-    -webkit-transition: all .18s ease;
 }
-#side li:hover a { padding-right: 32px }
+#side li:hover a {
+    padding-right: 32px;
+    text-decoration: none;
+}
 .side_menu {
     margin: 0;
     padding: 0;
@@ -102,17 +106,6 @@ ul { list-style-type: none }
     height: 500px;
     margin-left: 190px;
     padding: 0 20px;
-}
-::-webkit-scrollbar {
-    border-radius: 1ex;
-    width: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background: #6FA1D5 -webkit-gradient(linear,0% 0%, 0% 100%, from(rgba(250,250,250,.1)), to(rgba(180,180,180,.1)));
-    border: 1px solid #3E73AE;
-    border-top: 1px solid #FFF;
-    border-radius: 1ex;
-    margin-right: 10px;
 }
 #ajax ul {
     float: left;
@@ -132,31 +125,19 @@ ul { list-style-type: none }
     display: block;
     height: 32px;
     line-height: 32px;
-    margin-bottom: 4px;
     padding-left: 32px;
+    margin-bottom: 4px;
     width: 300px;
-    -webkit-transition: all .18s ease;
 }
 #ajax li:hover {
-    background-color: rgba(247,247,247,.6);
-    border-color: #BBB;
-    border-radius: 3px;
-    padding-left: 45px;
+    color: #2D4B69;
+    text-shadow: #EEE 1px 1px 0;
 }
 footer {
     bottom: 10px;
     font-size: 13px;
     padding-left: 10px;
     position: absolute;
-}
-.main_menu li img {
-    height: 48px;
-    width: 48px;
-    -webkit-transition: all .15s ease;
-}
-.main_menu li:hover img {
-    height: 70px;
-    width: 70px;
 }
 .button {
     background: #EFEFEF;

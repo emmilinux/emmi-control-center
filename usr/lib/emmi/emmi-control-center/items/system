@@ -5,8 +5,8 @@
     "gnome-language-selector": {
         "title": "Set up languages", "owner": "system", "icon": "config-language"
     },
-    "gksu tuquito-update": {
-        "title": "Update Manager", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-update/logo.png"
+    "gksu emmi-update": {
+        "title": "Update Manager", "owner": "system", "icon": "/usr/lib/emmi/emmi-update/logo.png"
     },
     "gksu startupmanager": {
         "title": "Set up startup", "owner": "system", "icon": "startupmanager"
@@ -18,7 +18,7 @@
         "title": "Status computer", "owner": "system", "icon": "utilities-system-monitor"
     },
     "garfio": {
-        "title": "Make a backup", "owner": "system", "icon": "/usr/lib/tuquito/garfio/logo.png"
+        "title": "Make a backup", "owner": "system", "icon": "/usr/lib/emmi/garfio/logo.png"
     },
     "gnome-system-log": {
         "title": "View system events", "owner": "system", "icon": "logviewer"

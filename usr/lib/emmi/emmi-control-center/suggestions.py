@@ -4,8 +4,8 @@
 """
  Tuquito Control Center
  Copyright (C) 2010
- Author: Mario Colque <mario@tuquito.org.ar>
- Tuquito Team! - www.tuquito.org.ar
+ Author: Mario Colque <mario@emmi.org.ar>
+ Tuquito Team! - www.emmi.org.ar
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ import tempfile
 from subprocess import Popen, PIPE
 
 # i18n
-gettext.install('tuquito-control-center', '/usr/share/tuquito/locale')
+gettext.install('emmi-control-center', '/usr/share/emmi/locale')
 
 class MessageDialog:
     def __init__(self, message, style):
@@ -50,7 +50,7 @@ class MessageDialog:
 class Suggestions:
     def __init__(self):
         self.glade = gtk.Builder()
-        self.glade.add_from_file('/usr/lib/tuquito/tuquito-control-center/suggestions.glade')
+        self.glade.add_from_file('/usr/lib/emmi/emmi-control-center/suggestions.glade')
         self.window = self.glade.get_object('suggestions')
         self.window.set_title(_('Control Center'))
         self.treeview_items = self.glade.get_object('treeview_items')
@@ -68,7 +68,7 @@ class Suggestions:
 
         self.cache = apt.Cache()
         self.suggestions = []
-        self.category_file = os.path.join('/usr/lib/tuquito/tuquito-control-center/items',category)
+        self.category_file = os.path.join('/usr/lib/emmi/emmi-control-center/items',category)
 
         self.model = gtk.TreeStore(str, str)
         self.model.set_sort_column_id(0, gtk.SORT_ASCENDING)

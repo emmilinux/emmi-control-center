@@ -2,8 +2,8 @@
     "users-admin": {
         "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
     },
-    "tuquito-control-parental": {
-        "title": "Set up Parental Control", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-control-parental/control.png"
+    "emmi-control-parental": {
+        "title": "Set up Parental Control", "owner": "system", "icon": "/usr/lib/emmi/emmi-control-parental/control.png"
     },
     "gdmsetup": {
         "title": "Set up startup screen", "owner": "system", "icon": "gdmsetup"
@@ -68,8 +68,8 @@
     "ubuntuone-control-panel-gtk": {
         "title": "Ubuntu One", "owner": "system", "icon": "ubuntuone"
     },
-    "tuquito-software-manager": {
-        "title": "Add/Remove programs", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-software-manager/logo.svg"
+    "emmi-software-manager": {
+        "title": "Add/Remove programs", "owner": "system", "icon": "/usr/lib/emmi/emmi-software-manager/logo.svg"
     },
     "software-center": {
         "title": "Add/Remove programs", "owner": "system", "icon": "softwarecenter"
@@ -95,8 +95,8 @@
     "gnome-language-selector -n": {
         "title": "Set up languages", "owner": "system", "icon": "config-language"
     },
-    "gksu tuquito-update": {
-        "title": "Update Manager", "owner": "system", "icon": "/usr/lib/tuquito/tuquito-update/logo.png"
+    "gksu emmi-update": {
+        "title": "Update Manager", "owner": "system", "icon": "/usr/lib/emmi/emmi-update/logo.png"
     },
     "gksu startupmanager": {
         "title": "Set up startup", "owner": "system", "icon": "startupmanager"
@@ -108,7 +108,7 @@
         "title": "Status computer", "owner": "system", "icon": "utilities-system-monitor"
     },
     "garfio": {
-        "title": "Make a backup", "owner": "system", "icon": "/usr/lib/tuquito/garfio/logo.png"
+        "title": "Make a backup", "owner": "system", "icon": "/usr/lib/emmi/garfio/logo.png"
     },
     "gnome-system-log": {
         "title": "View system events", "owner": "system", "icon": "logviewer"

@@ -4,8 +4,8 @@
 """
  Tuquito Control Center
  Copyright (C) 2010
- Author: Mario Colque <mario@tuquito.org.ar>
- Tuquito Team! - www.tuquito.org.ar
+ Author: Mario Colque <mario@emmi.org.ar>
+ Tuquito Team! - www.emmi.org.ar
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -29,7 +29,7 @@ import json
 from user import home
 
 # i18n
-gettext.install('tuquito-control-center', '/usr/share/tuquito/locale')
+gettext.install('emmi-control-center', '/usr/share/emmi/locale')
 
 class MessageDialog:
     def __init__(self, title, message, style):
@@ -50,7 +50,7 @@ class MessageDialog:
 class ControlCenter():
     def __init__(self):
         self.builder = gtk.Builder()
-        self.builder.add_from_file('/usr/lib/tuquito/tuquito-control-center/control-center.glade')
+        self.builder.add_from_file('/usr/lib/emmi/emmi-control-center/control-center.glade')
         self.window = self.builder.get_object('window')
         self.builder.get_object('window').set_title(_('Control Center'))
         self.edit_handler_id = False
@@ -156,13 +156,13 @@ class ControlCenter():
 
     def get_template(self):
         if self.visual_effects and self.mode:
-            template = open('/usr/lib/tuquito/tuquito-control-center/frontend/default.html')
+            template = open('/usr/lib/emmi/emmi-control-center/frontend/default.html')
         elif not self.visual_effects and self.mode:
-            template = open('/usr/lib/tuquito/tuquito-control-center/frontend/default-faster.html')
+            template = open('/usr/lib/emmi/emmi-control-center/frontend/default-faster.html')
         elif self.visual_effects and not self.mode:
-            template = open('/usr/lib/tuquito/tuquito-control-center/frontend/advanced.html')
+            template = open('/usr/lib/emmi/emmi-control-center/frontend/advanced.html')
         else:
-            template = open('/usr/lib/tuquito/tuquito-control-center/frontend/advanced-faster.html')
+            template = open('/usr/lib/emmi/emmi-control-center/frontend/advanced-faster.html')
         return template
 
     def change_skin(self, widget):
@@ -176,7 +176,7 @@ class ControlCenter():
         self.browser.load_html_string(html, 'file:/')
 
     def read_preferences(self, widget):
-        self.pref_file = os.path.join(home, '.tuquito/tuquito-control-center/preferences')
+        self.pref_file = os.path.join(home, '.emmi/emmi-control-center/preferences')
         if os.path.isfile(self.pref_file):
             pref_file = open(self.pref_file)
             dic = json.load(pref_file)
@@ -441,8 +441,8 @@ class ControlCenter():
     def load_advanced(self):
         li_content = []
         self.category = 'advanced'
-        self.home_file = os.path.join(home, '.tuquito/tuquito-control-center/items/' + self.category)
-        self.base_file = os.path.join('/usr/lib/tuquito/tuquito-control-center/items/', self.category)
+        self.home_file = os.path.join(home, '.emmi/emmi-control-center/items/' + self.category)
+        self.base_file = os.path.join('/usr/lib/emmi/emmi-control-center/items/', self.category)
         self.has_suggestions = False
         if os.path.isfile(self.home_file):
             self.category_file = self.home_file
@@ -465,7 +465,7 @@ class ControlCenter():
                     if iconInfo and os.path.exists(iconInfo.get_filename()):
                         icon = iconInfo.get_filename()
                     else:
-                        icon = '/usr/lib/tuquito/tuquito-control-center/frontend/images/applications-other.png'
+                        icon = '/usr/lib/emmi/emmi-control-center/frontend/images/applications-other.png'
             command_clean = command.split(' ')[0]
             if command_clean != 'gksu':
                 command_search = command_clean
@@ -493,8 +493,8 @@ class ControlCenter():
                 message.show()
         elif title.startswith('category:'):
             self.category = title.split(':')[1]
-            self.home_file = os.path.join(home, '.tuquito/tuquito-control-center/items/' + self.category)
-            self.base_file = os.path.join('/usr/lib/tuquito/tuquito-control-center/items/', self.category)
+            self.home_file = os.path.join(home, '.emmi/emmi-control-center/items/' + self.category)
+            self.base_file = os.path.join('/usr/lib/emmi/emmi-control-center/items/', self.category)
             if os.path.isfile(self.home_file):
                 self.category_file = self.home_file
             else:
@@ -517,7 +517,7 @@ class ControlCenter():
                         if iconInfo and os.path.exists(iconInfo.get_filename()):
                             icon = iconInfo.get_filename()
                         else:
-                            icon = '/usr/lib/tuquito/tuquito-control-center/frontend/images/applications-other.png'
+                            icon = '/usr/lib/emmi/emmi-control-center/frontend/images/applications-other.png'
                 command_clean = command.split(' ')[0]
                 if command_clean != 'gksu':
                     command_search = command_clean
@@ -535,7 +535,7 @@ class ControlCenter():
         elif title == 'edit-item':
             self.items_window(self)
         elif title == 'suggestions':
-            os.system('/usr/lib/tuquito/tuquito-control-center/suggestions.py %s &' % self.category)
+            os.system('/usr/lib/emmi/emmi-control-center/suggestions.py %s &' % self.category)
         elif title == 'about':
             self.about(self)
         #usage: save-options:mode:show_suggestions:visual_effects
@@ -550,7 +550,7 @@ class ControlCenter():
             self.change_skin(self)
 
 if __name__ == '__main__':
-    home_path = os.path.join(home, '.tuquito/tuquito-control-center/items')
+    home_path = os.path.join(home, '.emmi/emmi-control-center/items')
     if not os.path.exists(home_path):
         os.system('mkdir -p ' + home_path)
     gtk.gdk.threads_init()
