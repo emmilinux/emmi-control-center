@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
- Tuquito Control Center
- Copyright (C) 2010
- Author: Mario Colque <mario@emmi.org.ar>
- Tuquito Team! - www.emmi.org.ar
+ Emmi control center
+ Copyright (C) 2017
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -431,7 +429,7 @@ class ControlCenter():
         abt.connect('delete-event', self.close_about)
         abt.connect('destroy-event', self.close_about)
         abt.set_name(_('Control Center'))
-        abt.set_comments(_('Configuration tool for Tuquito'))
+        abt.set_comments(_('Configuration tool for emmi'))
         abt.show()
 
     def close_about(self, widget, data=None):
