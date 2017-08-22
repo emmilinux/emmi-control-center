@@ -1,13 +1,13 @@
 Source: emmi-control-center
 Section: gnome
 Priority: extra
-Maintainer: Mario Colque <mario@emmi.org.ar>
+Maintainer: slackjeff <lrcjefferson@gmail.com>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.1
 
 Package: emmi-control-center
 Architecture: all
 Depends: gnome-disk-utility, emmi-control-parental, hardinfo, libjs-jquery, synaptic
-Description: Centro de control de emmi
+Description: Centro de control de Emmi
  Menú de centro de control de Emmi
  * Emmi Team! - 2017
