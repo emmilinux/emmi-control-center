@@ -14,7 +14,7 @@
     <property name="program_name">Control Center</property>
     <property name="version">0.3-7</property>
     <property name="copyright" translatable="yes">Copyright © 2010 - Tuquito Team!</property>
-    <property name="website">http://www.emmi.org.ar</property>
+    <property name="website">http://www.emmi.com.br</property>
     <property name="website_label" translatable="yes">Tuquito Team!</property>
     <property name="license" translatable="yes">		    GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991
