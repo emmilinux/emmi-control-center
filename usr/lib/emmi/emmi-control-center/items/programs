@@ -1,0 +1,35 @@
+{
+    "emmi-software-manager": {
+        "title": "Add/Remove programs", "owner": "system", "icon": "/usr/share/icons/control-center.png"
+    },
+    "software-center": {
+        "title": "Add/Remove programs", "owner": "system", "icon": "softwarecenter"
+    },
+    "synaptic-pkexec": {
+        "title": "Synapctic", "owner": "system", "icon": "synaptic"
+    },
+    "gnome-default-applications-properties": {
+        "title": "Set favorite applications", "owner": "system", "icon": "preferences-desktop-default-applications"
+    },
+    "gksu software-properties-gtk": {
+        "title": "Edit software sources", "owner": "system", "icon": "software-properties"
+    },
+    "libfm-pref-apps": {
+        "title": "Set favorite applications", "owner": "system", "icon": "preferences-desktop"
+    },
+    "lxsession-edit": {
+        "title": "Startup Applications", "owner": "system", "icon": "session-properties"
+    },
+    "gnome-session-properties": {
+        "title": "Startup Applications", "owner": "system", "icon": "session-properties"
+    },
+    "bleachbit": {
+        "title": "Remove unused files", "owner": "system", "icon": "bleachbit"
+    },
+    "gdebi-gtk %f": {
+        "title": "Instalador pacotes .deb", "owner": "system", "icon": "gdebi"
+    },
+    "xfce4-session-settings": {
+        "title": "Sessão e inicialização", "owner": "system", "icon": "session-properties"
+    }
+}

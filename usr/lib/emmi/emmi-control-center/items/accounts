@@ -1,0 +1,26 @@
+{
+    "users-admin": {
+        "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
+    },
+    "emmi-control-parental": {
+        "title": "Set up Parental Control", "owner": "system", "icon": "/usr/lib/emmi/emmi-control-parental/control.png"
+    },
+    "gdmsetup": {
+        "title": "Set up startup screen", "owner": "system", "icon": "gdmsetup"
+    },
+    "gnome-about-me": {
+        "title": "About me", "owner": "system", "icon": "user-info"
+    },
+    "gnome-control-center user-accounts": {
+        "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
+    },
+    "exo-preferred-applications": {
+        "title": "Aplicativos preferidos", "owner": "system", "icon": "preferences-desktop-default-applications"
+    },
+    "xfce4-appearance-settings": {
+        "title": "Aparência", "owner": "system", "icon": "theme-config"
+    },
+    "xfwm4-settings": {
+        "title": "Gerenciador de Janelas", "owner": "system", "icon": "gnome-window-manager"
+    }
+}

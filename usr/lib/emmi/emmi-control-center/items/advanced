@@ -1,0 +1,237 @@
+{
+    "users-admin": {
+        "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
+    },
+    "emmi-control-parental": {
+        "title": "Set up Parental Control", "owner": "system", "icon": "/usr/lib/emmi/emmi-control-parental/control.png"
+    },
+    "gdmsetup": {
+        "title": "Set up startup screen", "owner": "system", "icon": "gdmsetup"
+    },
+    "gnome-about-me": {
+        "title": "About me", "owner": "system", "icon": "user-info"
+    },
+    "gnome-appearance-properties": {
+        "title": "Change the background and theme", "owner": "system", "icon": "preferences-desktop-theme"
+    },
+    "lxappearance": {
+        "title": "Change the background and theme", "owner": "system", "icon": "preferences-desktop-theme"
+    },
+    "pcmanfm --desktop-pref": {
+        "title": "Change the background", "owner": "system", "icon": "preferences-desktop-wallpaper"
+    },
+    "obconf": {
+        "title": "Configure Openbox", "owner": "system", "icon": "preferences-desktop-theme"
+    },
+    "simple-ccsm": {
+        "title": "Configure visual effects", "owner": "system", "icon": "simple-ccsm"
+    },
+    "gnome-display-properties": {
+        "title": "Adjust the screen resolution", "owner": "system", "icon": "gnome-display-properties"
+    },
+    "lxrandr": {
+        "title": "Adjust the screen resolution", "owner": "system", "icon": "gnome-display-properties"
+    },
+    "gnome-screensaver-preferences": {
+        "title": "Set up screensaver", "owner": "system", "icon": "preferences-desktop-screensaver"
+    },
+    "xscreensaver-demo": {
+        "title": "Set up screensaver", "owner": "system", "icon": "preferences-desktop-screensaver"
+    },
+    "font-manager": {
+        "title": "Font Manager", "owner": "system", "icon": "preferences-desktop-font"
+    },
+    "nm-connection-editor": {
+        "title": "Network connections", "owner": "system", "icon": "preferences-system-network"
+    },
+    "gnome-nettool": {
+        "title": "Network tools", "owner": "system", "icon": "gnome-nettool"
+    },
+    "nautilus --no-desktop network:": {
+        "title": "Network sites", "owner": "system", "icon": "folder-remote"
+    },
+    "gnome-network-properties": {
+        "title": "Proxy settings", "owner": "system", "icon": "gnome-network-properties"
+    },
+    "gufw": {
+        "title": "Set up firewall", "owner": "system", "icon": "gufw_menu"
+    },
+    "shares-admin": {
+        "title": "Shared files and folders", "owner": "system", "icon": "folder-remote"
+    },
+    "lxproxy": {
+        "title": "Proxy settings", "owner": "system", "icon": "gnome-network-properties"
+    },
+    "vino-preferences": {
+        "title": "Remote Desktop", "owner": "system", "icon": "preferences-desktop-remote-desktop"
+    },
+    "ubuntuone-control-panel-gtk": {
+        "title": "Ubuntu One", "owner": "system", "icon": "ubuntuone"
+    },
+    "emmi-software-manager": {
+        "title": "Add/Remove programs", "owner": "system", "icon": "/usr/lib/emmi/emmi-software-manager/logo.svg"
+    },
+    "software-center": {
+        "title": "Add/Remove programs", "owner": "system", "icon": "softwarecenter"
+    },
+    "gksu synaptic": {
+        "title": "Add/Remove programs with Synaptic", "owner": "system", "icon": "synaptic"
+    },
+    "gnome-default-applications-properties": {
+        "title": "Set favorite applications", "owner": "system", "icon": "preferences-desktop-default-applications"
+    },
+    "gksu software-properties-gtk": {
+        "title": "Edit software sources", "owner": "system", "icon": "software-properties"
+    },
+    "libfm-pref-apps": {
+        "title": "Set favorite applications", "owner": "system", "icon": "preferences-desktop"
+    },
+    "bleachbit": {
+        "title": "Remove unused files", "owner": "system", "icon": "bleachbit"
+    },
+    "time-admin": {
+        "title": "Set date and time", "owner": "system", "icon": "time-admin"
+    },
+    "gnome-language-selector -n": {
+        "title": "Set up languages", "owner": "system", "icon": "config-language"
+    },
+    "gksu emmi-update": {
+        "title": "Update Manager", "owner": "system", "icon": "/usr/lib/emmi/emmi-update/logo.png"
+    },
+    "gksu startupmanager": {
+        "title": "Set up startup", "owner": "system", "icon": "startupmanager"
+    },
+    "gnome-system-monitor": {
+        "title": "Status computer", "owner": "system", "icon": "gnome-system-monitor"
+    },
+    "lxtask": {
+        "title": "Status computer", "owner": "system", "icon": "utilities-system-monitor"
+    },
+    "garfio": {
+        "title": "Make a backup", "owner": "system", "icon": "/usr/lib/emmi/garfio/logo.png"
+    },
+    "gnome-system-log": {
+        "title": "View system events", "owner": "system", "icon": "logviewer"
+    },
+    "seahorse": {
+        "title": "Set passwords and encryption keys", "owner": "system", "icon": "seahorse"
+    },
+    "lxsession-edit": {
+        "title": "Startup Applications", "owner": "system", "icon": "session-properties"
+    },
+    "gnome-session-properties": {
+        "title": "Startup Applications", "owner": "system", "icon": "session-properties"
+    },
+    "update-manager": {
+        "title": "Update Manager", "owner": "system", "icon": "update-manager"
+    },
+    "deja-dup": {
+        "title": "Backup utility", "owner": "system", "icon": "deja-dup"
+    },
+    "hardinfo": {
+        "title": "System information", "owner": "system", "icon": "hardinfo"
+    },
+    "gnome-power-preferences": {
+        "title": "Power management", "owner": "system", "icon": "gnome-power-manager"
+    },
+    "system-config-printer": {
+        "title": "View devices and printers", "owner": "system", "icon": "system-config-printer"
+    },
+    "palimpsest": {
+        "title": "Configure disks", "owner": "system", "icon": "palimpsest"
+    },
+    "jockey-gtk": {
+        "title": "Install drivers", "owner": "system", "icon": "jockey"
+    },
+    "gksu /usr/sbin/ndisgtk": {
+        "title": "Wireless network drivers", "owner": "system", "icon": "ndisgtk"
+    },
+    "gnome-keyboard-properties": {
+        "title": "Configure keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "lxinput": {
+        "title": "Configure keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "gnome-mouse-properties": {
+        "title": "Configure mouse", "owner": "system", "icon": "input-mouse"
+    },
+    "lxinput": {
+        "title": "Configure mouse", "owner": "system", "icon": "input-mouse"
+    },
+    "gnome-volume-control": {
+        "title": "Sound Preferences", "owner": "system", "icon": "multimedia-volume-control"
+    },
+    "gnome-alsamixer": {
+        "title": "Sound Preferences", "owner": "system", "icon": "preferences-desktop-sound"
+    },
+    "bluetooth-properties": {
+        "title": "Configure bluetooth", "owner": "system", "icon": "bluetooth"
+    },
+    "jstest-gtk": {
+        "title": "Configure joystick", "owner": "system", "icon": "joystick"
+    },
+    "gnome-lirc-properties": {
+        "title": "Configure IR devices", "owner": "system", "icon": "gnome-lirc-properties"
+    },
+
+    "cinnamon-settings": {
+        "title": "Cinnamon Settings", "owner": "system", "icon": "preferences-system"
+    },
+    "gnome-control-center background": {
+        "title": "Appearance", "owner": "system", "icon": "preferences-desktop-wallpaper"
+    },
+    "gnome-control-center display": {
+        "title": "Displays", "owner": "system", "icon": "preferences-desktop-display"
+    },
+    "gnome-control-center printers": {
+        "title": "Change printer settings", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center wacom": {
+        "title": "Wacom Graphics Tablet", "owner": "system", "icon": "input-tablet"
+    },
+    "gnome-control-center keyboard": {
+        "title": "Keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "hp-toolbox": {
+        "title": "HPLIP Toolbox", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center bluetooth": {
+        "title": "Bluetooth", "owner": "system", "icon": "bluetooth"
+    },
+    "gnome-control-center sound": {
+        "title": "Sound", "owner": "system", "icon": "multimedia-volume-control"
+    },
+    "gnome-control-center color": {
+        "title": "Color", "owner": "system", "icon": "preferences-color"
+    },
+    "gnome-control-center region": {
+        "title": "Keyboard Layout", "owner": "system", "icon": "key_bindings"
+    },
+    "gnome-control-center power": {
+        "title": "Power", "owner": "system", "icon": "gnome-power-manager"
+    },
+    "gnome-control-center datetime": {
+        "title": "Set date and time", "owner": "system", "icon": "preferences-system-time"
+    },
+    "gnome-control-center screen": {
+        "title": "Brightness and Lock", "owner": "system", "icon": "system-lock-screen"
+    },
+    "gnome-control-center info": {
+        "title": "Details", "owner": "system", "icon": "applications-system"
+    },
+    "gnome-control-center activity-log-manager": {
+        "title": "Privacy", "owner": "system", "icon": "activity-log-manager"
+    },
+    "gnome-power-statistics": {
+        "title": "Power Statistics", "owner": "system", "icon": "gnome-power-statistics"
+    },
+    "gnome-control-center universal-access": {
+        "title": "Universal Access", "owner": "system", "icon": "preferences-desktop-accessibility"
+    },
+    "gnome-control-center network": {
+        "title": "Network", "owner": "system", "icon": "network-workgroup"
+    },
+    "gnome-control-center user-accounts": {
+        "title": "Add or remove user accounts", "owner": "system", "icon": "system-users"
+    }
+}

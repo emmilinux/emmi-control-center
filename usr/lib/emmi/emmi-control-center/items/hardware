@@ -1,0 +1,87 @@
+{
+    "hardinfo": {
+        "title": "System information", "owner": "system", "icon": "hardinfo"
+    },
+    "gnome-power-preferences": {
+        "title": "Power management", "owner": "system", "icon": "gnome-power-manager"
+    },
+    "system-config-printer": {
+        "title": "View devices and printers", "owner": "system", "icon": "system-config-printer"
+    },
+    "palimpsest": {
+        "title": "Configure disks", "owner": "system", "icon": "palimpsest"
+    },
+    "jockey-gtk": {
+        "title": "Install drivers", "owner": "system", "icon": "jockey"
+    },
+    "gksu ndisgtk": {
+        "title": "Wireless network drivers", "owner": "system", "icon": "ndisgtk"
+    },
+    "gnome-keyboard-properties": {
+        "title": "Configure keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "lxinput": {
+        "title": "Configure keyboard and mouse", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "gnome-mouse-properties": {
+        "title": "Configure mouse", "owner": "system", "icon": "input-mouse"
+    },
+    "gnome-volume-control": {
+        "title": "Sound Preferences", "owner": "system", "icon": "multimedia-volume-control"
+    },
+    "gnome-alsamixer": {
+        "title": "Sound Preferences", "owner": "system", "icon": "preferences-desktop-sound"
+    },
+    "bluetooth-properties": {
+        "title": "Configure bluetooth", "owner": "system", "icon": "bluetooth"
+    },
+    "jstest-gtk": {
+        "title": "Configure joystick", "owner": "system", "icon": "joystick"
+    },
+    "gnome-lirc-properties": {
+        "title": "Configure IR devices", "owner": "system", "icon": "gnome-lirc-properties"
+    },
+
+    "gnome-control-center printers": {
+        "title": "Change printer settings", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center wacom": {
+        "title": "Wacom Graphics Tablet", "owner": "system", "icon": "input-tablet"
+    },
+    "gnome-control-center keyboard": {
+        "title": "Keyboard", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+    "hp-toolbox": {
+        "title": "HPLIP Toolbox", "owner": "system", "icon": "printer"
+    },
+    "gnome-control-center bluetooth": {
+        "title": "Bluetooth", "owner": "system", "icon": "bluetooth"
+    },
+    "gnome-control-center sound": {
+        "title": "Sound", "owner": "system", "icon": "multimedia-volume-control"
+    },
+    "gnome-control-center color": {
+        "title": "Color", "owner": "system", "icon": "preferences-color"
+    },
+    "gnome-control-center region": {
+        "title": "Keyboard Layout", "owner": "system", "icon": "key_bindings"
+    },
+    "xfce4-mouse-settings": {
+        "title": "Mouse e Touchpad", "owner": "system", "icon": "preferences-desktop-peripherals"
+    },
+    "xfce4-mixer": {
+        "title": "Gestor de som", "owner": "system", "icon": "multimedia-volume-control"
+    },
+    "xfce4-display-settings": {
+        "title": "Monitor", "owner": "system", "icon": "video-display"
+    },
+    "xfce4-keyboard-settings": {
+        "title": "Teclado", "owner": "system", "icon": "preferences-desktop-keyboard"
+    },
+     "xfce4-power-manager-settings": {
+        "title": "Gerenciador de energia", "owner": "system", "icon": "gnome-power-manager"
+    },
+    "thunar-volman-settings": {
+        "title": "Midias e unidades removiveis", "owner": "system", "icon": "drive-removable-media"
+    }
+}
