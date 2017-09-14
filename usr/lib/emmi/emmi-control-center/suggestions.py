@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
- Emmi Control Center
- Copyright (C) 2017
-
+ Tuquito Control Center
+ Copyright (C) 2010
+ Author: Mario Colque <mario@emmi.org.ar>
+ Tuquito Team! - www.emmi.org.ar
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

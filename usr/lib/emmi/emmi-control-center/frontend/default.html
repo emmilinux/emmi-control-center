@@ -7,20 +7,21 @@
     <script src="/usr/lib/emmi/emmi-control-center/frontend/js/jquery.easing.1.3.js"></script>
     <script src="/usr/lib/emmi/emmi-control-center/frontend/js/default.js"></script>
     <link href="/usr/lib/emmi/emmi-control-center/frontend/css/default.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/usr/lib/emmi/emmi-control-center/frontend/font-awesome/css/font-awesome.css">
 </head>
 <body>
     <section id="container" class="hidden">
         <nav id="side">
             <ul class="side_menu">
-                <li><a data-cat="appearance" class="btn">$appearance</a>
-                <li><a data-cat="network" class="btn">$network</a>
-                <li><a data-cat="programs" class="btn">$programs</a>
-                <li><a data-cat="accounts" class="btn">$accounts</a>
-                <li><a data-cat="system" class="btn">$system</a>
-                <li><a data-cat="hardware" class="btn">$hard</a>
-                <li><a data-cat="options" class="btn">$options</a>
-                <li><a href="javascript:changeTitle('about')">$about</a>
-                <li><a href="javascript:back()">$back</a>
+                <li><a data-cat="appearance" class="fa fa-paint-brush btn"> $appearance</a>
+                <li><a data-cat="network" class="fa fa-wifi btn"> $network</a>
+                <li><a data-cat="programs" class="fa fa-rocket btn"> $programs</a>
+                <li><a data-cat="accounts" class="fa fa-user btn"> $accounts</a>
+                <li><a data-cat="system" class="fa fa-shield btn"> $system</a>
+                <li><a data-cat="hardware" class="fa fa-microchip btn"> $hard</a>
+                <li><a data-cat="options" class="fa fa-cogs btn"> $options</a>
+                <li><a class="fa fa-info-circle" href="javascript:changeTitle('about')"> $about</a>
+                <li><a class="fa fa-mail-reply" href="javascript:back()"> $back</a>
             </ul>
         </nav>
         <div id="ajax"></div>
@@ -85,7 +86,6 @@
             <a href='javascript:changeTitle("edit-item")'>$edit_items</a>
             <span id="appearance_span" class="hidden"> | <a href='javascript:changeTitle("suggestions")'>$suggestions</a></span>
         </footer>
-        <img src="/usr/lib/emmi/emmi-control-center/frontend/images/menu/appearance.svg" class="logo-back">
     </article>
 
     <article id="network_html" class="hidden">
@@ -95,7 +95,6 @@
             <a href='javascript:changeTitle("edit-item")'>$edit_items</a>
             <span id="network_span" class="hidden"> | <a href='javascript:changeTitle("suggestions")'>$suggestions</a></span>
         </footer>
-        <img src="/usr/lib/emmi/emmi-control-center/frontend/images/menu/network.svg" class="logo-back">
     </article>
 
     <article id="programs_html" class="hidden">
@@ -105,7 +104,6 @@
             <a href='javascript:changeTitle("edit-item")'>$edit_items</a>
             <span id="programs_span" class="hidden"> | <a href='javascript:changeTitle("suggestions")'>$suggestions</a></span>
         </footer>
-        <img src="/usr/lib/emmi/emmi-control-center/frontend/images/menu/software.svg" class="logo-back">
     </article>
 
     <article id="accounts_html" class="hidden">
@@ -115,7 +113,6 @@
             <a href='javascript:changeTitle("edit-item")'>$edit_items</a>
             <span id="accounts_span" class="hidden"> | <a href='javascript:changeTitle("suggestions")'>$suggestions</a></span>
         </footer>
-        <img src="/usr/lib/emmi/emmi-control-center/frontend/images/menu/users.svg" class="logo-back">
     </article>
 
     <article id="system_html" class="hidden">
@@ -125,7 +122,6 @@
             <a href='javascript:changeTitle("edit-item")'>$edit_items</a>
             <span id="system_span" class="hidden"> | <a href='javascript:changeTitle("suggestions")'>$suggestions</a></span>
         </footer>
-        <img src="/usr/lib/emmi/emmi-control-center/frontend/images/menu/system.svg" class="logo-back">
     </article>
 
     <article id="hardware_html" class="hidden">
@@ -135,7 +131,6 @@
             <a href='javascript:changeTitle("edit-item")'>$edit_items</a>
             <span id="hardware_span" class="hidden"> | <a href='javascript:changeTitle("suggestions")'>$suggestions</a></span>
         </footer>
-        <img src="/usr/lib/emmi/emmi-control-center/frontend/images/menu/hardware.svg" class="logo-back">
     </article>
 
     <article id="options_html" class="hidden">

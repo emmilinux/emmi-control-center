@@ -1,18 +1,19 @@
 * {
     -webkit-user-drag: none;
     -webkit-user-select: none;
+    font-family: "Free Sans", "Droid Sans", "Ubuntu", sans-serif;
 }
 html, body {
     margin: 0;
     padding: 0;
 }
 html {
-    background: #FFF url(/usr/lib/emmi/emmi-control-center/frontend/images/bg.png) repeat-x top;
+    background: #FFF;
     color: #64676A;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Free Sans", "Droid Sans", "Ubuntu", sans-serif;
     font-size: 14px;
 }
-body { background: url(/usr/lib/emmi/emmi-control-center/frontend/images/clouds.png) top right no-repeat }
+body { }
 .hidden { display: none }
 .logo-back {
     bottom: 10px;
@@ -66,8 +67,8 @@ ul { list-style-type: none }
 /* Container */
 #container { border-top: 1px solid transparent }
 #side {
-    background: -webkit-gradient(linear,0 0,0 100%,from(#6FA1D5),to(#3E73AE));
-    border-right: 1px solid #3E73AE;
+    background: #4a4a4a;
+    border-right: 1px solid #4a4a4a;
     float: left;
     height: 519px;
     text-shadow: #2D4B69 1px 1px 0;
