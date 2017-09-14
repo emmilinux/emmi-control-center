@@ -1,3 +1,10 @@
+emmi-control-center (0.3-12) precise; urgency=low
+
+  * Alterado aparencia
+  * Adicionado novos itens
+
+ -- Sidnei Weber <sidnei.weber@gmail.com>  Mon, 14 Set 2017 12:56:37 -0300
+ 
 emmi-control-center (0.3-11) precise; urgency=low
 
   * Translations pt_BR
